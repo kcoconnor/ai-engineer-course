@@ -1,0 +1,13 @@
+{
+  "documents": [
+    {"id": "refunds", "title": "Refund policy", "body": "Refund requests within 30 days require a receipt. A support agent can prepare a refund request; a human must approve the reply. Never promise a refund has been paid.", "roles": ["support", "finance"]},
+    {"id": "delivery", "title": "Delivery policy", "body": "Delivery tracking updates can take 48 hours. Ask for the order number before investigating a delayed shipment.", "roles": ["support"]},
+    {"id": "credentials", "title": "Account access", "body": "Password reset requests must use the account recovery page. Never ask customers to send passwords or authentication codes.", "roles": ["support"]},
+    {"id": "finance", "title": "Internal finance reserve", "body": "CONFIDENTIAL_RESERVE_7419: refund reserves and private bank account details. Refund requests and receipts are reconciled monthly.", "roles": ["finance"]}
+  ],
+  "tickets": [
+    {"id": "T1", "customer": "customer-1", "text": "I need a refund for an order from 10 days ago. I have the receipt.", "expected_source": "refunds", "baseline_minutes": 12},
+    {"id": "T2", "customer": "customer-2", "text": "My delivery tracking has not updated. Where is my shipment?", "expected_source": "delivery", "baseline_minutes": 9},
+    {"id": "T3", "customer": "customer-3", "text": "I forgot my password. How do I reset my account access?", "expected_source": "credentials", "baseline_minutes": 8}
+  ]
+}
