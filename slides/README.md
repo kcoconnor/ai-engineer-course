@@ -23,6 +23,10 @@ One Marp deck for each 90-minute class session. Each deck follows the teaching n
 | | 4.2 Efficiency core | [m4-s2-efficiency-core.md](m4-s2-efficiency-core.md) |
 | | 4.3 Security frontier **[FRONTIER]** | [m4-s3-security-frontier.md](m4-s3-security-frontier.md) |
 | | 4.4 Efficiency frontier and capstone **[FRONTIER]** | [m4-s4-efficiency-frontier-capstone.md](m4-s4-efficiency-frontier-capstone.md) |
+| Reviews | Review A: Modules 1–2 (start of Week 6) | [review-a-modules-1-2.md](review-a-modules-1-2.md) |
+| | Review B: all modules (after Week 13; repeat at 3 months) | [review-b-all-modules.md](review-b-all-modules.md) |
+
+The review decks are generated from `reviews/*.md`, which hold the questions and answers. Edit the review file, then run `python3 tools/build_review_decks.py` from the repository root.
 
 ## Render the slides
 

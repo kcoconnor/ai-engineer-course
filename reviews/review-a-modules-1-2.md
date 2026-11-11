@@ -6,6 +6,8 @@ This session is retrieval practice. You recall what you learned in Weeks 1–5 f
 
 Terms follow [GLOSSARY.md](../GLOSSARY.md). Cards: [Module 1](../cards/module-1.md), [Module 2](../cards/module-2.md).
 
+**Slides:** [slides/review-a-modules-1-2.md](../slides/review-a-modules-1-2.md). The deck is generated from this file: `python3 tools/build_review_decks.py`.
+
 ## Plan
 
 | Time | Step | Mode |
