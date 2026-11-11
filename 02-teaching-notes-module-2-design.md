@@ -182,7 +182,7 @@ sync DraftNeedsApproval
 
 sync SendOnApproval
   when Approving.approve (q, a)
-  where item(q) = d
+  where d = item(q)
   then Sending.send (d)
 ```
 
