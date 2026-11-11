@@ -172,7 +172,7 @@ Ask: "Which part did you forget?" Most learners forget the operational principle
 
 ### Worked example
 
-Concepts: `Drafting [Ticket]` (an LLM drafts a reply), `Approving [Agent, Draft]`, `Sending [Draft]`.
+Concepts: `Drafting [Ticket]` (an LLM drafts a reply), `Approving [Agent, Draft]` (the same concept as Session 2.2, reused here with different types), `Sending [Draft]`.
 
 ```
 sync DraftNeedsApproval
