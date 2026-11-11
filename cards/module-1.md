@@ -15,7 +15,7 @@ AI added to a workflow designed for people gives small gains. Large gains need t
 | Track | Measure the baseline; later, the outcome against it |
 
 ## Outcome vs. output
-Output: what a step produces (a draft, a report). Outcome: what the business needs, measurable (a decision made faster, a risk found earlier).
+Output: what a step produces (a draft, a report). Outcome: what the business needs, measurable (a decision made faster, a risk found earlier). Share of AI-written code and tokens used are activity, not outcome.
 
 ## Use case canvas (T8): six dimensions
 Impact, feasibility, strategic fit, repeatability, business risk (consequence of an error), security risk (lethal trifecta legs). Score 1–5; for the two risks, 5 = low risk.

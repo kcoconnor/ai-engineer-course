@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'AI Engineering · Module 4 – Engineering'
-footer: 'Session 4.3 · Security frontier [FRONTIER — dated October 2026]'
+footer: 'Session 4.3 · Security frontier [FRONTIER — dated November 2026]'
 style: |
   section { font-size: 28px; padding: 60px 70px; }
   h1 { color: #1f3a5f; font-size: 44px; }
@@ -28,7 +28,7 @@ style: |
 
 ## Session 4.3 · Module 4 – Engineering
 
-**[FRONTIER — dated October 2026]**
+**[FRONTIER — dated November 2026]**
 
 90 minutes · Week 12
 
@@ -139,11 +139,14 @@ Write them on the board. Use them in the red-team lab.
 | **Tool poisoning** (third-party MCP servers) | A tool description contains instructions |
 | **Exfiltration through rendering** | An image URL or link carries data out |
 | **Confused deputy** across agents | One agent asks a more privileged agent to act |
+| **Multi-turn attacks** (need stateful guardrails) | Each message looks safe; the conversation is not |
+| **Unreviewed third-party skills** | A downloaded skill file contains instructions |
 
 <!--
 Verify this list each quarter.
 Each row maps to the stable principle: any text in the context can act as an instruction.
 Ask: "Which route is new, and which is the same principle with a new input?" Usually all are the same principle.
+The last two rows come from the Thoughtworks Technology Radar Vol 35 (Nov 2026): stateful guardrails (Trial) and agent skill cognitive surrender (Caution). Each April and November, take one or two new Radar security items as input to the procedure.
 -->
 
 ---
@@ -190,6 +193,8 @@ Connect to Module 2: a fixed plan is a fixed set of synchronizations.
 ---
 
 ## Capability-based defense: CaMeL
+
+CaMeL: Capabilities for Machine Learning.
 
 - Separates **control flow** (from the trusted request) from **data flow** (from untrusted content).
 - Tracks **capabilities** on each value: where it came from, where it may go.

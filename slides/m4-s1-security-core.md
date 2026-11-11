@@ -249,7 +249,7 @@ Prompts and classifiers reduce risk. They do not remove it.
 The real boundary: **what the agent can do, with which data.**
 
 **6. Use reference lists as checklists.**
-- OWASP Top 10 for LLM Applications (2025)
+- OWASP (Open Worldwide Application Security Project) Top 10 for LLM Applications (2025)
 - OWASP Top 10 for Agentic Applications (2026)
 
 A checklist is not a threat model. Your data flow is.

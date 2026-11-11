@@ -51,10 +51,10 @@ Security and efficiency have the same shape. Each rests on a few principles that
    - access to private data,
    - exposure to untrusted content,
    - a way to communicate externally.
-   Remove one leg, or put a human approval step on the path.
+   Remove one leg, or put a human approval step on the path. To find these paths, trace each flow of data from where it enters to where it can leave the system. The Thoughtworks Radar (Vol 35, Trial, November 2026) calls this [toxic flow analysis](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai).
 4. **Least privilege.** Each tool gets the minimum permissions. Credentials belong to the user or the task, not to the agent in general.
 5. **Defense in the architecture.** Prompt instructions and classifiers reduce risk. They do not remove it. Architectural limits (what the agent can do, with which data) are the real boundary.
-6. **Reference lists.** OWASP Top 10 for LLM Applications (2025) and OWASP Top 10 for Agentic Applications (2026). Use them as checklists, not as the threat model itself.
+6. **Reference lists.** OWASP (Open Worldwide Application Security Project) Top 10 for LLM Applications (2025) and OWASP Top 10 for Agentic Applications (2026). Use them as checklists, not as the threat model itself.
 
 ### How to teach it
 - **Recall (5 min):** The two questions above. Question 2 sets up today's demo: instructions in data reach every model that reads them.
@@ -97,10 +97,10 @@ Security and efficiency have the same shape. Each rests on a few principles that
 
 ### Key points
 1. **Evaluation before optimization.** No change without a quality baseline. A cheaper system that is wrong is not cheaper.
-2. **Cost model.** Cost per task = Σ (calls × (input tokens × input price + output tokens × output price)). Find the top drivers from traces, not from intuition.
+2. **Cost model.** Cost per task = Σ (calls × (input tokens × input price + output tokens × output price)). Find the top drivers from traces, not from intuition. Measuring where the tokens go (instructions, retrieved documents, tool results, history) before you cut anything is called [context profiling](https://www.thoughtworks.com/radar/techniques/context-profiling) (Thoughtworks Radar Vol 35, Assess, November 2026).
 3. **Latency model.** Separate time to first token, generation time, tool time, and queue time. Measure p50 (the median: half of requests are faster than this) and p95 (the 95th percentile: your slow outliers).
 4. **Context budgets.** Set a maximum context size for each action. Remove content that does not change the output.
-5. **Routing.** Send each task to the cheapest model that passes its eval. Use a cascade (try the cheap model first, escalate to a stronger model when the cheap one flags its own uncertainty).
+5. **Routing.** Send each task to the cheapest model that passes its eval. Use a cascade (try the cheap model first, escalate to a stronger model when the cheap one flags its own uncertainty). The opposite habit, sending every task to the strongest model, has a name: [blanket frontier model usage](https://www.thoughtworks.com/radar/techniques/blanket-frontier-model-usage) (Thoughtworks Radar Vol 35, Caution, November 2026).
 6. **Design-level savings.** Replace model calls with deterministic code. Remove retries that do not improve quality. Merge or split calls. These changes often save more than any model change.
 
 ### How to teach it
@@ -119,7 +119,7 @@ Security and efficiency have the same shape. Each rests on a few principles that
 
 ---
 
-## Session 4.3 – Security frontier **[FRONTIER — dated October 2026]**
+## Session 4.3 – Security frontier **[FRONTIER — dated November 2026]**
 
 Rebuild this session every quarter. Keep the structure. Replace the specifics.
 
@@ -143,6 +143,8 @@ Rebuild this session every quarter. Keep the structure. Replace the specifics.
 - Tool poisoning: malicious tool descriptions or results from third-party MCP servers.
 - Exfiltration (private data leaving the system to an attacker) through rendered content, for example image URLs or links that carry data.
 - Confused-deputy attacks across agents in multi-agent systems. A confused deputy is a less-privileged party that tricks a more-privileged agent into acting for it.
+- Attacks spread over many turns. A check on each single message misses them. [Stateful guardrails](https://www.thoughtworks.com/radar/techniques/stateful-guardrails) check the recent conversation as a whole and keep a record of warnings (Thoughtworks Radar Vol 35, Trial).
+- Third-party agent skills and instruction files used without review. They put unread instructions in the agent's path. The Radar calls this [agent skill cognitive surrender](https://www.thoughtworks.com/radar/techniques/agent-skill-cognitive-surrender) (Caution). Review a skill as you review a dependency.
 
 **Architectural patterns** (Beurer-Kellner et al., 2025)
 | Pattern | Idea | Tradeoff |
@@ -158,7 +160,7 @@ Rebuild this session every quarter. Keep the structure. Replace the specifics.
 
 ### How to teach it
 - **Recall (5 min):** The two questions above. They are the stable core under today's frontier content.
-- **Update (10 min):** What changed since the last session. Use recent advisories.
+- **Update (10 min):** What changed since the last session. Use recent advisories and the latest [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar) (published each April and November). Pick one or two new security items as input to the procedure below.
 - **Explain (20 min):** The patterns table.
 - **Red-team lab (45 min):** Pairs attack each other's systems. Each pair writes at least 10 attack cases. They record successes.
 - **Close (10 min):** Each learner chooses one pattern for their highest-risk path.
@@ -173,7 +175,7 @@ Rebuild this session every quarter. Keep the structure. Replace the specifics.
 
 ---
 
-## Session 4.4 – Efficiency frontier and capstone **[FRONTIER — dated October 2026]**
+## Session 4.4 – Efficiency frontier and capstone **[FRONTIER — dated November 2026]**
 
 Rebuild the first half of this session every quarter.
 
@@ -196,6 +198,8 @@ Rebuild the first half of this session every quarter.
 - **Reasoning budgets.** Many models let you control how much they reason. Set the budget per action from evals.
 - **Output control.** Structured outputs and length limits reduce output tokens and parsing failures.
 - **Inference options.** Faster inference modes and regional options change latency and price. Check current provider documentation.
+- **Smaller and open-weight models.** Small language models and open-weight models now pass evals for narrow tasks such as classification, extraction, and routing (Thoughtworks Radar Vol 35, Trial). Route to them only after they pass your eval.
+- **Context compression: a warning.** Tools that shrink the prompt can break prompt caching, so real cost rises while token counts fall, and they can drop information the model needed. The Radar puts [naive context compression](https://www.thoughtworks.com/radar/techniques/naive-context-compression) on Caution. Apply the procedure below before you adopt one.
 
 ### How to teach it
 - **Recall (5 min):** The two questions above. Question 2 sets up the capstone: report the outcome as measured.

@@ -8,10 +8,10 @@ Security and efficiency have the same shape: a few principles that hold for year
 ## Security core (stable)
 1. Any text in the context can act as an instruction: user input, retrieved documents, tool results, web pages, emails, memory.
 2. Model output is untrusted input. Validate it before a shell, a database, a browser, an API, or a human approver.
-3. **Lethal trifecta** (Willison): private data + untrusted content + external communication. Remove one leg, or put human approval on the path.
+3. **Lethal trifecta** (Willison): private data + untrusted content + external communication. Remove one leg, or put human approval on the path. Find the paths with toxic flow analysis: trace each data flow from entry to exit.
 4. **Least privilege:** minimum permissions per tool. Credentials belong to the user or the task.
 5. Prompts and classifiers reduce risk. Architectural limits are the boundary.
-6. OWASP Top 10 lists are checklists, not the threat model.
+6. OWASP (Open Worldwide Application Security Project) Top 10 lists are checklists, not the threat model.
 
 **Threat model (T4):** data-flow diagram, trust boundaries, trifecta paths, mitigation per threat. STRIDE + "Can injected content cause this?"
 
@@ -19,10 +19,10 @@ Security and efficiency have the same shape: a few principles that hold for year
 
 ## Efficiency core (stable)
 1. **Evaluation before optimization.** No change without a quality baseline.
-2. **Cost per task** = Σ over calls (input tokens × input price + output tokens × output price). Find drivers in traces.
+2. **Cost per task** = Σ over calls (input tokens × input price + output tokens × output price). Find drivers in traces (context profiling: where do the tokens go?).
 3. **Latency:** time to first token, generation, tool time, queue time. Watch p50 and p95.
 4. **Context budget** per action.
-5. **Routing:** cheapest model that passes its eval; cascade from cheap to strong.
+5. **Routing:** cheapest model that passes its eval; cascade from cheap to strong. Anti-pattern: blanket frontier model usage (the strongest model for every task).
 6. **Design-level savings:** replace model calls with code, drop useless retries, merge or split calls.
 
 ## Procedure: judge a new attack
@@ -31,12 +31,14 @@ Security and efficiency have the same shape: a few principles that hold for year
 ## Procedure: judge a new optimization
 1. Which measured driver? 2. Expected saving on your traces? 3. Does quality hold on the eval suite? 4. Does it change the security posture (for example, a cache shared across users)? 5. Keep only if 1–4 pass.
 
-## Frontier specifics [FRONTIER — dated October 2026, verify each quarter]
+## Frontier specifics [FRONTIER — dated November 2026, verify each quarter]
 **Attack routes:** injection through tool results, retrieved documents, and memory; tool poisoning from third-party MCP servers; exfiltration through rendered links and images; confused-deputy attacks across agents.
 
 **Patterns** (Beurer-Kellner et al., 2025): action-selector, plan-then-execute, LLM map-reduce, dual LLM, code-then-execute, context minimization. **CaMeL** separates control flow from data flow.
 
-**Optimizations:** prompt caching (stable content first; measure cache hit rate), batch APIs for non-interactive work, model tiers, reasoning budgets, structured output and length limits.
+**Optimizations:** prompt caching (stable content first; measure cache hit rate), batch APIs for non-interactive work, model tiers, reasoning budgets, structured output and length limits, small and open-weight models for narrow tasks.
+
+**Warnings (Thoughtworks Radar Vol 35, Nov 2026):** naive context compression (can break caching), agent skill cognitive surrender (unreviewed third-party skills), multi-turn attacks (mitigate with stateful guardrails, which check the whole conversation).
 
 ## Capstone
 Report the outcome as measured against the Module 1 baseline, with sample size and method. No extrapolated multiples.

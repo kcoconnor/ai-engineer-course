@@ -19,6 +19,7 @@ The **Module** column shows where the course introduces the term.
 
 | Term | Definition | Module |
 |---|---|---|
+| HDSR | *Harvard Data Science Review*, the journal that published the A.G.E.N.T. article (Kruhse-Lehtonen and Hofmann, 2026). | 1 |
 | A.G.E.N.T. | The playbook from Kruhse-Lehtonen, Hofmann et al. (2026): Audit, Gauge, Engineer, Navigate, Track. | 1 |
 | Agent OS | A workflow model in which agents are the main actors and people are supervisors, coaches, approvers, and exception handlers. | 1 |
 | Agent-first | A workflow redesigned so software does the work and people supervise. Not the same as an autonomous agent architecture. | 1 |
@@ -35,6 +36,7 @@ The **Module** column shows where the course introduces the term.
 | Lethal trifecta | Access to private data, plus exposure to untrusted content, plus the ability to communicate externally. A path with all three legs can leak data. (Willison, 2025.) | 1, 4 |
 | Exfiltration | The risk of private data leaving the system to an attacker. Created when a path has all three lethal-trifecta legs. | 1, 4 |
 | Straight-through flow | A workflow redesigned so an agent acts without a human step in the middle. Not the goal everywhere: on a path with all three lethal-trifecta legs, it creates exfiltration risk, so keep an approval step or remove a leg. | 1, 4 |
+| Activity metric | A count of work done, such as lines of AI-written code or tokens used. It is not an outcome. The Thoughtworks Radar (Vol 35, Nov 2026) warns against using it as productivity. | 1 |
 | Outcome | What the business needs: a decision made faster, a risk found earlier. Measurable. | 1 |
 | Output | What one step produces: a report, a draft. Not an outcome. | 1 |
 | Tacit decision | A judgment made in a workflow with no written rule behind it, for example which customers always need sign-off. Tacit decisions are where agents most often fail, and must become explicit rules or eval criteria in Module 2. | 1 |
@@ -82,6 +84,7 @@ The **Module** column shows where the course introduces the term.
 | Walking skeleton | A minimal end-to-end path through the whole system, built before adding retrieval or other features. It proves the pieces connect before the system gets complex. | 3 |
 | ADR | Architecture decision record (T3). Fields: design property, context, decision, alternatives considered, consequences, change trigger. | 3 |
 | Lexical search | Search for exact terms, names, and codes (for example, BM25). | 3 |
+| BM25 | A standard scoring method for lexical search. It ranks documents by how often the query words appear, and gives rare words more weight. | 3 |
 | Dense search | Search by meaning, with embeddings. | 3 |
 | Hybrid search | Lexical and dense search combined. | 3 |
 | Reranking | Reordering the top search results with a stronger model. | 3 |
@@ -89,7 +92,12 @@ The **Module** column shows where the course introduces the term.
 | Recall@k | The share of questions where the correct source appears in the top k results. Measures retrieval alone. | 3 |
 | Durable execution | Workflow state that is persisted, so a long task can resume after a failure. | 3 |
 | Digest | The SHA-256 hash of the exact payload a human reviewed. The system checks it again at decision time and at send time, so an approval cannot be reused on a changed payload. | 3 |
+| Idempotent | An operation is idempotent if doing it twice has the same effect as doing it once. A retried send that creates one outbox row, not two, is idempotent. | 3 |
+| ACL | Access control list: the list of who may read or change a resource. Retrieval filters documents by the user's ACL before the model sees them. | 3 |
 | Idempotency key | A value a client sends with a request so a provider can recognize a retried request and avoid doing it twice. Needed because a crash or timeout can leave a delivery outcome ambiguous. | 3 |
+| Human-in-the-loop theater | An approval step where the human cannot really judge what they approve, so it gives false confidence. Named by the Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 3 |
+| Risk-tiered human oversight | Matching review to risk: low-risk actions run, medium-risk actions get a human review, a human performs high-risk or irreversible actions. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 3 |
+| Progressive context disclosure | Start the model with a small context; load more only when a step needs it. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 3 |
 | Approver's view | What the approver sees, decides, overrides, and escalates. Shows the real action, not only a model summary. | 3 |
 | Error analysis | Reading real traces, putting failures into categories, and fixing the largest category first. | 3 |
 
@@ -99,6 +107,7 @@ The **Module** column shows where the course introduces the term.
 |---|---|---|
 | Trust boundary | A line in a data-flow diagram where the party that controls the input changes. | 4 |
 | Least privilege | Each tool gets the minimum permissions. Credentials belong to the user or the task, not to the agent in general. | 4 |
+| OWASP | Open Worldwide Application Security Project: a nonprofit foundation that publishes security guidance, including the Top 10 risk lists for LLM and agentic applications. | 4 |
 | Indirect prompt injection | An instruction hidden in content the model reads (a document, a tool result, a memory), not typed by the user. (Greshake et al., 2023.) | 4 |
 | Threat model | Template T4. Trust boundaries, threats, trifecta paths, and the mitigation for each. | 4 |
 | STRIDE | An older threat-modeling checklist: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. Add an AI-specific question to each category, for example "can injected content cause this?" | 4 |
@@ -109,12 +118,20 @@ The **Module** column shows where the course introduces the term.
 | Cascade | A routing pattern: try the cheap model first, escalate to a stronger model when the cheap one flags its own uncertainty or a check fails. | 4 |
 | Reasoning budget | A limit on how much a model reasons before it answers. Set per action from evals. | 4 |
 | Cache hit rate | The share of requests that reuse the cached prefix. Measures whether prompt caching is working. | 4 |
+| Context profiling | Measuring which parts of the context (instructions, documents, tool results, history) use the tokens, before you reduce any of them. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 4 |
+| Blanket frontier model usage | The anti-pattern of sending every task to the strongest, most expensive model. The fix is routing. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 4 |
+| Naive context compression | Shrinking the prompt without measuring the effect. It can break prompt caching and drop needed information. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 4 |
+| Small language model | A smaller, cheaper, faster model for one narrow task, such as classification or extraction. Use it only where it passes the eval. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 4 |
+| Open-weight model | A model whose trained weights are published, so you can run it on your own infrastructure. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 4 |
 | Action-selector | Security pattern: the model selects from a fixed set of actions; tool outputs do not return to the model. (Beurer-Kellner et al., 2025.) **[FRONTIER]** | 4 |
 | LLM map-reduce | Security pattern: isolated model calls process each untrusted item; a constrained step aggregates the results. **[FRONTIER]** | 4 |
 | Code-then-execute | Security pattern: the model writes a program; the program, run in a sandbox, handles the data. **[FRONTIER]** | 4 |
 | Context minimization | Security pattern: remove content that later steps do not need, including the user prompt, before those steps run. **[FRONTIER]** | 4 |
 | CaMeL | Capabilities for Machine Learning (Debenedetti et al., 2025). A defense that separates control flow from data flow and tracks what each piece of data may do. **[FRONTIER]** | 4 |
 | Tool poisoning | An attack through malicious tool descriptions or tool results, for example from a third-party MCP server. **[FRONTIER]** | 4 |
+| Toxic flow analysis | Tracing each flow of data from where it enters to where it can leave, to find paths that complete the lethal trifecta. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 4 |
+| Stateful guardrails | Checks that look at the recent conversation as a whole and keep a record of warnings, to catch attacks spread over many turns. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 4 |
+| Agent skill cognitive surrender | Using third-party agent skills or instruction files without reading them. It puts unreviewed instructions in the agent's path. Thoughtworks Radar (Vol 35, Nov 2026). **[FRONTIER]** | 4 |
 | Plan-then-execute | Security pattern: the model makes its plan before it sees untrusted data. (Beurer-Kellner et al., 2025.) | 4 |
 | Dual LLM | Security pattern: a privileged model never sees untrusted text. A quarantined model processes it and returns references. | 4 |
 | Confused deputy | An attack in which a less-privileged party makes a more-privileged agent act for it. | 4 |

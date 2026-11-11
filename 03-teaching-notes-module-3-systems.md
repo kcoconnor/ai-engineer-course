@@ -77,7 +77,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 ### Key points
 1. **The continuum.** Single call → prompt chain → routing → parallelization → orchestrator-workers → evaluator-optimizer → autonomous agent. Each step to the right adds flexibility and also cost, latency, and risk.
 2. **The rule.** Start at the left. Move right only when the design requires it.
-3. **Context engineering.** The model sees only its context. Decide what goes in, in what order, and what stays out. This is a design decision, not a prompt trick.
+3. **Context engineering.** The model sees only its context. Decide what goes in, in what order, and what stays out. This is a design decision, not a prompt trick. One current technique: [progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure). Start with a small context and let the system load more only when a step needs it (Thoughtworks Radar Vol 35, Adopt, November 2026).
 4. **Tools are interfaces for a model.** Write clear names, few parameters, specific descriptions, and error messages that tell the model what to do next. Return only what the model needs.
 5. **Protocols.** The Model Context Protocol (MCP) standardizes how tools and data connect to models. It changes the integration cost, not the design reasoning. **[dated November 2026]**
 
@@ -120,7 +120,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ### Key points
 1. **Ask the requirements first:** corpus size, change rate, query type, freshness, access control, citation needs.
-2. **Lexical search** (for example, BM25) finds exact terms, names, and codes. **Dense search** finds meaning. **Hybrid** combines them. **Reranking** reorders the top results with a stronger model.
+2. **Lexical search** (for example, BM25, a standard scoring method that weights rare words more) finds exact terms, names, and codes. **Dense search** finds meaning. **Hybrid** combines them. **Reranking** reorders the top results with a stronger model.
 3. **Agentic search** lets the model write queries, read results, and search again. It is better for complex questions. It costs more and is harder to evaluate.
 4. **Long context** is a strong option when the corpus is small and stable. Combine it with prompt caching.
 5. **Graphs and structured queries** answer relational questions ("Which teams own services that depend on X?"). Embeddings do not answer these well.
@@ -181,6 +181,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ### Expert depth
 - A common defect: the approver sees a model-written summary of the action. An injected instruction can make the summary misleading. Show the raw action.
+- **Human-in-the-loop theater.** An approval step where the human cannot really judge what they approve: too many requests, too little context, or a summary instead of the action. It gives false confidence. The Thoughtworks Radar (Vol 35, November 2026) puts it on Caution. Its remedy is [risk-tiered human oversight](https://www.thoughtworks.com/radar/techniques/risk-tiered-human-oversight): low-risk actions run without approval, medium-risk actions get a human review, and a human performs high-risk or irreversible actions. Use the refusals from Module 2 to decide each action's tier. See [human-in-the-loop theater](https://www.thoughtworks.com/radar/techniques/human-in-the-loop-theater).
 - Durable execution is a design property that people often find late. Ask in Module 2: "Can this task take longer than one request?"
 
 ---

@@ -40,7 +40,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 - Score candidate workflows for impact, feasibility, strategic fit, repeatability, and security risk.
 
 **Study**
-- Kruhse-Lehtonen, Hofmann et al., "The Agent-Centric Enterprise" (HDSR, 2026).
+- Kruhse-Lehtonen, Hofmann et al., "The Agent-Centric Enterprise" (*Harvard Data Science Review* (HDSR), 2026).
 - Simon Willison, "The lethal trifecta for AI agents" (for the security score).
 
 **Exercises**
@@ -281,7 +281,7 @@ Weeks 10–11 are the **stable core**. Weeks 12–13 are the **frontier**. Rebui
 - Know the limit of Guardian agents: they monitor quality and policy, but they are not a security boundary.
 
 **Study**
-- OWASP Top 10 for LLM Applications (2025).
+- OWASP (Open Worldwide Application Security Project) Top 10 for LLM Applications (2025).
 - OWASP Top 10 for Agentic Applications (2026).
 - Simon Willison, "The lethal trifecta for AI agents".
 
@@ -315,7 +315,7 @@ Weeks 10–11 are the **stable core**. Weeks 12–13 are the **frontier**. Rebui
 **Deliverable**
 - Efficiency report v1: before and after, with quality held.
 
-### Week 12 – Security frontier **[FRONTIER — dated October 2026]**
+### Week 12 – Security frontier **[FRONTIER — dated November 2026]**
 
 **Objectives**
 - Know the current attack routes: injection through tool results, retrieved documents, and memory; tool poisoning in MCP servers; leaks through agent memory; confused-deputy attacks across agents.
@@ -337,7 +337,7 @@ Weeks 10–11 are the **stable core**. Weeks 12–13 are the **frontier**. Rebui
 **Deliverable**
 - Red-team report and threat model v2.
 
-### Week 13 – Efficiency frontier and capstone **[FRONTIER — dated October 2026]**
+### Week 13 – Efficiency frontier and capstone **[FRONTIER — dated November 2026]**
 
 **Objectives**
 - Apply the current optimizations: prompt caching, batch processing, model tiers, output length control, reasoning budgets, provider-specific features.

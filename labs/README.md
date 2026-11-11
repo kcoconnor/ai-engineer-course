@@ -154,13 +154,13 @@ Run `python3 -m support_lab lab 7`.
 
 Two lightweight retrieval strategies are compared: `overlap` (raw word
 overlap) and `lexical` (word overlap with extra weight for title matches).
-Neither is BM25 or dense search. Both get recall@2 of 1.0 on three
+Neither is BM25 (the standard lexical scoring method) or dense search. Both get recall@2 of 1.0 on three
 cases. Support access excludes the finance policy before generation.
 
 **Learner task:** Expand to at least ten questions before tuning either
 strategy. Keep some cases held out. Include exact codes, paraphrases, irrelevant
 queries and denied documents. Add a reranker or another retrieval strategy and
-measure recall separately from draft quality. Inspect the spy-model ACL test.
+measure recall separately from draft quality. Inspect the spy-model ACL (access control list) test.
 For the full course deliverable, expand to 30–50 labeled questions.
 
 **Checkpoint:** Both reference strategies retrieve expected fixture sources;
@@ -176,7 +176,7 @@ closes the database, reopens it and retries the send twice.
 
 **Learner task:** Identify the transaction boundary. Explain why a real remote
 email API cannot participate in the SQLite transaction. Propose a dispatcher
-with a provider idempotency key and reconciliation of ambiguous failures. Walk
+with a provider idempotency key (a value that lets the provider recognize a retried request, so the email is sent once) and reconciliation of ambiguous failures. Walk
 through `inspect`, then approve a reviewed digest using the reference README.
 
 **Checkpoint:** Failed transaction leaves zero outbox rows; restart and two

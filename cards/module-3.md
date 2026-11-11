@@ -39,7 +39,7 @@ Corpus size, change rate, query type, freshness, access control, citation needs.
 Model context (temporary). Application database (durable, queryable). Durable workflow engine (durable, resumable).
 
 ## Approval
-The check is in code, not in the prompt. The approver sees the real action, not a model summary.
+The check is in code, not in the prompt. The approver sees the real action, not a model summary. Avoid human-in-the-loop theater (approvals no one can really judge): tier actions by risk. Low risk runs, medium risk gets review, a human performs high risk.
 
 ## Observability and evals
 Trace every request: inputs, outputs, model, tokens, latency, cost, tool calls, errors. Eval types: code checks, evaluator-model checks with a rubric, human review for calibration. Use the cheapest reliable check. Eval sources: Module 2 acceptance scenarios, production failures, Module 4 attack cases.

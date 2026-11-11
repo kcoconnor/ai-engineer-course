@@ -153,7 +153,7 @@ Model calls per user action. Context per call. Which calls deterministic code co
 
 ---
 
-## Week 12 – Security frontier [FRONTIER — dated October 2026]
+## Week 12 – Security frontier [FRONTIER — dated November 2026]
 
 **1.** A third-party MCP server returns a tool description with hidden instructions. What is this attack called?
 
@@ -216,7 +216,7 @@ Injected content can make the summary misleading. The approver then approves tex
 
 ---
 
-## Week 13 – Efficiency frontier and capstone [FRONTIER — dated October 2026]
+## Week 13 – Efficiency frontier and capstone [FRONTIER — dated November 2026]
 
 **1.** For prompt caching to work, where does stable content go?
 
@@ -276,6 +276,13 @@ As measured against the Module 1 baseline, with the sample size and method. Do n
 </details>
 
 **7. (your system)** Apply the optimization procedure to two current optimizations for your system. Keep only the ones that pass all four checks.
+
+**8.** A context compression tool cuts your prompt tokens by 40%. Your cost per task goes up. Give the likely reason, and the procedure step that would have caught it.
+
+<details><summary>Answer</summary>
+
+The compressed prompt changes on every call, so the prompt cache no longer matches and every call pays the full price. Compression can also drop information the model needs. Step 2 (expected saving on your traces) and step 3 (does quality hold on the eval suite) catch it. The Thoughtworks Radar puts naive context compression on Caution. **[FRONTIER]**
+</details>
 
 ---
 
