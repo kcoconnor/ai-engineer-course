@@ -58,12 +58,33 @@ The exit ticket checks objectives 1 and 4.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Warm-up: "Why a vector database?" | Discussion |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up: "Why a vector database?" | Discussion |
 | 10–30 | Requirements first; the options | Explain + check |
 | 30–70 | Choose your strategy; group review | Individual + groups |
 | 70–80 | Demo: lexical vs. dense | Demo + predict |
 | 80–85 | Debrief and takeaways | Group |
 | 85–90 | Exit ticket | Individual |
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. State the rule that decides between a workflow and an agent.
+2. Name the three legs of the lethal trifecta. Which leg can a retrieval system add?
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 6, Session 3.1. Q2 is from Week 1, Module 1.
+Answer to 1: If you can list the steps in advance, use a workflow. If the system must choose the steps as it goes, use an agent. Start at the left of the continuum.
+Answer to 2: Private data, untrusted content, external communication. Retrieval can add untrusted content: a retrieved document can carry hidden instructions.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Do not skip this slide when time is short.
+-->
 
 ---
 
@@ -287,3 +308,4 @@ Predicting first increases retention of the result.
 - Edge et al., "From Local to Global: A Graph RAG Approach to Query-Focused Summarization," 2024.
 - Hamel Husain, "Your AI Product Needs Evals."
 - Course files: `03-teaching-notes-module-3-systems.md`, `05-templates.md` (T3, T6).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-3.md`.

@@ -54,14 +54,35 @@ By the end of this session, you can:
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–5 | Warm-up | Individual |
-| 5–20 | Tracing, evals, error analysis, ADRs, KPIs | Explain + check |
-| 20–70 | Error analysis workshop | Individual + share |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up | Individual |
+| 10–25 | Tracing, evals, error analysis, ADRs, KPIs | Explain + check |
+| 25–70 | Error analysis workshop | Individual + share |
 | 70–85 | ADR review | Pairs |
 | 85–90 | Takeaways and exit ticket | Individual |
 
 <!--
 Explanation: 15 minutes. Practice: 65 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Why must the approval check be in code, not in the prompt?
+2. What is an acceptance scenario? Where does it come from?
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 8, Session 3.3. Q2 is from Week 5, Module 2.
+Answer to 1: A prompt is not enforcement. The model can skip or be talked out of an instruction. Code runs the check every time.
+Answer to 2: A testable scenario derived from an operational principle, including the paths that must be refused. It comes from the Module 2 spec, and today it becomes an automated eval.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Do not skip this slide when time is short.
 -->
 
 ---
@@ -160,14 +181,14 @@ Approval rate near 100% may mean approvers stopped reading. Rising override rate
 
 <!-- _class: activity -->
 
-## Activity: error analysis workshop <span class="timer">50 min</span>
+## Activity: error analysis workshop <span class="timer">45 min</span>
 
 1. Read your 30 traces in silence. <span class="timer">20 min</span>
 2. Write a one-line note for each failure. <span class="timer">(same)</span>
 3. Group your notes into categories. <span class="timer">8 min</span>
 4. Count each category. <span class="timer">2 min</span>
 5. Compare the top category with your warm-up guess. <span class="timer">2 min</span>
-6. Share your top category with the group. <span class="timer">18 min</span>
+6. Share your top category with the group. <span class="timer">13 min</span>
 
 <!--
 Keep the room silent during step 1. Expected result: most learners find a category they did not expect.
@@ -247,3 +268,4 @@ During sharing, ask: "Which eval would catch this category?" Each answer becomes
 - Hamel Husain, "Your AI Product Needs Evals."
 - Chip Huyen, *AI Engineering*, O'Reilly, 2025.
 - Course files: `03-teaching-notes-module-3-systems.md`, `05-templates.md` (T3, T6).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-3.md`.

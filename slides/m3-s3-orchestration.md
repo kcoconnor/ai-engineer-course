@@ -54,12 +54,33 @@ By the end of this session, you can:
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–5 | Warm-up | Individual |
-| 5–25 | Syncs, state, memory, approval, multi-agent | Explain + check |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up | Individual |
+| 10–25 | Syncs, state, memory, approval, multi-agent | Explain + check |
 | 25–55 | Failure drill | Individual + share |
 | 55–75 | Approval review | Pairs |
 | 75–85 | Multi-agent debate | Two teams |
 | 85–90 | Takeaways and exit ticket | Individual |
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. What does recall@k measure? Why do you measure retrieval separately from generation?
+2. Write the sync that sends a draft after someone approves it.
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 7, Session 3.2. Q2 is from Week 4, Module 2.
+Answer to 1: The share of test questions where the correct source is in the top k results. If retrieval fails, generation cannot recover, so you test retrieval alone.
+Answer to 2: sync SendOnApproval / when Approving.approve (q, a) / where d = item(q) / then Sending.send (d)
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Do not skip this slide when time is short.
+-->
 
 ---
 
@@ -267,3 +288,4 @@ Steer to: "Compare on 10 real tasks. Measure quality, cost, and traceability."
 - Cognition, "Don't Build Multi-Agents," 2025.
 - Meng and Jackson, "What You See Is What It Does," 2025 (synchronizations).
 - Course files: `03-teaching-notes-module-3-systems.md`, `05-templates.md` (T3, T9).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-3.md`.
