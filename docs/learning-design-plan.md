@@ -1,6 +1,6 @@
 # Learning Design Upgrade Plan
 
-Status: Phases 1 to 3 done (Modules 2, 1, 3). Phase 5 fact-check items resolved early during the readability loop (see Issues). Phases 4 and 6 not started.
+Status: Phases 1 to 5 done (all four modules; fact-check items resolved during the readability loop). Phase 6 (cumulative review sessions) in progress.
 
 ## Why
 
