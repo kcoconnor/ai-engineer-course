@@ -86,7 +86,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ### Expert depth
 - Ask: "What is the smallest change to the design that would let this agent become a workflow?" Often a small change to the spec removes the need for an agent.
-- In concept terms: a workflow is a fixed set of syncs. An agent is a sync that the model chooses at runtime. This shows why agents are harder to verify.
+- In concept terms: a workflow is a fixed set of syncs (short for synchronization: a Module 2 rule that triggers an action when a condition holds, defined in GLOSSARY.md). An agent is a sync that the model chooses at runtime. This shows why agents are harder to verify.
 
 ---
 
