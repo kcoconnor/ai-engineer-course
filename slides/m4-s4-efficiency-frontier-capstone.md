@@ -112,7 +112,7 @@ Collect 2–3 answers aloud. Look for "quality held" with evidence. If a learner
 | **Prompt caching** | Stable content first: system prompt, tools, reference docs. Variable content last. Measure hit rate. |
 | **Batch processing** | Move non-interactive work to discounted batch APIs. |
 | **Model tiers** | Check current tiers and prices. They change often. |
-| **Reasoning budgets** | Set the budget per action from evals. |
+| **Reasoning budgets** (cap on how much internal reasoning a model does before answering) | Set the budget per action from evals. |
 | **Output control** | Structured outputs and length limits. |
 | **Inference options** | Faster modes and regional options change latency and price. |
 
