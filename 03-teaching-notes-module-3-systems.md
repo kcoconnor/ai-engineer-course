@@ -155,7 +155,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ---
 
-## Session 3.4 – Deploy with observability and evals
+## Session 3.4 – Deploy with observability, evals, and KPIs
 
 ### Objectives
 - Learners trace every model call and tool call.
