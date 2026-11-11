@@ -151,7 +151,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 ### Key points
 1. **No baseline, no proof.** Measure before the build: time per case, error rate, throughput, cost per case, and one outcome measure.
 2. **Treat published productivity claims with care.** The HDSR article reports 2–10x gains from practitioner cases. The authors state these are not controlled studies. Your own baseline and measurement are the evidence.
-3. **The implementation brief** covers: outcome, chosen workflow, future-state map, roles, risk controls, KPIs with baseline, resources, phased plan.
+3. **The implementation brief** (T10) has nine sections: outcome, baseline, future-state workflow, human roles, risk controls, target KPIs, resources, phased plan, open questions.
 4. **The brief is a contract with the builders.** It must answer "what must the system do?" and "how do we know it worked?"
 
 ### How to teach it
