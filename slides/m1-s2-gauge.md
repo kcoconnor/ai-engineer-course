@@ -147,7 +147,7 @@ Module 4 goes deeper. Here we only score it.
 
 How many trifecta legs does this workflow have?
 
-> An agent reads supplier invoices sent by email, compares them with purchase orders in the ERP, and posts a summary to an internal dashboard.
+> An agent reads supplier invoices sent by email, compares them with purchase orders in the ERP (the company's order and inventory system), and posts a summary to an internal dashboard.
 
 - A. 1   B. 2   C. 3
 
