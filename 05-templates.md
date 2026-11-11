@@ -55,6 +55,11 @@ cost estimate
   calls: <n>   input tokens: <n>   output tokens: <n>
 ```
 
+**Untrusted inputs, in plain words:** an input is untrusted if its text can come from
+outside your system, for example a customer message, a web page, or a tool result.
+Module 4 ([04-teaching-notes-module-4-engineering.md](04-teaching-notes-module-4-engineering.md))
+covers this in depth; for now, just list any such input here.
+
 ---
 
 ## T2 – Synchronization
