@@ -126,7 +126,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 ### Tensions to teach (important)
 | Tension | Resolution |
 |---|---|
-| "Straight-through flow" vs. the lethal trifecta | Autonomy on a path with private data, untrusted content, and external communication creates exfiltration risk. Put an approval step on that path, or remove one leg. Module 4 goes deeper. |
+| "Straight-through flow" vs. the lethal trifecta | Autonomy on a path with private data, untrusted content, and external communication creates exfiltration risk (data leaking out to an outside party). Put an approval step on that path, or remove one leg. Module 4 goes deeper. |
 | "Agent-first" vs. "start simple" | Agent-first means software does the work. It does not require an autonomous agent architecture. Many agent-first steps are best built as fixed workflows (Module 3). |
 | Guardian agents as safety | A Guardian is useful for quality and policy monitoring. It reads the same content as the agents it watches, so the same injection can affect it. It is not a security boundary. |
 | Orchestrator by default | An Orchestrator is the most flexible type and the hardest to test. Use it only when the steps cannot be listed in advance. |
@@ -191,6 +191,6 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 | Current state | From documents only | Interviews, partial map | Interviews; map with waits, rework, tacit decisions |
 | Selection | Chosen by preference | Canvas used, no risk score | Canvas with business and security risk; defended choice |
 | Redesign | AI added to existing steps | Steps redesigned, roles vague | Agent-first flow; each step typed; roles defined |
-| Risk | Not considered | Business risk only | Trifecta paths identified; approval steps placed |
+| Risk | Not considered | Business risk only | Lethal trifecta paths identified; approval steps placed |
 | Baseline | None | Partial | Measured on a sample, with method stated |
 | Brief | Missing parts | Complete, not testable | A builder can list steps and human decisions from it |
