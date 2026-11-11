@@ -19,7 +19,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 | 14 (optional) | Rollout | Rollout and change management plan |
 | 15 (optional) | Teach-back | Delivered session and retrospective |
 
-**Leader track:** Weeks 1–5 and Week 14. See [07-facilitator-guide.md](07-facilitator-guide.md).
+**Leader track** (for a sponsor or manager who guides the work but does not build the system): Weeks 1–5 and Week 14. See [07-facilitator-guide.md](07-facilitator-guide.md).
 
 ---
 
