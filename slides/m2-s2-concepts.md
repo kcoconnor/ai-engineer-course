@@ -235,10 +235,10 @@ Items marked in step 3 are useful for Session 2.3 (overloading).
 
 <!-- _class: activity -->
 
-## Activity 2: write and test one spec <span class="timer">30 min</span>
+## Activity 2: write and test one spec <span class="timer">25 min</span>
 
 1. Choose one concept from Activity 1. <span class="timer">1 min</span>
-2. Write the full spec with template T1. <span class="timer">17 min</span>
+2. Write the full spec with template T1. <span class="timer">12 min</span>
 3. Swap specs with another group. <span class="timer">1 min</span>
 4. Find any reference to a **different** concept. <span class="timer">6 min</span>
 5. Return the spec with your findings. <span class="timer">5 min</span>
