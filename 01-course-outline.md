@@ -178,7 +178,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 **Exercises**
 1. For each concept action that uses an LLM, put it on the continuum. Write one sentence for why. Compare with the agent type that you gave the step in Module 1.
 2. Design the tool interfaces that your system needs. Write each tool description for a model reader.
-3. Build a minimal walking skeleton: one end-to-end path through the system with no retrieval.
+3. Build a minimal walking skeleton: the smallest version that runs end to end, one path through the system, with no retrieval.
 
 **Deliverable**
 - ADR-001: overall control structure (workflow, agent, or mix).
