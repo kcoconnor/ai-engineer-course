@@ -6,7 +6,7 @@ This session is retrieval practice across the whole course. Run it after the cap
 
 Terms follow [GLOSSARY.md](../GLOSSARY.md). Cards: [Module 1](../cards/module-1.md), [Module 2](../cards/module-2.md), [Module 3](../cards/module-3.md), [Module 4](../cards/module-4.md).
 
-**Slides:** [slides/review-b-all-modules.md](../slides/review-b-all-modules.md). The deck is generated from this file: `python3 tools/build_review_decks.py`.
+**Slides:** [presentations/review-b-all-modules.html](https://kcoconnor.github.io/ai-engineer-course/review-b-all-modules.html) (source: [slides/review-b-all-modules.md](../slides/review-b-all-modules.md), generated from this file). After you edit this file, run `python3 tools/build_html_decks.py`.
 
 ## Plan
 

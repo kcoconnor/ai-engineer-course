@@ -22,3 +22,15 @@ jobs:
       - name: Execute all labs
         working-directory: reference
         run: python -m support_lab lab all
+  decks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: HTML presentations match the Markdown decks
+        run: python3 tools/build_html_decks.py --check
