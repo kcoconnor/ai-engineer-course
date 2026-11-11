@@ -91,7 +91,7 @@ B. The model is an implementation detail inside an action. Syncs stay determinis
 
 <details><summary>Answer</summary>
 
-D. Two different purposes are forced into one concept.
+D. Two different purposes are forced into one concept. This is a cause of overloading, not a separate peer defect.
 </details>
 
 **3.** You want to remove the approval step from the draft-and-send flow. What must change?
@@ -118,11 +118,11 @@ sync SendOnApproval
 ```
 </details>
 
-**5.** Name the five design defects. Give a one-line description of each.
+**5.** Name the two design defects. Give the three causes of overloading.
 
 <details><summary>Answer</summary>
 
-Overloading: one concept, more than one purpose. False convergence: two purposes forced into one concept. Denied purpose: a concept used for a purpose it does not serve. Piggybacking: a new function added to an existing concept. Redundancy: two concepts with the same purpose.
+Overloading: one concept, more than one purpose. Causes: false convergence (two purposes forced into one concept), denied purpose (a concept used for a purpose it does not serve), piggybacking (a new function added to an existing concept). Redundancy: two concepts with the same purpose.
 </details>
 
 **6. (earlier, Week 1)** Name the three legs of the lethal trifecta. Which legs does your anchor system have?
@@ -220,7 +220,7 @@ The questions mix Modules 1 and 2. For each one, first decide which idea applies
 <details><summary>Answers</summary>
 
 1. No. A Guardian reads the same content as the agents it watches. The same injection can affect it. It is not a security boundary. Put an approval step on the path, or remove one leg (Module 1, Module 4).
-2. Overloading and piggybacking. Preferences and cost limits are separate purposes. Split them into concepts such as `Profiling` and `Budgeting`, and connect them with syncs (Module 2).
+2. Overloading by piggybacking. Preferences and cost limits are separate purposes. Split them into concepts such as `Profiling` and `Budgeting`, and connect them with syncs (Module 2).
 3. Concept: `Approving [Actor, Refund]`. Sync: when `Approving.approve`, then the refund action runs. Refusal: the approver is not the requester, enforced by the `approve` precondition (Modules 1 and 2).
 4. "Compared with what, measured how?" Ask for the baseline. Also ask whether faster drafts changed the outcome, or only an output (Module 1).
 </details>

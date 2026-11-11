@@ -47,13 +47,13 @@ The **Module** column shows where the course introduces the term.
 | State | What a concept remembers. Abstract, not a database schema. | 2 |
 | Action | Something a user or the system can do in a concept. Has a precondition (`requires`) and an effect on state. | 2 |
 | Precondition | The condition that must hold before an action can run. The usual home of a refusal. | 2 |
-| Independence | The property that a concept makes no reference to any other concept. | 2 |
+| Independence | The criterion that a concept must meet: it makes no reference to any other concept. Not a part of the spec structure. | 2 |
 | Synchronization (sync) | A rule that connects concepts: when an action happens in one concept, and a condition holds, then an action happens in another. Concepts do not call each other. (Meng and Jackson, 2025.) | 2 |
 | Concept inventory | The list of concepts in a system. Target 5–9 for the anchor system. | 2 |
-| Overloading | Design defect: one concept serves more than one purpose. | 2 |
-| False convergence | Design defect: two different purposes are forced into one concept. | 2 |
-| Denied purpose | Design defect: a concept is used for a purpose it does not serve. | 2 |
-| Piggybacking | Design defect: a new function is added to an existing concept instead of a new concept. | 2 |
+| Overloading | Design defect: one concept serves more than one purpose. Common causes: false convergence, denied purpose, piggybacking. | 2 |
+| False convergence | A cause of overloading: two different purposes are forced into one concept. | 2 |
+| Denied purpose | A cause of overloading: a concept is used for a purpose it does not serve. | 2 |
+| Piggybacking | A cause of overloading: a new function is added to an existing concept instead of a new concept. | 2 |
 | Redundancy | Design defect: two concepts serve the same purpose. | 2 |
 | Acceptance scenario | A testable scenario derived from an operational principle. Includes the paths that must be refused. | 2 |
 | Refusal | Something the system must never do. Each refusal has an owner: a precondition or a sync condition. A refusal that lives only in a prompt is not enforced. | 2 |

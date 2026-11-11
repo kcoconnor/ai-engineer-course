@@ -111,7 +111,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 
 **Objectives**
 - Keep concepts independent. Compose them with synchronizations, not with shared state.
-- Identify design defects: overloading, false convergence, denied purpose, piggybacking, redundancy.
+- Identify design defects: overloading (causes: false convergence, denied purpose, piggybacking), and redundancy.
 - Place the LLM correctly: inside the implementation of an action, not as a concept of its own.
 
 **Study**

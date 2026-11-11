@@ -27,13 +27,13 @@ sync <Name>
 ```
 Concepts never call each other. To change behavior, change one sync.
 
-## Five design defects
+## Two design defects
 | Defect | Test question |
 |---|---|
 | Overloading | Does this concept serve more than one purpose? |
-| False convergence | Were two different purposes forced into one concept? |
-| Denied purpose | Is the concept used for a purpose it does not serve? |
-| Piggybacking | Was a new function added here instead of a new concept? |
+| &nbsp;&nbsp;cause: false convergence | Were two different purposes forced into one concept? |
+| &nbsp;&nbsp;cause: denied purpose | Is the concept used for a purpose it does not serve? |
+| &nbsp;&nbsp;cause: piggybacking | Was a new function added here instead of a new concept? |
 | Redundancy | Do two concepts serve the same purpose? |
 
 ## LLM-backed action: three parts
@@ -55,4 +55,4 @@ Every Module 1 outcome has a concept. Every concept serves an outcome or has a s
 ## Module check
 A colleague reads your spec and predicts the behavior in 5 scenarios that you choose. They are correct in at least 4.
 
-**Sources:** Jackson, *The Essence of Software* (2021); [essenceofsoftware.com](https://essenceofsoftware.com/tutorials/concept-basics/); [Meng and Jackson (2025)](https://arxiv.org/abs/2508.14511).
+**Sources:** Jackson, *The Essence of Software* (2021); [essenceofsoftware.com](https://essenceofsoftware.com/tutorials/concept-basics/criteria/); [Meng and Jackson (2025)](https://arxiv.org/abs/2508.14511); [Jackson, 2015 (defect causes)](https://groups.csail.mit.edu/sdg/pubs/2015/concept-essay.pdf).
