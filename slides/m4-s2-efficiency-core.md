@@ -58,7 +58,8 @@ The exit ticket checks objectives 1 and 3.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Warm-up: where does the money go? | Predict |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up: where does the money go? | Predict |
 | 10–30 | Six efficiency principles | Explain + check |
 | 30–75 | Cost model and top drivers | Individual + groups |
 | 75–85 | Debrief and takeaways | Group |
@@ -66,6 +67,26 @@ The exit ticket checks objectives 1 and 3.
 
 <!--
 Explanation is 20 minutes. Practice is 45 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Name the three legs of the lethal trifecta. Name the two ways to make a path with all three safe.
+2. Name the four questions that find cost in a design.
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 10, Session 4.1. Q2 is from Week 5, Module 2.
+Answer to 1: Private data, untrusted content, external communication. Remove one leg, or put a human approval step on the path.
+Answer to 2: Model calls per user action. Context per call. Which calls deterministic code could replace. Which calls retry, and how many times.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Do not skip this slide when time is short.
 -->
 
 ---
@@ -307,3 +328,4 @@ Read all tickets before Session 4.3.
 - Ong et al., "RouteLLM: Learning to Route LLMs with Preference Data," 2024.
 - Your providers' pricing documentation (check current prices).
 - Course files: `04-teaching-notes-module-4-engineering.md`, `05-templates.md` (T5).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-4.md`.

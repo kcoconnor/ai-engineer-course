@@ -80,8 +80,8 @@ The exit ticket checks objective 2 and asks for one reflection on the whole cour
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–5 | Warm-up | Individual |
-| 5–20 | Current optimizations and the procedure | Explain + check |
+| 0–5 | Recall: no notes | Individual |
+| 5–20 | Warm-up (2 min); current optimizations and the procedure | Explain + check |
 | 20–35 | Apply the procedure to your system | Individual |
 | 35–85 | Capstone presentations and peer review | Groups of 4 |
 | 85–90 | Exit ticket | Individual |
@@ -89,6 +89,26 @@ The exit ticket checks objective 2 and asks for one reflection on the whole cour
 <!--
 Explanation is 15 minutes. Practice and presentation is 65 minutes.
 Capstone: groups of 4, 12 minutes per learner (10 present + 2 feedback) = 48 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. What does "evaluation before optimization" mean?
+2. What is a baseline? How must you report a gain against it?
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 11, Session 4.2. Q2 is from Week 2, Module 1.
+Answer to 1: No efficiency change without a quality baseline. A cheaper system that is wrong is not cheaper.
+Answer to 2: The measured value of the outcome before the system existed. Report the gain as measured, with the sample size and method. Do not extrapolate productivity multiples.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Do not skip this slide when time is short.
 -->
 
 ---
@@ -315,3 +335,4 @@ Question 2 starts the teach-back (Week 15). Use the answers to plan teach-back p
 - Your providers' documentation on prompt caching, batch processing, reasoning budgets, and pricing (check each quarter).
 - Chen, Zaharia, Zou, "FrugalGPT," 2023; Ong et al., "RouteLLM," 2024.
 - Course files: `04-teaching-notes-module-4-engineering.md`, `05-templates.md` (T5, T7).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-4.md`.
