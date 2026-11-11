@@ -171,9 +171,10 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 6. **Outcome KPIs.** Put the Module 1 outcome measures on the same dashboard as quality, cost, and latency. Add approval rate and override rate. A system can pass every eval and still not move the outcome.
 
 ### How to teach it
+- **Warm-up (5 min):** Guess your system's most common failure.
 - **Explain (15 min):** Tracing and eval types.
 - **Error analysis workshop (50 min):** Each learner brings 30 traces. They categorize failures in silence for 20 minutes, then share categories. Most learners find a category they did not expect.
-- **ADR review (20 min):** Pairs swap one ADR. The reviewer asks: "What design property would change this decision?"
+- **ADR review (15 min):** Pairs swap one ADR. The reviewer asks: "What design property would change this decision?"
 - **Close (5 min):** Each learner names their top failure category.
 
 ### Expert depth
