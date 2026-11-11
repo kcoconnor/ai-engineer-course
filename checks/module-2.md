@@ -16,10 +16,10 @@ Terms follow [GLOSSARY.md](../GLOSSARY.md). Summary for review: [cards/module-2.
 
 **1.** Which item is most likely a concept?
 
-- A. A customer record table
-- B. A settings page layout
-- C. `Bookmarking [User, Item]`
-- D. A billing microservice deployment
+- A. A customer record database table
+- B. A settings page screen layout
+- C. A `Bookmarking [User, Item]` concept
+- D. A billing microservice deployment unit
 
 <details><summary>Answer</summary>
 
