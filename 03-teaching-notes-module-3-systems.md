@@ -22,7 +22,7 @@ An architecture is a set of reasons. Each component must trace to a property of 
 
 - Replace "what is the stack?" with "what does the design require?"
 - Make the workflow–agent decision explicit and reversible.
-- Make every decision a written ADR (architecture decision record: decision, context, options, reason).
+- Make every decision a written ADR (architecture decision record: design property, context, decision, alternatives considered, consequences, change trigger).
 
 ### The central table
 
