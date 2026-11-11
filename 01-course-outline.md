@@ -240,7 +240,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 - Measure the business outcome from Module 1 against its baseline.
 
 **Study**
-- Reading list, Module 3: evaluation practice and observability.
+- Reading list, Module 3: evaluation practice (Hamel Husain, "Your AI Product Needs Evals"). For tracing and observability tooling, use your LLM provider's or observability platform's own documentation; this course does not list a fixed source because tooling changes often.
 
 **Exercises**
 1. Add tracing: inputs, outputs, tokens, latency, cost, tool calls, per request.
