@@ -49,7 +49,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 |---|---|---|
 | Assistant | Single call or prompt chain | Usually a workflow step. |
 | Analyst | Prompt chain, parallelization, or evaluator-optimizer | Output is a recommendation. A person or a later step decides. |
-| Tasker | Single call with one tool, inside a workflow | Bounded action. Strong candidate for least privilege. |
+| Tasker | Single call with one tool, inside a workflow | Bounded action. Strong candidate for least privilege (a Module 4 term: give the tool only the access it needs, nothing more). |
 | Orchestrator | Orchestrator-workers or autonomous agent | Use only when steps cannot be listed in advance. Hardest to test. |
 | Guardian | Evaluator step or separate monitor | Good for quality and policy. Not a security boundary (Module 4). |
 
