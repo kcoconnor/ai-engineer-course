@@ -98,10 +98,16 @@ The **Module** column shows where the course introduces the term.
 | Least privilege | Each tool gets the minimum permissions. Credentials belong to the user or the task, not to the agent in general. | 4 |
 | Indirect prompt injection | An instruction hidden in content the model reads (a document, a tool result, a memory), not typed by the user. (Greshake et al., 2023.) | 4 |
 | Threat model | Template T4. Trust boundaries, threats, trifecta paths, and the mitigation for each. | 4 |
+| STRIDE | An older threat-modeling checklist: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. Add an AI-specific question to each category, for example "can injected content cause this?" | 4 |
+| Exfiltration | The risk of private data leaving the system to an attacker. Created when an agent has all three lethal-trifecta legs: private data, untrusted content, and external communication. | 4 |
+| Straight-through flow | A workflow redesigned so an agent acts without a human step in the middle. Not the goal everywhere: on a path with all three trifecta legs, it creates exfiltration risk, so keep an approval step or remove a leg. | 4 |
 | Evaluation before optimization | The rule: no efficiency change without a quality baseline. A cheaper system that is wrong is not cheaper. | 4 |
+| p50/p95 latency | p50 is the median: half of requests are faster than this. p95 is the 95th percentile: your slow outliers. Both are measured separately from time to first token, generation time, and tool time. | 4 |
 | Context budget | The maximum context size for one action. | 4 |
 | Model routing | Sending each task to the cheapest model that passes its eval. | 4 |
 | Plan-then-execute | Security pattern: the model makes its plan before it sees untrusted data. (Beurer-Kellner et al., 2025.) | 4 |
 | Dual LLM | Security pattern: a privileged model never sees untrusted text. A quarantined model processes it and returns references. | 4 |
 | Confused deputy | An attack in which a less-privileged party makes a more-privileged agent act for it. | 4 |
+| Red-team | To attack your own system on purpose, to find what a real attacker could do. The attacks you find get added to the regression test suite. | 4 |
 | Frontier | Course content that changes every few months. Marked **[FRONTIER]** with a date. Rebuilt each quarter. | 4 |
+| Capstone | The final Module 4 deliverable (T7): a report and presentation covering the workflow and outcome, design summary, architecture with ADRs, threat model, and efficiency and outcome results, plus three things you would change. | 4 |
