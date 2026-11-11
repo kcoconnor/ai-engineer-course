@@ -43,7 +43,7 @@ Before the session:
 
 By the end of this session, you can:
 
-1. **Name** the six parts of a concept.
+1. **Name** the five parts of a concept, and the independence test.
 2. **Write** a complete concept specification.
 3. **Tell** a concept from a feature, a class, or a data entity.
 4. **Test** a concept for independence.
@@ -60,7 +60,7 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 |---|---|---|
 | 0–5 | Recall: no notes | Individual |
 | 5–10 | Warm-up: features vs. concepts | Pairs |
-| 10–30 | The six parts; worked example `Approving` | Explain + check |
+| 10–30 | The five parts, plus independence; worked example `Approving` | Explain + check |
 | 30–55 | Find 5 concepts in a product | Groups |
 | 55–80 | Write one full spec; swap and test | Groups |
 | 80–85 | Takeaways | Group |
@@ -127,7 +127,7 @@ Point out: concepts are familiar across products. Coding agents have seen many i
 
 ---
 
-## The six parts of a concept
+## The five parts of a concept
 
 | Part | What it says |
 |---|---|
@@ -136,7 +136,9 @@ Point out: concepts are familiar across products. Coding agents have seen many i
 | 3. Operational principle | A short scenario: "If you do X, then Y happens" |
 | 4. State | What the concept remembers |
 | 5. Actions | What users or the system can do; preconditions and effects |
-| 6. Independence | No reference to any other concept |
+
+Every concept must also pass the **independence test**: no reference to any other concept. This is a criterion, not a sixth part.
+<p class="small">Source: Jackson, <a href="https://essenceofsoftware.com/tutorials/concept-basics/criteria/">"Concept criteria: what's a concept?"</a></p>
 
 <!--
 Spend most time on purpose and principle. People skip these. They make concepts reusable and checkable.
@@ -293,11 +295,11 @@ Answer to 3 comes from the Human-approves-Agent steps in the Module 1 future-sta
 
 Write your answers. Hand them in.
 
-1. Name the six parts of a concept.
+1. Name the five parts of a concept.
 2. Is `Customer` a concept? Explain in one sentence.
 
 <!--
-Answer to 1: name and type parameters, purpose, operational principle, state, actions, independence.
+Answer to 1: name and type parameters, purpose, operational principle, state, actions. Independence is a separate test the spec must pass, not a sixth part.
 Good answer to 2: "No. It is a data entity. Concepts such as Subscribing or Billing say what happens with customers and why."
 -->
 

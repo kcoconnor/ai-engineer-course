@@ -50,11 +50,11 @@ A. The operational principle is a short scenario: "If you do X, then Y happens."
 D. "Notify the approver" belongs to a different concept. The concept fails the independence test. A synchronization must connect them (Week 4).
 </details>
 
-**4.** Write the six parts of a concept.
+**4.** Write the five parts of a concept, and the independence test.
 
 <details><summary>Answer</summary>
 
-Name and type parameters, purpose, operational principle, state, actions, independence.
+Name and type parameters, purpose, operational principle, state, actions. Independence is a criterion the concept must pass, not a sixth part: it makes no reference to any other concept.
 </details>
 
 **5. (earlier, Week 2)** Name the five agent types. Say what each one does.
@@ -190,11 +190,11 @@ D. A concept with no outcome and no supporting role is a candidate for removal. 
 How many model calls does one user action cause? How much context does each call need? Which calls could deterministic code replace? Which calls retry, and how many times?
 </details>
 
-**6. (earlier, Week 3)** Write the six parts of a concept.
+**6. (earlier, Week 3)** Write the five parts of a concept, and the independence test.
 
 <details><summary>Answer</summary>
 
-Name and type parameters, purpose, operational principle, state, actions, independence.
+Name and type parameters, purpose, operational principle, state, actions. Independence is a criterion the concept must pass, not a sixth part: it makes no reference to any other concept.
 </details>
 
 **7. (earlier, Week 2)** What is a baseline? Why measure it before you build?

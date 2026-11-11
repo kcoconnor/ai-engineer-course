@@ -79,14 +79,14 @@ Explanation is 20 minutes. Practice is 55 minutes.
 
 Write your answers alone. Do not look at your notes.
 
-1. Name the six parts of a concept.
+1. Name the five parts of a concept, and the independence test.
 2. Which kind of step in your Module 1 future-state workflow becomes a use of the `Approving` concept?
 
 Then compare with a partner. Correct each other.
 
 <!--
 Q1 is from Week 3. Q2 is from Week 2.
-Answer to 1: Name and type parameters, purpose, operational principle, state, actions, independence.
+Answer to 1: Name and type parameters, purpose, operational principle, state, actions. Independence is a criterion the spec must pass, not a sixth part.
 Answer to 2: Each Human-approves-Agent step.
 Ask: "Which part did you forget?" Most learners forget the operational principle. Say that it becomes the acceptance scenarios in Session 2.4.
 Why this slide: recall from memory builds long-term retention. Re-reading does not. Questions reach back 1 week and 2 or more weeks on purpose. Do not skip this slide when time is short. Cut the warm-up instead.

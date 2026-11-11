@@ -5,7 +5,7 @@ One page. Print it. Use it when you write or review a spec. Terms follow [GLOSSA
 ## The one idea
 Agents write code faster than people review it. The leverage moves to the design. A precise spec gives one definition of correct for people and agents.
 
-## Concept: six parts
+## Concept: five parts, plus independence
 ```
 concept <Name> [<TypeParam>, ...]   1. name and type parameters
 purpose    <one sentence, user's view>   2.
@@ -14,8 +14,8 @@ state      <what it remembers, abstract>  4.
 actions    <action> (<params>)          5.
              requires: <precondition>      usual home of a refusal
              effect:   <change to state>
-                                          6. independence: no other concept named
 ```
+Independence test: no other concept named. This is a criterion every concept must pass, not a sixth part.
 A concept is **not** a class, a module, a screen, or a data entity. "User" is usually not a concept.
 
 ## Sync

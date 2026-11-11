@@ -85,14 +85,15 @@ Agents now write code faster than people can review it. The leverage moves to th
 - Learners can tell a concept from a feature, a class, or a data entity.
 
 ### Key points
-A concept has six parts:
+A concept has five parts:
 
 1. **Name and type parameters.** For example, `Approving [Actor, Item]`. Type parameters show that the concept does not depend on what an Actor or an Item is.
 2. **Purpose.** One sentence. The reason the concept exists for a user.
 3. **Operational principle.** A short scenario that shows how the concept fulfills its purpose. "If you do X, then Y happens."
 4. **State.** What the concept remembers.
 5. **Actions.** What users or the system can do. Each action has preconditions and effects on state.
-6. **Independence.** The concept makes no reference to any other concept.
+
+Every concept must also pass the **independence test**: it makes no reference to any other concept. Independence is a criterion a concept must meet, not a sixth part of its spec. ([Jackson, "Concept criteria: what's a concept?"](https://essenceofsoftware.com/tutorials/concept-basics/criteria/))
 
 ### Worked example: `Approving [Actor, Item]`
 
@@ -129,7 +130,7 @@ Point out:
 
 ### How to teach it
 - **Recall (5 min):** The two questions above.
-- **Explain (20 min):** Present the six parts with `Approving`.
+- **Explain (20 min):** Present the five parts and the independence test with `Approving`.
 - **Exercise 1 (25 min):** Groups choose a familiar product (an email client, a chat tool, an AI assistant). They find 5 concepts and write one purpose sentence for each.
 - **Exercise 2 (30 min):** Each group writes one full concept spec. Then they swap with another group. The other group tries to find a reference to a different concept. If they find one, the spec is not independent.
 - **Close (10 min):** Discuss the specs that failed the independence test.
@@ -153,8 +154,8 @@ Point out:
 **Primary source:** Meng and Jackson, ["What You See Is What It Does"](https://arxiv.org/abs/2508.14511) (2025). Read the sections on synchronizations and the RealWorld case study.
 
 ### Recall warm-up (5 min, no notes)
-1. Name the six parts of a concept. *(Week 3)*
-   - Name and type parameters, purpose, operational principle, state, actions, independence.
+1. Name the five parts of a concept. What is the independence test? *(Week 3)*
+   - Name and type parameters, purpose, operational principle, state, actions. The independence test: the concept makes no reference to any other concept. It is a criterion a concept must meet, not a sixth part.
 2. Which kind of step in your Module 1 future-state workflow becomes a use of `Approving`? *(Week 2)*
    - Each Human-approves-Agent step.
 
@@ -191,15 +192,15 @@ Point out:
 - The LLM call lives inside `Drafting.draft`. It is not a concept.
 
 ### Design defects to teach
-From *The Essence of Software*:
+From *The Essence of Software*. Jackson names two peer defects, overloading and redundancy. Overloading has three common causes ([Jackson, 2015](https://groups.csail.mit.edu/sdg/pubs/2015/concept-essay.pdf)):
 
 | Defect | Description | AI example |
 |---|---|---|
-| Overloading | One concept serves more than one purpose. | A "memory" concept that stores user preferences and also stores retrieved facts. |
-| False convergence | Two different purposes are forced into one concept. | One "feedback" button that means "bad answer" and also "report abuse". |
-| Denied purpose | A concept is used for a purpose it does not serve. | Using chat history as an audit log. |
-| Piggybacking | A new function is added to an existing concept instead of a new concept. | Adding cost limits to the conversation concept. |
-| Redundancy | Two concepts serve the same purpose. | Two separate approval flows for drafts and for refunds. |
+| **Overloading** | One concept serves more than one purpose. | A "memory" concept that stores user preferences and also stores retrieved facts. |
+| &nbsp;&nbsp;cause: false convergence | Two different purposes look similar, so they get forced into one concept. | One "feedback" button that means "bad answer" and also "report abuse". |
+| &nbsp;&nbsp;cause: denied purpose | A concept is used for a purpose it does not serve. | Using chat history as an audit log. |
+| &nbsp;&nbsp;cause: piggybacking | A new function is added to an existing concept instead of a new concept. | Adding cost limits to the conversation concept. |
+| **Redundancy** | Two concepts serve the same purpose. | Two separate approval flows for drafts and for refunds. |
 
 ### How to teach it
 - **Recall (5 min):** The two questions above.
