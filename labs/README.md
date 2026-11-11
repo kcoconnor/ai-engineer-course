@@ -71,7 +71,8 @@ each step. Do not call simulator execution time a business improvement.
 
 **Checkpoint:** JSON identifies the sample size, source and human role.
 **Deliver:** T9 future-state map and T10 implementation brief, including
-baseline method and missing evidence. Worked example: `artifacts/design.md`.
+baseline method and missing evidence. Worked example:
+`reference/artifacts/design.md`.
 
 ## Module 2: Design
 
@@ -195,7 +196,8 @@ plan T6 and sample JSON dashboard; record the failed-gate experiment too.
 
 ### Lab 10 — Map and constrain threats
 
-Run `python3 -m support_lab lab 10` and read `artifacts/threat-model.md`.
+Run `python3 -m support_lab lab 10` and read
+`reference/artifacts/threat-model.md`.
 
 The experiment refuses model/service identity approval, finance identity
 approval and sending without a human decision. Retrieval excludes finance data.
@@ -263,7 +265,7 @@ not implemented by the simulator. Present three changes you would make next.
 
 ## Optional Weeks 14 and 15
 
-Use `artifacts/evaluation.md` and T11 to plan a pilot with success and rollback
+Use `reference/artifacts/evaluation.md` and T11 to plan a pilot with success and rollback
 criteria. Test role instructions with a colleague. Teach back the Lab 8 failure
 drill and Lab 12 compromised-generator experiment, then collect feedback.
 These human activities are reviewed by a facilitator, not by a passing script.
