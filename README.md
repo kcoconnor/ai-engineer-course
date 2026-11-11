@@ -32,7 +32,7 @@ It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, 
 
 ## How to use this curriculum
 
-1. Read the course summary.
+1. Read the course summary, or go through the course overview slides ([slides/m0-course-overview.md](slides/m0-course-overview.md)).
 2. Do Module 1 to choose one workflow and redesign it. Use a real workflow from your organization.
 3. Follow the outline one week at a time.
 4. Use the templates to produce each deliverable.
