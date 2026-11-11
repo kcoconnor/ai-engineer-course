@@ -108,9 +108,10 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 7. **Access control.** Filter at retrieval time. Never rely on the model to hide documents that the user must not see.
 
 ### How to teach it
+- **Warm-up (10 min):** "Why a vector database?"
 - **Explain (20 min):** Requirements first, then the options.
 - **Exercise (40 min):** Learners write their knowledge requirements and choose a strategy. Groups review each choice against the central table.
-- **Demo (20 min):** Show one query where lexical search wins and one where dense search wins. Use your organization's data if possible.
+- **Demo (10 min):** Show one query where lexical search wins and one where dense search wins. Use your organization's data if possible.
 - **Close (10 min):** "What would make you change your strategy?"
 
 ### Common misconceptions
