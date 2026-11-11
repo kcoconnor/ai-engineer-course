@@ -85,9 +85,10 @@ Security and efficiency have the same shape. Each rests on a few principles that
 6. **Design-level savings.** Replace model calls with deterministic code. Remove retries that do not improve quality. Merge or split calls. These changes often save more than any model change.
 
 ### How to teach it
+- **Warm-up (10 min):** Learners guess their top cost step and cost per task, before opening traces.
 - **Explain (20 min):** The six points.
 - **Exercise (45 min):** Learners compute cost per task from their traces. They identify the top 3 drivers. For each driver, they propose one change and predict its effect on quality.
-- **Close (25 min):** Groups share drivers. Discuss how many drivers trace back to a design decision.
+- **Close (15 min):** Groups share drivers. Discuss how many drivers trace back to a design decision.
 
 ### Common misconceptions
 | Misconception | Response |
