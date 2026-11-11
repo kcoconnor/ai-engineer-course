@@ -6,6 +6,9 @@ reference experiment, inspect its JSON evidence, complete the learner task,
 and review the deliverable with the module rubric. Allow 2–4 hours per lab;
 the wider anchor-project work and readings use the remaining weekly time.
 
+Deliverables below are named by template code (T1, T8, ADR-001, and so on).
+All template codes are defined in [05-templates.md](../05-templates.md).
+
 ## Setup and learning loop
 
 Python 3.11+ is required. No dependencies or API keys are needed.
