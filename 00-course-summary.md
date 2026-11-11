@@ -47,7 +47,7 @@ Prerequisites (leader track): none technical. Familiarity with the workflows of 
 |---|---|---|---|
 | 1 – Strategy | 1–2 | Choose and redesign one workflow (A.G.E.N.T.: Audit, Gauge, first part of Engineer and Navigate). Baseline. | Use case canvas, future-state workflow, roles, baseline, implementation brief |
 | 2 – Design | 3–5 | Concept design. Specification. Definition of correct. | Concept design and specification for your system |
-| 3 – Systems | 6–9 | Architecture from design properties. Retrieval, graphs, workflows, agents. Deployment. Outcome KPIs. | Deployed system with ADRs, evals, and KPI dashboard |
+| 3 – Systems | 6–9 | Architecture from design properties. Retrieval, graphs, workflows, agents. Deployment. Outcome KPIs (key performance indicators). | Deployed system with ADRs, evals, and KPI dashboard |
 | 4 – Engineering | 10–13 | Security and efficiency. Stable core, then current frontier. | Threat model, defenses, eval harness, cost, latency, and outcome benchmarks |
 | Rollout (optional) | 14 | Phased rollout, role training, review cycle. | Rollout plan and role guides |
 | Teach-back (optional) | 15 | Teach one session to others. | Delivered session and retrospective |
