@@ -33,6 +33,8 @@ The **Module** column shows where the course introduces the term.
 | Implementation brief | The Module 1 hand-off document (T10). It tells a builder what the system must do and which decisions people keep. | 1 |
 | Leader track | The path through the course for managers, product owners, and architects who choose and specify AI work for others to build: Modules 1 and 2, plus the optional rollout week. No technical prerequisite. | 1 |
 | Lethal trifecta | Access to private data, plus exposure to untrusted content, plus the ability to communicate externally. A path with all three legs can leak data. (Willison, 2025.) | 1, 4 |
+| Exfiltration | The risk of private data leaving the system to an attacker. Created when a path has all three lethal-trifecta legs. | 1, 4 |
+| Straight-through flow | A workflow redesigned so an agent acts without a human step in the middle. Not the goal everywhere: on a path with all three lethal-trifecta legs, it creates exfiltration risk, so keep an approval step or remove a leg. | 1, 4 |
 | Outcome | What the business needs: a decision made faster, a risk found earlier. Measurable. | 1 |
 | Output | What one step produces: a report, a draft. Not an outcome. | 1 |
 | Tacit decision | A judgment made in a workflow with no written rule behind it, for example which customers always need sign-off. Tacit decisions are where agents most often fail, and must become explicit rules or eval criteria in Module 2. | 1 |
@@ -99,8 +101,6 @@ The **Module** column shows where the course introduces the term.
 | Indirect prompt injection | An instruction hidden in content the model reads (a document, a tool result, a memory), not typed by the user. (Greshake et al., 2023.) | 4 |
 | Threat model | Template T4. Trust boundaries, threats, trifecta paths, and the mitigation for each. | 4 |
 | STRIDE | An older threat-modeling checklist: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. Add an AI-specific question to each category, for example "can injected content cause this?" | 4 |
-| Exfiltration | The risk of private data leaving the system to an attacker. Created when an agent has all three lethal-trifecta legs: private data, untrusted content, and external communication. | 4 |
-| Straight-through flow | A workflow redesigned so an agent acts without a human step in the middle. Not the goal everywhere: on a path with all three trifecta legs, it creates exfiltration risk, so keep an approval step or remove a leg. | 4 |
 | Evaluation before optimization | The rule: no efficiency change without a quality baseline. A cheaper system that is wrong is not cheaper. | 4 |
 | p50/p95 latency | p50 is the median: half of requests are faster than this. p95 is the 95th percentile: your slow outliers. Both are measured separately from time to first token, generation time, and tool time. | 4 |
 | Context budget | The maximum context size for one action. | 4 |
