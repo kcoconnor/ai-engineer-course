@@ -127,7 +127,7 @@ A learner is ready to teach a session when they:
 
 | Layer | Review | Owner | Actions |
 |---|---|---|---|
-| Module 1 | Every year | Course lead + 1 leader-track alumnus | Check for new versions of the A.G.E.N.T. playbook. Replace external cases with your organization's own measured results. |
+| Module 1 | Every year | Course lead + 1 leader-track alumnus | Check for new versions of the [A.G.E.N.T. playbook](GLOSSARY.md). Replace external cases with your organization's own measured results. |
 | Module 2 | Every 2–3 years | Course lead | Check for new work by Jackson and the concept design community. |
 | Module 3 | Every 6–12 months | Course lead + 1 alumnus | Update the central table. Replace named tools. Keep the reasoning. |
 | Module 4 core | Every year | Course lead | Check OWASP lists for new versions. |
