@@ -83,7 +83,7 @@ Each sync from Module 2 maps to one handler, event, or workflow step.
 ```
 sync SendOnApproval
   when Approving.approve (q, a)
-  where item(q) = d
+  where d = item(q)
   then Sending.send (d)
 ```
 → an event handler on `approve` that calls `send` for the approved draft.
