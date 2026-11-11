@@ -105,6 +105,9 @@ The **Module** column shows where the course introduces the term.
 | p50/p95 latency | p50 is the median: half of requests are faster than this. p95 is the 95th percentile: your slow outliers. Both are measured separately from time to first token, generation time, and tool time. | 4 |
 | Context budget | The maximum context size for one action. | 4 |
 | Model routing | Sending each task to the cheapest model that passes its eval. | 4 |
+| Cascade | A routing pattern: try the cheap model first, escalate to a stronger model when the cheap one flags its own uncertainty or a check fails. | 4 |
+| Reasoning budget | A limit on how much a model reasons before it answers. Set per action from evals. | 4 |
+| Cache hit rate | The share of requests that reuse the cached prefix. Measures whether prompt caching is working. | 4 |
 | Plan-then-execute | Security pattern: the model makes its plan before it sees untrusted data. (Beurer-Kellner et al., 2025.) | 4 |
 | Dual LLM | Security pattern: a privileged model never sees untrusted text. A quarantined model processes it and returns references. | 4 |
 | Confused deputy | An attack in which a less-privileged party makes a more-privileged agent act for it. | 4 |
