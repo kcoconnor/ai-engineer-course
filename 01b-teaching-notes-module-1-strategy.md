@@ -120,7 +120,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 | Guardian | Monitors other agents for policy, quality, and risk | Monitors and flags |
 
 3. **Mark each step:** Agent, Human, or Human-approves-Agent.
-4. **Design for straight-through flow where risk allows.** Remove waits. Keep people at the decisions that need judgment or carry high consequence.
+4. **Design for straight-through flow where risk allows.** Straight-through flow means a step runs with no human wait or hand-off in between. Remove waits. Keep people at the decisions that need judgment or carry high consequence.
 5. **Define each human role precisely:** what they see, what they decide, how they override, how they escalate.
 
 ### Tensions to teach (important)
