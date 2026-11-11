@@ -89,7 +89,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 4. **First-system rule.** High impact, high feasibility, recoverable failures. Not mission-critical.
 
 ### How to teach it
-- **Explain (20 min):** The canvas (T8) and the five dimensions.
+- **Explain (20 min):** The canvas (T8) and the six dimensions.
 - **Exercise (45 min):** Each learner scores 3–5 candidates. In groups of three, each learner presents a top choice in 3 minutes. The group challenges the scores.
 - **Close (25 min):** Each learner writes a one-paragraph justification for the chosen workflow.
 
