@@ -62,3 +62,11 @@ Commit after each phase. Check in with KC between phases.
 
 - Converting lessons to HTML. The course is Markdown and Marp. Keep it.
 - A scheduling system for spaced repetition. The weekly rhythm already gives spacing. The warm-ups use it.
+
+## Issues found during Phase 1
+
+| Issue | Where | Status |
+|---|---|---|
+| Week 5 study says "Reading list, Module 2: specification-driven development and evals". The reading list has no such entries. | `01-course-outline.md` Week 5, `06-reading-list.md` | Open. Session 2.4 now names Husain, "Your AI Product Needs Evals" as its primary source. Add spec-driven development sources to the reading list. |
+| The defect table presents five peer defects. In *The Essence of Software*, false convergence, denied purpose, and piggybacking may be presented as causes of overloading, not peers. | `02-teaching-notes-module-2-design.md` Session 2.3, `GLOSSARY.md` | Unverified. Check against the book in Phase 5. |
+| The course lists "independence" as part 6 of a concept. Jackson's tutorial structures a concept as name, purpose, principle, state, actions; independence is a criterion, not a section. | Module 2 notes, slides, card, glossary | Unverified. Check in Phase 5. If confirmed, relabel as "five parts plus the independence test". |
