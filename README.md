@@ -23,6 +23,7 @@ It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, 
 | [GLOSSARY.md](GLOSSARY.md) | One definition for each course term. All files use these terms. |
 | [checks/](checks/) | Weekly self-checks: recall questions with hidden answers, including questions from earlier weeks. All four modules are done. |
 | [cards/](cards/) | One-page reference card per module, for review and print. All four modules are done. |
+| [reviews/](reviews/) | Two cumulative review sessions with no new material: Review A (start of Week 6, Modules 1–2) and Review B (after Week 13, all modules; repeat 3 months later to measure retention). |
 | [docs/learning-design-plan.md](docs/learning-design-plan.md) | Plan for the retention upgrade: diagnosis, components, phases. |
 | [slides/](slides/README.md) | Marp slide decks, one per class session, with speaker notes. |
 | [labs/](labs/README.md) | Thirteen executable weekly labs with learner tasks, evidence, and checkpoints. |

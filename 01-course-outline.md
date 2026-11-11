@@ -155,6 +155,12 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 
 ---
 
+## Review session A (start of Week 6)
+
+One 60-minute session with no new material: recall Modules 1 and 2 from memory, find the gaps, and fix them before Module 3 builds on them. See [reviews/review-a-modules-1-2.md](reviews/review-a-modules-1-2.md).
+
+---
+
 ## Module 3 – Systems: design to implementation (Weeks 6–9)
 
 **Module goal:** Choose and deploy an architecture from the properties of your design. Defend each decision.
@@ -352,6 +358,12 @@ Weeks 10–11 are the **stable core**. Weeks 12–13 are the **frontier**. Rebui
 **Deliverable**
 - **Module 4 deliverable:** Threat model v2, red-team report, efficiency and outcome report.
 - **Capstone review:** 6–10 pages. Workflow and outcome, design summary, architecture with ADRs, threat model, efficiency and outcome results, and 3 things you would change.
+
+---
+
+## Review session B (after Week 13; repeat 3 months later)
+
+One 75-minute session with no new material: recall all four modules from memory, then review an end-to-end case. Run the same session 3 months later to measure retention. See [reviews/review-b-all-modules.md](reviews/review-b-all-modules.md).
 
 ---
 
