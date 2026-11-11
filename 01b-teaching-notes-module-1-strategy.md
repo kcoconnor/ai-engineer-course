@@ -157,7 +157,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 ### How to teach it
 - **Explain (20 min):** Baseline methods: sample 20–50 recent cases; time them; count errors and rework.
 - **Exercise (40 min):** Learners draft the brief (T10).
-- **Hand-off drill (25 min):** A learner who did not see the workflow reads the brief and lists the system's steps and the decisions people keep. The author compares the list with their intent. Discuss the gaps.
+- **Hand-off drill (20 min):** A learner who did not see the workflow reads the brief and lists the system's steps and the decisions people keep. The author compares the list with their intent. Discuss the gaps.
 - **Close (5 min):** Each learner names one gap they will fix.
 
 ---
