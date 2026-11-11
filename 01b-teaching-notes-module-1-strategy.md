@@ -155,6 +155,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 4. **The brief is a contract with the builders.** It must answer "what must the system do?" and "how do we know it worked?"
 
 ### How to teach it
+- **Open (5 min):** Review the gaps from the last exit tickets.
 - **Explain (20 min):** Baseline methods: sample 20–50 recent cases; time them; count errors and rework.
 - **Exercise (40 min):** Learners draft the brief (T10).
 - **Hand-off drill (20 min):** A learner who did not see the workflow reads the brief and lists the system's steps and the decisions people keep. The author compares the list with their intent. Discuss the gaps.
