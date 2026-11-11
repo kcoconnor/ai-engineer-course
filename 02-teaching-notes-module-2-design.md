@@ -263,10 +263,11 @@ Each business outcome from Module 1 must have at least one concept that serves i
 
 ### How to teach it
 - **Recall (5 min):** The two questions above.
+- **Warm-up (5 min):** Pairs name one thing their anchor system must never do, and where it is enforced today, if anywhere.
 - **Explain (20 min):** The five points with your worked example.
 - **Exercise 1 (25 min):** Learners write acceptance scenarios and refusals for their system.
 - **Exercise 2 (25 min):** Learners hand one concept spec to a coding agent. They compare the output with their intent and note each difference.
-- **Close (15 min):** Discuss: "Was the difference a spec gap or an agent error?" Most are spec gaps.
+- **Close (10 min):** Discuss: "Was the difference a spec gap or an agent error?" Most are spec gaps.
 
 ### Expert depth
 - A good test of a spec: two independent implementations (one human, one agent) pass the same acceptance scenarios.
