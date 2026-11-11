@@ -108,7 +108,7 @@ Place before Module 2. Total course length becomes 13 weeks + optional teach-bac
 | Module 4, Week 8 | Add the Guardian-agent caveat to the misconceptions table. |
 | Module 4, Week 11 | Capstone adds a before/after comparison on the business outcome from Module 1. |
 | New Week 12b (optional) | Change management: staff training for oversight roles, rollout plan, feedback loop into the next Audit. |
-| Templates | Add T8 Use case canvas, T9 Future-state workflow, T10 Implementation brief. |
+| Templates | Add T8 Use case canvas, T9 Future-state workflow, T10 Implementation brief, T11 Rollout plan (for the optional Week 14). |
 | Reading list | Add the HDSR article and the Agent OS concept. |
 | Facilitator guide | Add a joint session: leaders present the Module 1 brief to builders, who respond with a Module 2 concept design. |
 
