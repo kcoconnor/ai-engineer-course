@@ -199,7 +199,7 @@ Walk between learners. Push for numbers from their traces in step 2, not guesses
 
 ---
 
-## Capstone format: 12 minutes each
+## Capstone format: 10 min present + 2 min feedback
 
 | Part | Time |
 |---|---|
@@ -207,8 +207,8 @@ Walk between learners. Push for numbers from their traces in step 2, not guesses
 | 2. Design: concepts and syncs | 2 min |
 | 3. Architecture and one ADR you would defend | 2 min |
 | 4. Threat model and one attack you stopped | 2 min |
-| 5. Before/after: cost, latency, quality, outcome | 2 min |
-| 6. Three things you would change | 2 min |
+| 5. Before/after: cost, latency, quality, outcome | 1 min |
+| 6. Three things you would change | 1 min |
 
 Report outcomes **as measured, with sample size**. No extrapolated multiples.
 
