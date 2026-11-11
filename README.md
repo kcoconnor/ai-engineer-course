@@ -16,10 +16,14 @@ It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, 
 | [02-teaching-notes-module-2-design.md](02-teaching-notes-module-2-design.md) | Teaching notes for Module 2: concept design and specification. |
 | [03-teaching-notes-module-3-systems.md](03-teaching-notes-module-3-systems.md) | Teaching notes for Module 3: architecture and deployment. |
 | [04-teaching-notes-module-4-engineering.md](04-teaching-notes-module-4-engineering.md) | Teaching notes for Module 4: security and efficiency. |
-| [05-templates.md](05-templates.md) | Templates: use case canvas, workflow map, implementation brief, concept spec, sync spec, ADR, threat model, cost model, eval plan, rollout plan. |
+| [05-templates.md](05-templates.md) | Templates: use case canvas, workflow map, implementation brief, concept spec, sync spec, ADR, threat model, cost model, eval plan, rollout plan, learning log. |
 | [06-reading-list.md](06-reading-list.md) | Primary sources, by module, with notes on what each one is for. |
 | [07-facilitator-guide.md](07-facilitator-guide.md) | How to run this course for a team: formats, tracks, rubrics, refresh cadence. |
 | [08-addendum-agentic-workflow-strategy.md](08-addendum-agentic-workflow-strategy.md) | Analysis of the HDSR course: gap analysis, tensions, and the integration record. |
+| [GLOSSARY.md](GLOSSARY.md) | One definition for each course term. All files use these terms. |
+| [checks/](checks/) | Weekly self-checks: recall questions with hidden answers, including questions from earlier weeks. Module 2 is done; Modules 1, 3, and 4 are planned. |
+| [cards/](cards/) | One-page reference card per module, for review and print. Module 2 is done. |
+| [docs/learning-design-plan.md](docs/learning-design-plan.md) | Plan for the retention upgrade: diagnosis, components, phases. |
 | [slides/](slides/README.md) | Marp slide decks, one per class session, with speaker notes. |
 | [labs/](labs/README.md) | Thirteen executable weekly labs with learner tasks, evidence, and checkpoints. |
 | [reference/](reference/README.md) | Offline Python support-workflow implementation, synthetic data, tests, and worked design artifacts. |
@@ -30,7 +34,8 @@ It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, 
 2. Do Module 1 to choose one workflow and redesign it. Use a real workflow from your organization.
 3. Follow the outline one week at a time.
 4. Use the templates to produce each deliverable.
-5. Read the teaching notes for each module after you finish that module yourself. Then use them to teach.
+5. At the end of each week, do the self-check from memory. Record the result in your learning log (T12).
+6. Read the teaching notes for each module after you finish that module yourself. Then use them to teach.
 
 For hands-on practice, follow the [executable labs](labs/README.md) alongside
 each week. The [reference implementation](reference/README.md) runs with Python

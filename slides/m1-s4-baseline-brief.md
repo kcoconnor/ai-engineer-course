@@ -164,7 +164,7 @@ A mixes estimate with measurement. C compares different populations.
 3. Future-state workflow
 4. Human roles
 5. Risk controls (business and security)
-6. Target KPIs
+6. Target KPIs (key performance indicators)
 7. Resources
 8. Phased plan
 9. Open questions

@@ -4,6 +4,8 @@ Sources are grouped by module. Each entry says what it is for. Items marked **[F
 
 List compiled October 2026. Verify the links before you distribute the list.
 
+Start with the first row of each module's table. That row is the core, required text. The rows below it are optional background and further reading.
+
 ---
 
 ## Module 1 – Strategy
@@ -24,14 +26,22 @@ List compiled October 2026. Verify the links before you distribute the list.
 | Daniel Jackson, *The Essence of Software: Why Concepts Matter for Great Design*, Princeton University Press, 2021 | The core text. Concepts, purposes, operational principles, composition, and design defects. Read Parts I and II fully. |
 | [essenceofsoftware.com](https://essenceofsoftware.com) | Essays, example concepts, workshop materials, and a discussion forum. |
 | Eagon Meng and Daniel Jackson, ["What You See Is What It Does: A Structural Pattern for Legible Software"](https://arxiv.org/abs/2508.14511), 2025 | Concepts plus synchronizations as a code structure. Directly relevant to code generation by agents. |
-| [MIT News: "MIT researchers propose a new model for legible, modular software"](https://www.eecs.mit.edu/mit-researchers-propose-a-new-model-for-legible-modular-software/) | A short summary of the paper above. Good for learners who need an introduction first. |
+| [MIT EECS News: "MIT researchers propose a new model for legible, modular software"](https://www.eecs.mit.edu/mit-researchers-propose-a-new-model-for-legible-modular-software/) | A short summary of the paper above. Good for learners who need an introduction first. |
 | Daniel Jackson, *Software Abstractions: Logic, Language, and Analysis* (Alloy), MIT Press, 2nd ed. 2012 | Optional. For learners who want formal specification and model checking. |
+
+### Specification and evals (Week 5)
+
+| Source | Use it for |
+|---|---|
+| GitHub, [Spec Kit](https://github.com/github/spec-kit), and the announcement ["Spec-driven development with AI: Get started with a new open source toolkit"](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/) | A real toolkit that turns a written spec into a plan, then tasks, then code with a coding agent. Shows what "hand the spec to a coding agent" looks like in practice. |
+| Hamel Husain and Shreya Shankar, ["AI Evals: Everything You Need to Know"](https://hamel.dev/blog/posts/evals-faq/) | A long FAQ that answers practical questions on writing eval criteria and test cases. Use it when you write the eval criterion that defines "correct enough" for an action. |
+| Hamel Husain, ["Your AI Product Needs Evals"](https://hamel.dev/blog/posts/evals/) | Already cited in Module 3. Read it again here: it is the basic case for why you need evals at all, before you write your first cost model. |
 
 ## Module 3 – Systems
 
 | Source | Use it for |
 |---|---|
-| Anthropic, ["Building effective agents"](https://www.anthropic.com/engineering/building-effective-agents), 2024 | The workflow–agent continuum and the "start simple" rule. |
+| Anthropic, ["Building effective AI agents"](https://www.anthropic.com/research/building-effective-agents), 2024 | The workflow–agent continuum and the "start simple" rule. The page itself now says its tooling details are dated (since December 2024), but the patterns it describes still hold. |
 | Anthropic, ["Effective context engineering for AI agents"](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), 2025 | How to decide what goes into the context. |
 | Anthropic, ["Writing effective tools for agents"](https://www.anthropic.com/engineering/writing-tools-for-agents), 2025 | Tool interface design for a model reader. |
 | Anthropic, ["How we built our multi-agent research system"](https://www.anthropic.com/engineering/multi-agent-research-system), 2025 | A case for multiple agents, with costs stated. |
@@ -49,7 +59,7 @@ List compiled October 2026. Verify the links before you distribute the list.
 | Source | Use it for |
 |---|---|
 | [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/llm-top-10/) | Checklist of risk categories for LLM systems. |
-| [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/) | Checklist of risk categories specific to agents. Published December 2025. |
+| [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | Checklist of risk categories specific to agents. Published December 2025. |
 | Simon Willison, ["The lethal trifecta for AI agents"](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/), 2025 | The simplest model of data exfiltration risk. |
 | Greshake et al., ["Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"](https://arxiv.org/abs/2302.12173), 2023 | The original indirect injection paper. |
 | Adam Shostack, *Threat Modeling: Designing for Security*, Wiley, 2014 | General threat modeling method (STRIDE). |

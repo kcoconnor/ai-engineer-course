@@ -112,7 +112,7 @@ Collect 2–3 answers aloud. Look for "quality held" with evidence. If a learner
 | **Prompt caching** | Stable content first: system prompt, tools, reference docs. Variable content last. Measure hit rate. |
 | **Batch processing** | Move non-interactive work to discounted batch APIs. |
 | **Model tiers** | Check current tiers and prices. They change often. |
-| **Reasoning budgets** | Set the budget per action from evals. |
+| **Reasoning budgets** (cap on how much internal reasoning a model does before answering) | Set the budget per action from evals. |
 | **Output control** | Structured outputs and length limits. |
 | **Inference options** | Faster modes and regional options change latency and price. |
 
@@ -136,7 +136,7 @@ After:
          ← stable prefix, cached →                          ← variable →
 ```
 
-Measure: **cache hit rate**, cost per task, quality.
+Measure: **cache hit rate** (share of requests that reuse the cached prefix), cost per task, quality.
 
 <!--
 Point out the security question from the procedure: is the cache shared across users or tenants? Check your provider's isolation guarantees.
@@ -199,7 +199,7 @@ Walk between learners. Push for numbers from their traces in step 2, not guesses
 
 ---
 
-## Capstone format: 12 minutes each
+## Capstone format: 10 min present + 2 min feedback
 
 | Part | Time |
 |---|---|
@@ -207,8 +207,8 @@ Walk between learners. Push for numbers from their traces in step 2, not guesses
 | 2. Design: concepts and syncs | 2 min |
 | 3. Architecture and one ADR you would defend | 2 min |
 | 4. Threat model and one attack you stopped | 2 min |
-| 5. Before/after: cost, latency, quality, outcome | 2 min |
-| 6. Three things you would change | 2 min |
+| 5. Before/after: cost, latency, quality, outcome | 1 min |
+| 6. Three things you would change | 1 min |
 
 Report outcomes **as measured, with sample size**. No extrapolated multiples.
 

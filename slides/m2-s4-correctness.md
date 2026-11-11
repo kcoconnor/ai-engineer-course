@@ -59,7 +59,8 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Warm-up: what must your system never do? | Pairs |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up: what must your system never do? | Pairs |
 | 10–30 | Scenarios, refusals, LLM actions, cost, outcome trace | Explain + check |
 | 30–55 | Write scenarios and refusals | Individual |
 | 55–80 | Hand one spec to a coding agent; compare | Individual + pairs |
@@ -67,7 +68,28 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 | 85–90 | Exit ticket | Individual |
 
 <!--
-Explanation is 20 minutes. Practice is 60 minutes.
+Explanation is 20 minutes. Practice is 55 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Concept A must cause an action in concept B. Where does that rule live? Why not inside A?
+2. What is a **baseline**? Why must you measure it before you build?
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 4. Q2 is from Week 2.
+Answer to 1: In a synchronization. If A calls B, A is no longer independent. With a sync, the behavior is readable in one place, and you change one sync to change it.
+Answer to 2: The measured value of an outcome before the system exists. Every claimed gain is compared with it. After the system ships, you cannot measure the old process.
+Q2 sets up today's purpose-to-outcome trace.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Questions reach back 1 week and 2 or more weeks on purpose. Do not skip this slide when time is short. Cut the warm-up instead.
 -->
 
 ---
@@ -294,3 +316,4 @@ Answer to 2: contract, quality criterion, failure behavior.
 
 - Daniel Jackson, *The Essence of Software: Why Concepts Matter for Great Design*, Princeton University Press, 2021.
 - Course files: `02-teaching-notes-module-2-design.md`, `05-templates.md` (T1), `01-course-outline.md` (Week 5).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-2.md`.

@@ -43,7 +43,7 @@ Before the session:
 
 By the end of this session, you can:
 
-1. **Name** the six parts of a concept.
+1. **Name** the five parts of a concept, and the independence test.
 2. **Write** a complete concept specification.
 3. **Tell** a concept from a feature, a class, or a data entity.
 4. **Test** a concept for independence.
@@ -58,8 +58,9 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Warm-up: features vs. concepts | Pairs |
-| 10–30 | The six parts; worked example `Approving` | Explain + check |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up: features vs. concepts | Pairs |
+| 10–30 | The five parts, plus independence; worked example `Approving` | Explain + check |
 | 30–55 | Find 5 concepts in a product | Groups |
 | 55–80 | Write one full spec; swap and test | Groups |
 | 80–85 | Takeaways | Group |
@@ -67,6 +68,26 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 
 <!--
 Explanation is 20 minutes. Practice is 55 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Why does a coding agent make a vague specification **more** dangerous, not less?
+2. Name the three legs of the lethal trifecta.
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Session 2.1. Q2 is from Week 1.
+Answer to 1: The agent amplifies the spec it gets. A vague spec gives plausible code that does the wrong thing, faster than people can review it.
+Answer to 2: Access to private data. Exposure to untrusted content. Ability to communicate externally.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Questions reach back 1 week and 2 or more weeks on purpose. Do not skip this slide when time is short. Cut the warm-up instead.
 -->
 
 ---
@@ -106,7 +127,7 @@ Point out: concepts are familiar across products. Coding agents have seen many i
 
 ---
 
-## The six parts of a concept
+## The five parts of a concept
 
 | Part | What it says |
 |---|---|
@@ -115,7 +136,9 @@ Point out: concepts are familiar across products. Coding agents have seen many i
 | 3. Operational principle | A short scenario: "If you do X, then Y happens" |
 | 4. State | What the concept remembers |
 | 5. Actions | What users or the system can do; preconditions and effects |
-| 6. Independence | No reference to any other concept |
+
+Every concept must also pass the **independence test**: no reference to any other concept. This is a criterion, not a sixth part.
+<p class="small">Source: Jackson, <a href="https://essenceofsoftware.com/tutorials/concept-basics/criteria/">"Concept criteria: what's a concept?"</a></p>
 
 <!--
 Spend most time on purpose and principle. People skip these. They make concepts reusable and checkable.
@@ -212,10 +235,10 @@ Items marked in step 3 are useful for Session 2.3 (overloading).
 
 <!-- _class: activity -->
 
-## Activity 2: write and test one spec <span class="timer">30 min</span>
+## Activity 2: write and test one spec <span class="timer">25 min</span>
 
 1. Choose one concept from Activity 1. <span class="timer">1 min</span>
-2. Write the full spec with template T1. <span class="timer">17 min</span>
+2. Write the full spec with template T1. <span class="timer">12 min</span>
 3. Swap specs with another group. <span class="timer">1 min</span>
 4. Find any reference to a **different** concept. <span class="timer">6 min</span>
 5. Return the spec with your findings. <span class="timer">5 min</span>
@@ -272,11 +295,11 @@ Answer to 3 comes from the Human-approves-Agent steps in the Module 1 future-sta
 
 Write your answers. Hand them in.
 
-1. Name the six parts of a concept.
+1. Name the five parts of a concept.
 2. Is `Customer` a concept? Explain in one sentence.
 
 <!--
-Answer to 1: name and type parameters, purpose, operational principle, state, actions, independence.
+Answer to 1: name and type parameters, purpose, operational principle, state, actions. Independence is a separate test the spec must pass, not a sixth part.
 Good answer to 2: "No. It is a data entity. Concepts such as Subscribing or Billing say what happens with customers and why."
 -->
 
@@ -296,3 +319,4 @@ Good answer to 2: "No. It is a data entity. Concepts such as Subscribing or Bill
 - Daniel Jackson, *The Essence of Software: Why Concepts Matter for Great Design*, Princeton University Press, 2021.
 - essenceofsoftware.com.
 - Course files: `02-teaching-notes-module-2-design.md`, `05-templates.md` (T1).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-2.md`.

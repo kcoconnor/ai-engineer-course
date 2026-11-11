@@ -83,7 +83,7 @@ Each sync from Module 2 maps to one handler, event, or workflow step.
 ```
 sync SendOnApproval
   when Approving.approve (q, a)
-  where item(q) = d
+  where d = item(q)
   then Sending.send (d)
 ```
 → an event handler on `approve` that calls `send` for the approved draft.
@@ -103,7 +103,7 @@ The list of syncs **is** the behavior of the system.
 Choose a home for **each** item of state.
 
 <!--
-Durable execution is a design property that teams find late. Ask: "Can this task take longer than one request?"
+Durable execution (workflow state is saved, so a long task can resume after a failure) is a design property that teams find late. Ask: "Can this task take longer than one request?"
 -->
 
 ---

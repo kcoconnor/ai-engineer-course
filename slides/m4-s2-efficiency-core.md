@@ -96,7 +96,7 @@ A cheaper system that is wrong is not cheaper.
 |---|---|
 | Quality | Eval suite pass rate (Module 3) |
 | Cost per task | Traces |
-| Latency p50 / p95 | Traces |
+| Latency p50 / p95 (median / slowest-5% response time) | Traces |
 
 <!--
 Make this a firm rule. Every later change in this module is checked against these three numbers.
@@ -150,7 +150,7 @@ Set a maximum context size for each action. Remove content that does not change 
 
 **5. Routing.**
 Send each task to the **cheapest model that passes its eval**.
-Use a **cascade** when a cheap model can detect its own uncertainty.
+Use a **cascade** (try the cheap model first, escalate to a bigger one only when needed) when a cheap model can detect its own uncertainty.
 
 <p class="small">See: FrugalGPT (Chen et al., 2023); RouteLLM (Ong et al., 2024)</p>
 

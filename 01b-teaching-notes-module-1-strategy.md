@@ -56,7 +56,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 ### How to teach it
 - **Open (15 min):** Ask: "Name an AI tool that your team adopted. Did the team's main result change?" Most answers: the tool helped individuals, but the result did not change. This is the bolt-on effect.
 - **Explain (20 min):** The four points. Use one case from the HDSR article (for example, the safety-audit case: report creation from about 24 hours to about 2 hours). State that the figures are practitioner-reported.
-- **Exercise (40 min):** Pairs interview each other for 10 minutes each about a workflow they know. The interviewer maps it. Then they swap. Each map must show at least one wait, one rework loop, and one tacit decision.
+- **Exercise (40 min):** Pairs interview each other for 10 minutes each about a workflow they know. The interviewer maps it on the current-state workflow map (T9, Part A). Then they swap. Each map must show at least one wait, one rework loop, and one tacit decision.
 - **Close (15 min):** Each learner rewrites one output as an outcome.
 
 ### Interview prompts for learners to use
@@ -83,13 +83,13 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 - Learners choose one workflow and defend the choice.
 
 ### Key points
-1. **Score on five dimensions:** impact (outcome value), feasibility (data, systems, skills), strategic fit, repeatability (how often, how similar), and risk.
-2. **Split risk in two:** consequence of an error (business risk) and the lethal trifecta legs present (security risk). A workflow with all three legs is not excluded, but it needs approval steps and more engineering in Module 4.
+1. **Score on six dimensions:** impact (outcome value), feasibility (data, systems, skills), strategic fit, repeatability (how often, how similar), business risk, and security risk.
+2. **Risk is two of those six dimensions:** consequence of an error (business risk) and the lethal trifecta legs present (security risk: private data, untrusted content, and external communication together, which can let data leak out). A workflow with all three legs is not excluded, but it needs approval steps and more engineering in Module 4.
 3. **Score steps, not only workflows.** A workflow with low repeatability overall may contain highly repeatable steps.
 4. **First-system rule.** High impact, high feasibility, recoverable failures. Not mission-critical.
 
 ### How to teach it
-- **Explain (20 min):** The canvas (T8) and the five dimensions.
+- **Explain (20 min):** The canvas (T8) and the six dimensions.
 - **Exercise (45 min):** Each learner scores 3–5 candidates. In groups of three, each learner presents a top choice in 3 minutes. The group challenges the scores.
 - **Close (25 min):** Each learner writes a one-paragraph justification for the chosen workflow.
 
@@ -120,20 +120,20 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 | Guardian | Monitors other agents for policy, quality, and risk | Monitors and flags |
 
 3. **Mark each step:** Agent, Human, or Human-approves-Agent.
-4. **Design for straight-through flow where risk allows.** Remove waits. Keep people at the decisions that need judgment or carry high consequence.
+4. **Design for straight-through flow where risk allows.** Straight-through flow means a step runs with no human wait or hand-off in between. Remove waits. Keep people at the decisions that need judgment or carry high consequence.
 5. **Define each human role precisely:** what they see, what they decide, how they override, how they escalate.
 
 ### Tensions to teach (important)
 | Tension | Resolution |
 |---|---|
-| "Straight-through flow" vs. the lethal trifecta | Autonomy on a path with private data, untrusted content, and external communication creates exfiltration risk. Put an approval step on that path, or remove one leg. Module 4 goes deeper. |
+| "Straight-through flow" vs. the lethal trifecta | Autonomy on a path with private data, untrusted content, and external communication creates exfiltration risk (data leaking out to an outside party). Put an approval step on that path, or remove one leg. Module 4 goes deeper. |
 | "Agent-first" vs. "start simple" | Agent-first means software does the work. It does not require an autonomous agent architecture. Many agent-first steps are best built as fixed workflows (Module 3). |
 | Guardian agents as safety | A Guardian is useful for quality and policy monitoring. It reads the same content as the agents it watches, so the same injection can affect it. It is not a security boundary. |
 | Orchestrator by default | An Orchestrator is the most flexible type and the hardest to test. Use it only when the steps cannot be listed in advance. |
 
 ### How to teach it
 - **Explain (25 min):** Agent OS, agent types, and the tensions table.
-- **Exercise (45 min):** Each learner draws the future-state workflow and classifies each step. Partners challenge every Orchestrator. They also challenge every step that has all three trifecta legs and no human checkpoint.
+- **Exercise (45 min):** Each learner draws the future-state workflow on the workflow map (T9, Part B) and classifies each step. Partners challenge every Orchestrator. They also challenge every step that has all three trifecta legs and no human checkpoint.
 - **Close (20 min):** Each learner writes the role definition for one human role.
 
 ### Expert depth
@@ -151,13 +151,14 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 ### Key points
 1. **No baseline, no proof.** Measure before the build: time per case, error rate, throughput, cost per case, and one outcome measure.
 2. **Treat published productivity claims with care.** The HDSR article reports 2–10x gains from practitioner cases. The authors state these are not controlled studies. Your own baseline and measurement are the evidence.
-3. **The implementation brief** covers: outcome, chosen workflow, future-state map, roles, risk controls, KPIs with baseline, resources, phased plan.
+3. **The implementation brief** (T10) has nine sections: outcome, baseline, future-state workflow, human roles, risk controls, target KPIs, resources, phased plan, open questions.
 4. **The brief is a contract with the builders.** It must answer "what must the system do?" and "how do we know it worked?"
 
 ### How to teach it
+- **Open (5 min):** Review the gaps from the last exit tickets.
 - **Explain (20 min):** Baseline methods: sample 20–50 recent cases; time them; count errors and rework.
 - **Exercise (40 min):** Learners draft the brief (T10).
-- **Hand-off drill (25 min):** A learner who did not see the workflow reads the brief and lists the system's steps and the decisions people keep. The author compares the list with their intent. Discuss the gaps.
+- **Hand-off drill (20 min):** A learner who did not see the workflow reads the brief and lists the system's steps and the decisions people keep. The author compares the list with their intent. Discuss the gaps.
 - **Close (5 min):** Each learner names one gap they will fix.
 
 ---
@@ -191,6 +192,6 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 | Current state | From documents only | Interviews, partial map | Interviews; map with waits, rework, tacit decisions |
 | Selection | Chosen by preference | Canvas used, no risk score | Canvas with business and security risk; defended choice |
 | Redesign | AI added to existing steps | Steps redesigned, roles vague | Agent-first flow; each step typed; roles defined |
-| Risk | Not considered | Business risk only | Trifecta paths identified; approval steps placed |
+| Risk | Not considered | Business risk only | Lethal trifecta paths identified; approval steps placed |
 | Baseline | None | Partial | Measured on a sample, with method stated |
 | Brief | Missing parts | Complete, not testable | A builder can list steps and human decisions from it |

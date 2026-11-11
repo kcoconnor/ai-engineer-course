@@ -64,7 +64,30 @@ Learners choose their workflow in Module 1. Approve each choice at the end of We
 
 ---
 
-## 4. Assessment
+## 4. Learning design: build retention, not fluency
+
+Learners who leave a session able to explain an idea often cannot recall it three weeks later. In-the-moment recall is **fluency**. Long-term retention is **storage strength**. The course is designed for storage strength. Terms are in [GLOSSARY.md](GLOSSARY.md).
+
+### What the course does
+| Practice | Where | What you do |
+|---|---|---|
+| Retrieval practice | Recall slide at the start of each session; exit ticket at the end | Learners answer from memory. No notes. Do not let them look first. |
+| Spacing | Recall slide Q1 reaches back 1 week. Q2 reaches back 2 or more weeks. | Keep both questions. The older one is the important one. |
+| Interleaving | Mixed review at the end of each module self-check | Learners first decide which idea applies, then answer. |
+| Self-check | `checks/module-N.md`, each week and again one week later | Ask learners for their score in the pair review. |
+| Reference card | `cards/module-N.md` | Learners review from the card, not from the teaching notes. |
+| Learning log | Template T12 | Read it before the pair review. Repeat misses tell you what to re-teach. |
+
+### Rules
+- Never cut the recall slide when time is short. Cut the warm-up.
+- Recall must feel hard. If every learner gets every answer right, ask a question from further back.
+- Correct out loud. When a learner gives a wrong answer, give the correct answer at once. Fast feedback is what fixes the error.
+- Use the glossary terms. If you use a different word, learners learn two terms for one idea.
+- Use your exit tickets. Choose next week's recall questions from the exit-ticket answers that were most often wrong.
+
+---
+
+## 5. Assessment
 
 Use the rubrics at the end of each teaching-notes file.
 
@@ -86,7 +109,7 @@ A learner is ready to teach a session when they:
 
 ---
 
-## 5. Adapting for different audiences
+## 6. Adapting for different audiences
 
 | Audience | Emphasize | Reduce |
 |---|---|---|
@@ -100,11 +123,11 @@ A learner is ready to teach a session when they:
 
 ---
 
-## 6. Keep the course current
+## 7. Keep the course current
 
 | Layer | Review | Owner | Actions |
 |---|---|---|---|
-| Module 1 | Every year | Course lead + 1 leader-track alumnus | Check for new versions of the A.G.E.N.T. playbook. Replace external cases with your organization's own measured results. |
+| Module 1 | Every year | Course lead + 1 leader-track alumnus | Check for new versions of the [A.G.E.N.T. playbook](GLOSSARY.md). Replace external cases with your organization's own measured results. |
 | Module 2 | Every 2–3 years | Course lead | Check for new work by Jackson and the concept design community. |
 | Module 3 | Every 6–12 months | Course lead + 1 alumnus | Update the central table. Replace named tools. Keep the reasoning. |
 | Module 4 core | Every year | Course lead | Check OWASP lists for new versions. |
@@ -117,7 +140,7 @@ A learner is ready to teach a session when they:
 
 ---
 
-## 7. Measure the effect
+## 8. Measure the effect
 
 Collect these measures before the course and 3 months after:
 
@@ -130,3 +153,4 @@ Collect these measures before the course and 3 months after:
 | Security | Number of AI systems with a current threat model; attack cases in CI |
 | Cost | Cost per task on systems built by alumni, before and after optimization |
 | Reach | Number of alumni who have taught at least one session |
+| Retention | Score on a no-notes recall check of Modules 1–2 at the end of the course and 3 months after |

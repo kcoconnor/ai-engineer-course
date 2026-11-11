@@ -43,7 +43,7 @@ Before the session:
 
 By the end of this session, you can:
 
-1. **Score** candidate workflows on five dimensions with the use case canvas.
+1. **Score** candidate workflows on six dimensions with the use case canvas.
 2. **Separate** business risk from security risk.
 3. **Identify** the lethal trifecta legs in a workflow.
 4. **Choose** one workflow and defend the choice.
@@ -59,7 +59,7 @@ Tell learners: the exit ticket checks objectives 2 and 3.
 | Time | Block | Mode |
 |---|---|---|
 | 0–10 | Exit-ticket review and warm-up | Group |
-| 10–30 | The canvas and the five dimensions | Explain + check |
+| 10–30 | The canvas and the six dimensions | Explain + check |
 | 30–75 | Score, present, challenge | Individual + triads |
 | 75–85 | Write the justification; debrief | Individual + group |
 | 85–90 | Exit ticket | Individual |
@@ -96,7 +96,8 @@ Score each candidate 1–5:
 | Feasibility | Do we have the data, systems, and skills? |
 | Strategic fit | Does it serve a current priority? |
 | Repeatability | How often? How similar each time? |
-| Risk | What happens when it is wrong? |
+| Business risk | What happens when it is wrong? |
+| Security risk | Can the agent be made to leak data? |
 
 <!--
 Explain each row with one example from your organization.
@@ -147,7 +148,7 @@ Module 4 goes deeper. Here we only score it.
 
 How many trifecta legs does this workflow have?
 
-> An agent reads supplier invoices sent by email, compares them with purchase orders in the ERP, and posts a summary to an internal dashboard.
+> An agent reads supplier invoices sent by email, compares them with purchase orders in the ERP (the company's order and inventory system), and posts a summary to an internal dashboard.
 
 - A. 1   B. 2   C. 3
 

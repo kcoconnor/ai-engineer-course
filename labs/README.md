@@ -6,6 +6,13 @@ reference experiment, inspect its JSON evidence, complete the learner task,
 and review the deliverable with the module rubric. Allow 2–4 hours per lab;
 the wider anchor-project work and readings use the remaining weekly time.
 
+Deliverables below are named by template code (T1, T8, ADR-001, and so on).
+All template codes are defined in [05-templates.md](../05-templates.md).
+
+The reference tool also has ticket IDs T1, T2, T3 (synthetic support
+tickets). A ticket ID is not a template code; `support_lab inspect T1` shows
+ticket T1's draft, not your T1 concept spec.
+
 ## Setup and learning loop
 
 Python 3.11+ is required. No dependencies or API keys are needed.
@@ -43,7 +50,8 @@ claim that strategy interviews or human judgment were completed.
 Run `python3 -m support_lab lab 1`.
 
 Inspect the three candidates and their six T8 scores. The example selects
-support drafts; higher business/security risk scores mean **lower** risk.
+support drafts; a score of 5 on business or security risk means low risk,
+by the T8 scoring convention.
 The dimensions are impact, feasibility, strategic fit, repeatability, business
 risk and security risk, in that order. Equal-weight totals are a discussion
 aid, not a validated prioritization method.
@@ -71,7 +79,8 @@ each step. Do not call simulator execution time a business improvement.
 
 **Checkpoint:** JSON identifies the sample size, source and human role.
 **Deliver:** T9 future-state map and T10 implementation brief, including
-baseline method and missing evidence. Worked example: `artifacts/design.md`.
+baseline method and missing evidence. Worked example:
+`reference/artifacts/design.md`.
 
 ## Module 2: Design
 
@@ -143,8 +152,9 @@ fixture may need corresponding evidence updates when you extend it.
 
 Run `python3 -m support_lab lab 7`.
 
-Two lightweight strategies compare set overlap with title-weighted lexical
-overlap. Neither is BM25 or dense search. Both get recall@2 of 1.0 on three
+Two lightweight retrieval strategies are compared: `overlap` (raw word
+overlap) and `lexical` (word overlap with extra weight for title matches).
+Neither is BM25 or dense search. Both get recall@2 of 1.0 on three
 cases. Support access excludes the finance policy before generation.
 
 **Learner task:** Expand to at least ten questions before tuning either
@@ -195,7 +205,8 @@ plan T6 and sample JSON dashboard; record the failed-gate experiment too.
 
 ### Lab 10 — Map and constrain threats
 
-Run `python3 -m support_lab lab 10` and read `artifacts/threat-model.md`.
+Run `python3 -m support_lab lab 10` and read
+`reference/artifacts/threat-model.md`.
 
 The experiment refuses model/service identity approval, finance identity
 approval and sending without a human decision. Retrieval excludes finance data.
@@ -263,7 +274,7 @@ not implemented by the simulator. Present three changes you would make next.
 
 ## Optional Weeks 14 and 15
 
-Use `artifacts/evaluation.md` and T11 to plan a pilot with success and rollback
+Use `reference/artifacts/evaluation.md` and T11 to plan a pilot with success and rollback
 criteria. Test role instructions with a colleague. Teach back the Lab 8 failure
 drill and Lab 12 compromised-generator experiment, then collect feedback.
 These human activities are reviewed by a facilitator, not by a passing script.

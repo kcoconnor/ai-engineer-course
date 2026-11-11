@@ -10,7 +10,7 @@ How the Harvard Data Science Review *Agentic AI 2.5-Week Intensive* adds to this
 
 | Item | Detail |
 |---|---|
-| Program | Agentic AI 2.5-Week Intensive, Harvard Data Science Review / Next Gen Learning |
+| Program | Agentic AI 2.5-Week Intensive, Harvard Data Science Review / Next Gen Learning (NGL) |
 | Audience | Professionals and leaders. No technical background required. |
 | Output | A workflow design, not a working agent. |
 | Deliverables | Use case canvas, one redesigned agentic workflow, implementation brief |
@@ -108,7 +108,7 @@ Place before Module 2. Total course length becomes 13 weeks + optional teach-bac
 | Module 4, Week 8 | Add the Guardian-agent caveat to the misconceptions table. |
 | Module 4, Week 11 | Capstone adds a before/after comparison on the business outcome from Module 1. |
 | New Week 12b (optional) | Change management: staff training for oversight roles, rollout plan, feedback loop into the next Audit. |
-| Templates | Add T8 Use case canvas, T9 Future-state workflow, T10 Implementation brief. |
+| Templates | Add T8 Use case canvas, T9 Workflow map (current- and future-state), T10 Implementation brief, T11 Rollout plan (for the optional Week 14). |
 | Reading list | Add the HDSR article and the Agent OS concept. |
 | Facilitator guide | Add a joint session: leaders present the Module 1 brief to builders, who respond with a Module 2 concept design. |
 
@@ -125,5 +125,5 @@ This removes the common hand-off failure where a leader's strategy deck does not
 
 ## Sources
 - [HDSR Agentic AI 2.5-Week Intensive](https://live.hdsrcourses.org/agentic-ai-2.5-week-intensive-app-portal)
-- Kruhse-Lehtonen, Hofmann et al., ["The Agent-Centric Enterprise: Why 2–10x Productivity Gains Demand Radical Workflow Redesign"](https://hdsr.mitpress.mit.edu/pub/0mrfxamu/release/1), *Harvard Data Science Review* 8.1, Winter 2026
+- Kruhse-Lehtonen, Hofmann et al., ["The Agent-Centric Enterprise: Why 2–10x Productivity Gains Demand Radical Workflow Redesign"](https://hdsr.mitpress.mit.edu/pub/0mrfxamu/release/3), *Harvard Data Science Review* 8.1, Winter 2026
 - [DAIN Studios summary of the article](https://dainstudios.com/insights/dain-studios-new-harvard-data-science-review-article-is-now-available/)

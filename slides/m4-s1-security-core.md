@@ -47,7 +47,7 @@ By the end of this session, you can:
 
 1. **Explain** why any text in the context can act as an instruction.
 2. **Treat** model output as untrusted input.
-3. **Draw** trust boundaries on your system's data flow.
+3. **Draw** trust boundaries (lines where the party controlling the input changes) on your system's data flow.
 4. **Find** and **break** every lethal trifecta path.
 
 <!--
@@ -174,7 +174,7 @@ Incoming ticket (untrusted) ─┐
 Customer records (private) ──┘
 ```
 
-All three legs are present. **Exfiltration path exists.**
+All three legs are present. **Exfiltration path exists** (a route for private data to leave the system).
 
 Fixes (choose one or more):
 1. Reply only to the ticket's own sender address. (Limits the external leg.)

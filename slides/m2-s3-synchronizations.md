@@ -47,7 +47,7 @@ By the end of this session, you can:
 1. **Compose** independent concepts with synchronizations, not shared state.
 2. **Read and write** a synchronization.
 3. **Place** the LLM inside an action, not as a concept.
-4. **Identify** five design defects.
+4. **Identify** the two design defects, and the three causes of overloading.
 
 <!--
 Tell learners that the exit ticket checks objectives 2 and 3.
@@ -59,7 +59,8 @@ Tell learners that the exit ticket checks objectives 2 and 3.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Warm-up: how do your concepts connect? | Pairs |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up: how do your concepts connect? | Pairs |
 | 10–30 | Syncs; worked example; where the LLM sits | Explain + check |
 | 30–65 | Write syncs for your system; partner reads them | Pairs |
 | 65–80 | Defect hunt | Individual + group |
@@ -68,6 +69,27 @@ Tell learners that the exit ticket checks objectives 2 and 3.
 
 <!--
 Explanation is 20 minutes. Practice is 55 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Name the five parts of a concept, and the independence test.
+2. Which kind of step in your Module 1 future-state workflow becomes a use of the `Approving` concept?
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 3. Q2 is from Week 2.
+Answer to 1: Name and type parameters, purpose, operational principle, state, actions. Independence is a criterion the spec must pass, not a sixth part.
+Answer to 2: Each Human-approves-Agent step.
+Ask: "Which part did you forget?" Most learners forget the operational principle. Say that it becomes the acceptance scenarios in Session 2.4.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Questions reach back 1 week and 2 or more weeks on purpose. Do not skip this slide when time is short. Cut the warm-up instead.
 -->
 
 ---
@@ -132,7 +154,7 @@ sync DraftNeedsApproval
 
 sync SendOnApproval
   when Approving.approve (q, a)
-  where item(q) = d
+  where d = item(q)
   then Sending.send (d)
 ```
 
@@ -208,17 +230,19 @@ Each gap in step 4 is a missing or unclear sync.
 
 ---
 
-## Five design defects
+## Two design defects
+
+Jackson names two peer defects. Overloading has three common causes.
 
 | Defect | Description | AI example |
 |---|---|---|
-| Overloading | One concept, more than one purpose | "Memory" stores preferences **and** retrieved facts |
-| False convergence | Different purposes forced into one concept | One "feedback" button means "bad answer" **and** "report abuse" |
-| Denied purpose | Concept used for a purpose it does not serve | Chat history used as an audit log |
-| Piggybacking | New function added to an existing concept | Cost limits added to the conversation concept |
-| Redundancy | Two concepts, same purpose | Separate approval flows for drafts and refunds |
+| **Overloading** | One concept, more than one purpose | "Memory" stores preferences **and** retrieved facts |
+| &nbsp;&nbsp;cause: false convergence | Two different purposes look similar, so they get forced into one concept | One "feedback" button means "bad answer" **and** "report abuse" |
+| &nbsp;&nbsp;cause: denied purpose | Concept used for a purpose it does not serve | Chat history used as an audit log |
+| &nbsp;&nbsp;cause: piggybacking | New function added to an existing concept | Cost limits added to the conversation concept |
+| **Redundancy** | Two concepts, same purpose | Separate approval flows for drafts and refunds |
 
-<p class="small">Source: Jackson, The Essence of Software</p>
+<p class="small">Source: Jackson, The Essence of Software; <a href="https://groups.csail.mit.edu/sdg/pubs/2015/concept-essay.pdf">Jackson, 2015</a></p>
 
 <!--
 Give your own example from your organization. Do not name the team. Focus on the pattern.
@@ -236,7 +260,7 @@ Give your own example from your organization. Do not name the team. Focus on the
 4. Share with the group. Do not name teams. <span class="timer">3 min</span>
 
 <!--
-Most common finds: overloading and piggybacking.
+Most common finds: overloading by piggybacking.
 Ask for the fix: usually "split the concept" or "move the rule into a sync".
 -->
 
@@ -274,7 +298,7 @@ Expected answer to 3: a short list of actions, e.g. Drafting.draft, Classifying.
 
 1. Concepts do not call each other. **Syncs** connect them.
 2. The LLM is **inside an action**. Syncs are deterministic; LLM actions are evaluated.
-3. Check for **overloading, false convergence, denied purpose, piggybacking, redundancy**.
+3. Check for the two defects: **overloading** (causes: false convergence, denied purpose, piggybacking) and **redundancy**.
 
 ---
 
@@ -311,3 +335,4 @@ Good answer to 2: "Inside the implementation of an action, not as a concept of i
 - Daniel Jackson, *The Essence of Software: Why Concepts Matter for Great Design*, Princeton University Press, 2021.
 - Eagon Meng and Daniel Jackson, "What You See Is What It Does: A Structural Pattern for Legible Software," arXiv:2508.14511, 2025.
 - Course files: `02-teaching-notes-module-2-design.md`, `05-templates.md` (T2).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-2.md`.

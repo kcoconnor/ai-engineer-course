@@ -254,7 +254,7 @@ Work in pairs. Use your Module 2 spec.
 5. Challenge each placement right of "prompt chain". <span class="timer">10 min</span>
 6. Move actions left where the challenge succeeds. <span class="timer">4 min</span>
 
-**Output:** a list of actions, positions, and reasons. This becomes ADR-001.
+**Output:** a list of actions, positions, and reasons. This becomes ADR-001, your first architecture decision record (context, decision, alternatives, consequences; covered in Session 3.4).
 
 <!--
 Challenge question to model: "What is the smallest change to the design that would let this agent become a workflow?"

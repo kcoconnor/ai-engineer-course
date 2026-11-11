@@ -22,7 +22,7 @@ An architecture is a set of reasons. Each component must trace to a property of 
 
 - Replace "what is the stack?" with "what does the design require?"
 - Make the workflow–agent decision explicit and reversible.
-- Make every decision a written ADR.
+- Make every decision a written ADR (architecture decision record: design property, context, decision, alternatives considered, consequences, change trigger).
 
 ### The central table
 
@@ -30,8 +30,8 @@ Teach this table in every session of the module. Add rows as learners find new c
 
 | If the design has… | Reach for… | Not for… |
 |---|---|---|
-| A large document set that changes often | Retrieval (lexical + dense, with reranking) | Small, stable corpora that fit in context |
-| A small, stable corpus | Long context, with prompt caching | Corpora that change daily or exceed the window |
+| A large document set that changes often | Retrieval (lexical + dense, with reranking: reordering top results with a stronger model) | Small, stable corpora that fit in context |
+| A small, stable corpus | Long context, with prompt caching (the model provider stores and reuses a previously-processed prompt prefix, so you pay less and wait less on repeat calls) | Corpora that change daily or exceed the window |
 | Answers that depend on relations between entities | A graph, or structured queries over relational data | Free-text questions about single documents |
 | Exact facts in a system of record | A tool call or a structured query | Embedding search |
 | Steps that you can list in advance | A workflow (fixed code path with LLM calls) | Open-ended tasks |
@@ -43,13 +43,13 @@ Real systems mix these. Teach learners to read the mix from the design.
 
 ### Agent types and the continuum
 
-Module 1 classified each step by agent type (from the HDSR article). Map each type to an architecture. The type says *what the step does*. The continuum says *how to build it*.
+Module 1 classified each step by agent type (from the HDSR article). Map each type to an architecture. The type says *what the step does*. The continuum (the workflow-agent continuum: a line of build options from a single fixed call up to a full autonomous agent, explained in Session 3.1 below) says *how to build it*.
 
 | Agent type (Module 1) | Typical place on the continuum | Note |
 |---|---|---|
 | Assistant | Single call or prompt chain | Usually a workflow step. |
 | Analyst | Prompt chain, parallelization, or evaluator-optimizer | Output is a recommendation. A person or a later step decides. |
-| Tasker | Single call with one tool, inside a workflow | Bounded action. Strong candidate for least privilege. |
+| Tasker | Single call with one tool, inside a workflow | Bounded action. Strong candidate for least privilege (a Module 4 term: give the tool only the access it needs, nothing more). |
 | Orchestrator | Orchestrator-workers or autonomous agent | Use only when steps cannot be listed in advance. Hardest to test. |
 | Guardian | Evaluator step or separate monitor | Good for quality and policy. Not a security boundary (Module 4). |
 
@@ -72,9 +72,10 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 5. **Protocols.** The Model Context Protocol (MCP) standardizes how tools and data connect to models. It changes the integration cost, not the design reasoning.
 
 ### How to teach it
+- **Warm-up (10 min):** "Why was it an agent?"
 - **Explain (20 min):** The continuum, with one example at each step.
 - **Exercise (35 min):** Learners place each LLM-backed action from their Module 2 spec on the continuum. Partners challenge each placement that is right of "prompt chain".
-- **Tool design clinic (25 min):** Learners write one tool description. A partner gives it to a model with no other context and asks the model to use it. Learners observe the errors.
+- **Tool design clinic (15 min):** Learners write one tool description. A partner gives it to a model with no other context and asks the model to use it. Learners observe the errors.
 - **Close (10 min):** "Which of your actions moved left after the challenge?"
 
 ### Common misconceptions
@@ -86,7 +87,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ### Expert depth
 - Ask: "What is the smallest change to the design that would let this agent become a workflow?" Often a small change to the spec removes the need for an agent.
-- In concept terms: a workflow is a fixed set of syncs. An agent is a sync that the model chooses at runtime. This shows why agents are harder to verify.
+- In concept terms: a workflow is a fixed set of syncs (short for synchronization: a Module 2 rule that triggers an action when a condition holds, defined in GLOSSARY.md). An agent is a sync that the model chooses at runtime. This shows why agents are harder to verify.
 
 ---
 
@@ -103,13 +104,14 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 3. **Agentic search** lets the model write queries, read results, and search again. It is better for complex questions. It costs more and is harder to evaluate.
 4. **Long context** is a strong option when the corpus is small and stable. Combine it with prompt caching.
 5. **Graphs and structured queries** answer relational questions ("Which teams own services that depend on X?"). Embeddings do not answer these well.
-6. **Evaluate retrieval alone.** Use recall@k on a labeled set. If retrieval fails, generation cannot recover.
+6. **Evaluate retrieval alone.** Use recall@k (the share of test questions where the correct source shows up in the top k results) on a labeled set. If retrieval fails, generation cannot recover.
 7. **Access control.** Filter at retrieval time. Never rely on the model to hide documents that the user must not see.
 
 ### How to teach it
+- **Warm-up (10 min):** "Why a vector database?"
 - **Explain (20 min):** Requirements first, then the options.
 - **Exercise (40 min):** Learners write their knowledge requirements and choose a strategy. Groups review each choice against the central table.
-- **Demo (20 min):** Show one query where lexical search wins and one where dense search wins. Use your organization's data if possible.
+- **Demo (10 min):** Show one query where lexical search wins and one where dense search wins. Use your organization's data if possible.
 - **Close (10 min):** "What would make you change your strategy?"
 
 ### Common misconceptions
@@ -141,9 +143,10 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 5. **Multiple agents.** Use them when the task divides into parts with separate context and separate tools. They multiply cost and make failures harder to trace. Compare with one agent on real tasks before you commit.
 
 ### How to teach it
+- **Warm-up (5 min):** A task in your system stops mid-way. Predict what happens.
 - **Explain (20 min):** The five points.
 - **Failure drill (30 min):** Each learner stops their system during a multi-step task. Does it resume, fail safely, or leave partial effects? Discuss results.
-- **Approval review (25 min):** Pairs review each other's approval flow. Questions: "Can the model skip it? Does the approver see the real action?"
+- **Approval review (20 min):** Pairs review each other's approval flow. Questions: "Can the model skip it? Does the approver see the real action?"
 - **Close (15 min):** Multi-agent debate. One side argues for, one side against, for a real case.
 
 ### Expert depth
@@ -152,7 +155,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ---
 
-## Session 3.4 – Deploy with observability and evals
+## Session 3.4 – Deploy with observability, evals, and KPIs
 
 ### Objectives
 - Learners trace every model call and tool call.
@@ -168,9 +171,10 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 6. **Outcome KPIs.** Put the Module 1 outcome measures on the same dashboard as quality, cost, and latency. Add approval rate and override rate. A system can pass every eval and still not move the outcome.
 
 ### How to teach it
+- **Warm-up (5 min):** Guess your system's most common failure.
 - **Explain (15 min):** Tracing and eval types.
 - **Error analysis workshop (50 min):** Each learner brings 30 traces. They categorize failures in silence for 20 minutes, then share categories. Most learners find a category they did not expect.
-- **ADR review (20 min):** Pairs swap one ADR. The reviewer asks: "What design property would change this decision?"
+- **ADR review (15 min):** Pairs swap one ADR. The reviewer asks: "What design property would change this decision?"
 - **Close (5 min):** Each learner names their top failure category.
 
 ### Expert depth

@@ -2,6 +2,8 @@
 
 Copy each template into your project. Use the same templates when you review the work of others.
 
+Terms used in these templates (purpose, principle, state, action, precondition, sync, independence, refusal) are defined in [GLOSSARY.md](GLOSSARY.md).
+
 ---
 
 ## T1 – Concept specification
@@ -53,6 +55,11 @@ cost estimate
   calls: <n>   input tokens: <n>   output tokens: <n>
 ```
 
+**Untrusted inputs, in plain words:** an input is untrusted if its text can come from
+outside your system, for example a customer message, a web page, or a tool result.
+Module 4 ([04-teaching-notes-module-4-engineering.md](04-teaching-notes-module-4-engineering.md))
+covers this in depth; for now, just list any such input here.
+
 ---
 
 ## T2 – Synchronization
@@ -101,6 +108,8 @@ Date: <YYYY-MM-DD>
 <Eval results, benchmarks, or traces that support the decision.>
 ```
 
+See `reference/artifacts/design.md` for a worked T1-T3 example.
+
 ---
 
 ## T4 – Threat model
@@ -127,9 +136,14 @@ Date: <YYYY-MM-DD>
 | ID | Threat | Entry point | Impact | Likelihood | OWASP ref | Mitigation | Status |
 |---|---|---|---|---|---|---|---|
 
+Example OWASP ref format: `LLM01:2025` (prompt injection). See the OWASP lists
+in [06-reading-list.md](06-reading-list.md).
+
 ## 6. Residual risk
 <What remains. Who accepted it.>
 ```
+
+See `reference/artifacts/threat-model.md` for a worked T4 example.
 
 ---
 
@@ -171,6 +185,8 @@ Date: <YYYY-MM-DD>
 | Date | Traces read | Top failure category | Fix | Result |
 |---|---|---|---|---|
 ```
+
+See `reference/artifacts/evaluation.md` for a worked T5-T7 example.
 
 ---
 
@@ -228,7 +244,7 @@ Reason:
 ### Part A – Current state
 
 ```
-| # | Step | Role | System / data | Time | Wait before | Rework? | Tacit decision? | Pain point |
+| # | Step | Role | System / data | Time | Wait before | Rework? | Tacit decision? (a judgment with no written rule) | Pain point |
 |---|---|---|---|---|---|---|---|---|
 ```
 
@@ -326,3 +342,34 @@ Signals that trigger a redesign (for example, approval rate > 98%, rising overri
 ## Next workflow
 <From the T8 comparison table.>
 ```
+
+---
+
+## T12 – Learning log (all modules)
+
+Keep one log for the whole course. Add one entry each week, after the self-check. Your facilitator reads it before the pair review. When you teach (Week 15), your log shows which ideas were hard to keep.
+
+```
+# Learning log: <your name>
+
+## Week <N> – <topic>
+Date:
+
+### I can now (shown, not read)
+- <A skill you showed: "Wrote a concept spec that passed the independence test.">
+
+### Self-check score
+Right: <n>   Partly: <n>   Wrong: <n>
+Missed from earlier weeks: <question numbers and topics>
+
+### I still confuse
+- <Two terms or ideas you mix up. Check them against GLOSSARY.md.>
+
+### Changed my mind
+- <A belief you held at the start of the week that you no longer hold, and why.>
+
+### Next action
+- <One thing to practice before next week.>
+```
+
+**Rule:** Write "I can now" entries only for things you did, not things you read.

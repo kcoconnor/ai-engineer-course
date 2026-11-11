@@ -60,11 +60,11 @@ Security and efficiency have the same shape. Each rests on a few principles that
 | "Only users can attack us." | Anyone who can write content that your system reads can attack it. |
 | "It is internal, so it is safe." | Internal documents, tickets, and emails contain external content. |
 | "A Guardian agent protects us." | A Guardian reads the same content as the agents it watches. The same injection can affect it. Use it for quality and policy monitoring, not as a security boundary. |
-| "Straight-through flow is the goal everywhere." | On a path with all three trifecta legs, autonomy creates exfiltration risk. Keep an approval step or remove a leg. |
+| "Straight-through flow is the goal everywhere." | On a path with all three trifecta legs, autonomy creates exfiltration risk (the risk of private data leaving the system to an attacker). Keep an approval step or remove a leg. |
 
 ### Expert depth
 - Map threats to concepts. The `Approving` concept from Module 2 is a security control. Its precondition (approver ≠ requester) is a refusal. Security that is in the design is easier to verify than security added afterwards.
-- STRIDE still works. Add AI-specific questions to each category: "Can injected content cause this?"
+- STRIDE still works. STRIDE is an older threat-modeling checklist: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. Add AI-specific questions to each category: "Can injected content cause this?"
 
 ---
 
@@ -79,15 +79,16 @@ Security and efficiency have the same shape. Each rests on a few principles that
 ### Key points
 1. **Evaluation before optimization.** No change without a quality baseline. A cheaper system that is wrong is not cheaper.
 2. **Cost model.** Cost per task = Σ (calls × (input tokens × input price + output tokens × output price)). Find the top drivers from traces, not from intuition.
-3. **Latency model.** Separate time to first token, generation time, tool time, and queue time. Measure p50 and p95.
+3. **Latency model.** Separate time to first token, generation time, tool time, and queue time. Measure p50 (the median: half of requests are faster than this) and p95 (the 95th percentile: your slow outliers).
 4. **Context budgets.** Set a maximum context size for each action. Remove content that does not change the output.
-5. **Routing.** Send each task to the cheapest model that passes its eval. Use a cascade when a cheap model can detect its own uncertainty.
+5. **Routing.** Send each task to the cheapest model that passes its eval. Use a cascade (try the cheap model first, escalate to a stronger model when the cheap one flags its own uncertainty).
 6. **Design-level savings.** Replace model calls with deterministic code. Remove retries that do not improve quality. Merge or split calls. These changes often save more than any model change.
 
 ### How to teach it
+- **Warm-up (10 min):** Learners guess their top cost step and cost per task, before opening traces.
 - **Explain (20 min):** The six points.
 - **Exercise (45 min):** Learners compute cost per task from their traces. They identify the top 3 drivers. For each driver, they propose one change and predict its effect on quality.
-- **Close (25 min):** Groups share drivers. Discuss how many drivers trace back to a design decision.
+- **Close (15 min):** Groups share drivers. Discuss how many drivers trace back to a design decision.
 
 ### Common misconceptions
 | Misconception | Response |
@@ -112,8 +113,8 @@ Rebuild this session every quarter. Keep the structure. Replace the specifics.
 - Indirect injection through tool results and retrieved documents.
 - Injection through agent memory that persists across sessions.
 - Tool poisoning: malicious tool descriptions or results from third-party MCP servers.
-- Exfiltration through rendered content (for example, image URLs or links that carry data).
-- Confused-deputy attacks across agents in multi-agent systems.
+- Exfiltration (private data leaving the system to an attacker) through rendered content, for example image URLs or links that carry data.
+- Confused-deputy attacks across agents in multi-agent systems. A confused deputy is a less-privileged party that tricks a more-privileged agent into acting for it.
 
 **Architectural patterns** (Beurer-Kellner et al., 2025)
 | Pattern | Idea | Tradeoff |
@@ -125,7 +126,7 @@ Rebuild this session every quarter. Keep the structure. Replace the specifics.
 | Code-then-execute | The model writes a program; the program handles the data. | Needs a sandbox. |
 | Context minimization | Remove unneeded content (including the user prompt) from context before later steps. | Can lose useful information. |
 
-**Capability-based defense:** CaMeL (Debenedetti et al., 2025) separates control flow from data flow and tracks capabilities on values. It gives provable limits for some attack classes.
+**Capability-based defense:** CaMeL (Capabilities for Machine Learning; Debenedetti et al., 2025) is a system that separates control flow (the steps the program runs) from data flow (the untrusted content itself), and tracks what each piece of data is allowed to do. It gives provable limits for some attack classes.
 
 ### How to teach it
 - **Update (15 min):** What changed since the last session. Use recent advisories.
@@ -152,7 +153,7 @@ Rebuild the first half of this session every quarter.
 - Learners present the full system.
 
 ### Current specifics (verify before teaching)
-- **Prompt caching.** Put stable content (system prompt, tool definitions, reference documents) first. Put variable content last. Measure the cache hit rate.
+- **Prompt caching.** The provider stores a processed copy of content it has already seen, so a later call that starts with the same content skips reprocessing it and costs less. Put stable content (system prompt, tool definitions, reference documents) first. Put variable content last, so it does not break the match. Measure the cache hit rate.
 - **Batch processing.** Most providers offer discounted asynchronous batch APIs. Move non-interactive work there.
 - **Model tiers.** Check the current tiers and prices from your providers. They change several times per year.
 - **Reasoning budgets.** Many models let you control how much they reason. Set the budget per action from evals.
@@ -167,13 +168,13 @@ Rebuild the first half of this session every quarter.
 5. Keep it only if 1–4 pass.
 
 ### Capstone presentation (50 min)
-Each learner presents for 12 minutes:
+Each learner presents for 10 minutes, then gets 1 minute of rubric scoring and 1 minute of peer feedback (12 minutes total per learner):
 1. The workflow, the outcome, and the baseline (2 min).
 2. The design: concepts and syncs (2 min).
 3. The architecture and one ADR that they would defend (2 min).
 4. The threat model and one attack that they stopped (2 min).
-5. Before-and-after cost, latency, quality, and outcome (2 min).
-6. Three things they would change (2 min).
+5. Before-and-after cost, latency, quality, and outcome (1 min).
+6. Three things they would change (1 min).
 
 Ask learners to report the outcome as measured, with sample size. Do not accept extrapolated productivity multiples.
 

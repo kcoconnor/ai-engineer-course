@@ -137,7 +137,7 @@ Hybrid + reranking is a strong default for large, changing corpora. It is still 
 
 **Long context:** put the whole corpus in the context.
 - Strong when the corpus is small and stable.
-- Combine with prompt caching.
+- Combine with prompt caching (the model reuses context it already processed, instead of paying to reprocess it each call).
 - Costs more per call. Has limits.
 
 <!--

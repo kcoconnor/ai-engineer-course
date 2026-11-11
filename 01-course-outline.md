@@ -19,7 +19,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 | 14 (optional) | Rollout | Rollout and change management plan |
 | 15 (optional) | Teach-back | Delivered session and retrospective |
 
-**Leader track:** Weeks 1–5 and Week 14. See [07-facilitator-guide.md](07-facilitator-guide.md).
+**Leader track** (for a sponsor or manager who guides the work but does not build the system): Weeks 1–5 and Week 14. See [07-facilitator-guide.md](07-facilitator-guide.md).
 
 ---
 
@@ -63,7 +63,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 
 **Study**
 - Kruhse-Lehtonen, Hofmann et al.: sections on Agent OS, agent types, and the phased roadmap.
-- Anthropic, "Building effective agents" (first read; Module 3 returns to it).
+- Anthropic, "Building effective AI agents" (first read; Module 3 returns to it).
 
 **Exercises**
 1. Draw the future-state workflow (T9, part B). Mark each step: Agent, Human, or Human-approves-Agent.
@@ -111,7 +111,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 
 **Objectives**
 - Keep concepts independent. Compose them with synchronizations, not with shared state.
-- Identify design defects: overloading, false convergence, denied purpose, piggybacking, redundancy.
+- Identify design defects: overloading (causes: false convergence, denied purpose, piggybacking), and redundancy.
 - Place the LLM correctly: inside the implementation of an action, not as a concept of its own.
 
 **Study**
@@ -138,7 +138,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 - Hand the specification to a coding agent and compare the result with your intent.
 
 **Study**
-- Reading list, Module 2: specification-driven development and evals.
+- Reading list, Module 2: "Specification and evals (Week 5)" table (GitHub Spec Kit; Husain and Shankar's evals FAQ; Husain, "Your AI Product Needs Evals"). Use it for the eval-criteria exercise below.
 
 **Exercises**
 1. For each concept, write 1–3 acceptance scenarios from its operational principle.
@@ -171,14 +171,14 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 - Design tools as interfaces: names, parameters, errors, and descriptions for a model.
 
 **Study**
-- Anthropic, "Building effective agents".
+- Anthropic, "Building effective AI agents".
 - Anthropic, "Writing effective tools for agents".
 - Model Context Protocol specification: overview.
 
 **Exercises**
 1. For each concept action that uses an LLM, put it on the continuum. Write one sentence for why. Compare with the agent type that you gave the step in Module 1.
 2. Design the tool interfaces that your system needs. Write each tool description for a model reader.
-3. Build a minimal walking skeleton: one end-to-end path through the system with no retrieval.
+3. Build a minimal walking skeleton: the smallest version that runs end to end, one path through the system, with no retrieval.
 
 **Deliverable**
 - ADR-001: overall control structure (workflow, agent, or mix).
@@ -240,7 +240,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 - Measure the business outcome from Module 1 against its baseline.
 
 **Study**
-- Reading list, Module 3: evaluation practice and observability.
+- Reading list, Module 3: evaluation practice (Hamel Husain, "Your AI Product Needs Evals"). For tracing and observability tooling, use your LLM provider's or observability platform's own documentation; this course does not list a fixed source because tooling changes often.
 
 **Exercises**
 1. Add tracing: inputs, outputs, tokens, latency, cost, tool calls, per request.
