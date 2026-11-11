@@ -130,9 +130,10 @@ Point out:
 
 ### How to teach it
 - **Recall (5 min):** The two questions above.
+- **Warm-up (5 min):** Pairs look at their feature list and mark which items are units of behavior with a purpose, and which are only screens or data.
 - **Explain (20 min):** Present the five parts and the independence test with `Approving`.
 - **Exercise 1 (25 min):** Groups choose a familiar product (an email client, a chat tool, an AI assistant). They find 5 concepts and write one purpose sentence for each.
-- **Exercise 2 (30 min):** Each group writes one full concept spec. Then they swap with another group. The other group tries to find a reference to a different concept. If they find one, the spec is not independent.
+- **Exercise 2 (25 min):** Each group writes one full concept spec. Then they swap with another group. The other group tries to find a reference to a different concept. If they find one, the spec is not independent.
 - **Close (10 min):** Discuss the specs that failed the independence test.
 
 ### Expert depth
