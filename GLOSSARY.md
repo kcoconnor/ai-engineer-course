@@ -72,18 +72,23 @@ The **Module** column shows where the course introduces the term.
 | Term | Definition | Module |
 |---|---|---|
 | Augmented LLM | A model plus context, tools, and memory. The basic building block. (Anthropic, 2024.) | 3 |
-| Workflow–agent continuum | Single call, prompt chain, routing, parallelization, orchestrator-workers, evaluator-optimizer, autonomous agent. Each step to the right adds flexibility, cost, latency, and risk. | 3 |
+| Workflow–agent continuum | Single call, prompt chain, routing, parallelization, orchestrator-workers, evaluator-optimizer, autonomous agent. Each step to the right adds flexibility, cost, latency, and risk. The five workflow patterns and their order come from Anthropic's "Building effective agents" (2024). The name "continuum" and "single call" as its first step are this course's own framing, not Anthropic's wording. | 3 |
 | Workflow | A system whose steps you can list in advance. | 3 |
 | Agent (architecture) | A system in which the model chooses the steps as it goes. | 3 |
+| Walking skeleton | A minimal end-to-end path through the whole system, built before adding retrieval or other features. It proves the pieces connect before the system gets complex. | 3 |
 | ADR | Architecture decision record (T3). One decision, its context, the options, and the reason, traced to a design property. | 3 |
 | Lexical search | Search for exact terms, names, and codes (for example, BM25). | 3 |
 | Dense search | Search by meaning, with embeddings. | 3 |
 | Hybrid search | Lexical and dense search combined. | 3 |
 | Reranking | Reordering the top search results with a stronger model. | 3 |
+| Prompt caching | A provider stores a processed copy of content it has already seen, so a later call that starts with the same content skips reprocessing and costs less. Put stable content first and variable content last, so the match is not broken. | 3 |
 | Recall@k | The share of questions where the correct source appears in the top k results. Measures retrieval alone. | 3 |
 | Durable execution | Workflow state that is persisted, so a long task can resume after a failure. | 3 |
+| Digest | The SHA-256 hash of the exact payload a human reviewed. The system checks it again at decision time and at send time, so an approval cannot be reused on a changed payload. | 3 |
+| Idempotency key | A value a client sends with a request so a provider can recognize a retried request and avoid doing it twice. Needed because a crash or timeout can leave a delivery outcome ambiguous. | 3 |
 | Approver's view | What the approver sees, decides, overrides, and escalates. Shows the real action, not only a model summary. | 3 |
 | Error analysis | Reading real traces, putting failures into categories, and fixing the largest category first. | 3 |
+| KPI | Key performance indicator. An outcome measure put on the same dashboard as quality, cost, and latency, and tracked against the Module 1 baseline. | 3 |
 
 ## Module 4 – Engineering
 
