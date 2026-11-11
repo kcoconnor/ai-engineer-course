@@ -205,8 +205,9 @@ From *The Essence of Software*. Jackson names two peer defects, overloading and 
 
 ### How to teach it
 - **Recall (5 min):** The two questions above.
+- **Warm-up (5 min):** Pairs look at their concept inventory, choose two concepts that must work together, and say how they connect today.
 - **Explain (20 min):** Syncs and the worked example.
-- **Exercise (40 min):** Each learner writes the syncs for their own anchor system. Partners read only the syncs and describe the system's behavior. The author checks the description.
+- **Exercise (35 min):** Each learner writes the syncs for their own anchor system. Partners read only the syncs and describe the system's behavior. The author checks the description.
 - **Defect hunt (15 min):** Each learner finds one defect from the table in a real system at your organization.
 - **Close (10 min):** Share defects. Do not name teams. Focus on the pattern.
 
