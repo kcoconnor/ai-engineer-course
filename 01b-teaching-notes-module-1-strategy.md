@@ -83,8 +83,8 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 - Learners choose one workflow and defend the choice.
 
 ### Key points
-1. **Score on five dimensions:** impact (outcome value), feasibility (data, systems, skills), strategic fit, repeatability (how often, how similar), and risk.
-2. **Split risk in two:** consequence of an error (business risk) and the lethal trifecta legs present (security risk). A workflow with all three legs is not excluded, but it needs approval steps and more engineering in Module 4.
+1. **Score on six dimensions:** impact (outcome value), feasibility (data, systems, skills), strategic fit, repeatability (how often, how similar), business risk, and security risk.
+2. **Risk is two of those six dimensions:** consequence of an error (business risk) and the lethal trifecta legs present (security risk: private data, untrusted content, and external communication together, which can let data leak out). A workflow with all three legs is not excluded, but it needs approval steps and more engineering in Module 4.
 3. **Score steps, not only workflows.** A workflow with low repeatability overall may contain highly repeatable steps.
 4. **First-system rule.** High impact, high feasibility, recoverable failures. Not mission-critical.
 
