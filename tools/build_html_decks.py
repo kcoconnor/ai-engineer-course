@@ -2,8 +2,7 @@
 
 The Markdown in slides/ is the source. Edit it there, then run from the repository root:
 
-    python3 tools/build_html_decks.py          # build presentations/
-    python3 tools/build_html_decks.py --check  # fail if presentations/ is out of date (used in CI)
+    python3 tools/build_html_decks.py   # build presentations/ (not committed; GitHub Pages builds it on each push to main)
 
 Requires Node.js (npx). The Marp CLI version is pinned so the output is the same on every machine.
 """
@@ -13,7 +12,6 @@ import re
 import shutil
 import subprocess
 import sys
-import tempfile
 
 MARP = ["npx", "-y", "@marp-team/marp-cli@4.5.1"]
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -92,20 +90,6 @@ def main():
     # The review decks are generated from reviews/*.md first.
     subprocess.run([sys.executable, str(ROOT / "tools" / "build_review_decks.py")], check=True, cwd=ROOT,
                    capture_output=True)
-    if "--check" in sys.argv:
-        with tempfile.TemporaryDirectory() as tmp:
-            fresh = pathlib.Path(tmp)
-            build(fresh)
-            want = {p.name: p.read_bytes() for p in fresh.iterdir()}
-            have = {p.name: p.read_bytes() for p in OUT.glob("*")} if OUT.exists() else {}
-            stale = sorted(n for n in set(want) | set(have) if want.get(n) != have.get(n))
-            if stale:
-                print("presentations/ is out of date. Run: python3 tools/build_html_decks.py")
-                for n in stale:
-                    print("  " + n)
-                sys.exit(1)
-            print(f"presentations/ is up to date ({len(want)} files)")
-        return
     if OUT.exists():
         shutil.rmtree(OUT)
     items = build(OUT)

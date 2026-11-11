@@ -32,5 +32,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: HTML presentations match the Markdown decks
-        run: python3 tools/build_html_decks.py --check
+      - name: Every deck builds to HTML
+        run: python3 tools/build_html_decks.py

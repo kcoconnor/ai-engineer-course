@@ -1,6 +1,6 @@
 # Session Slides (Marp)
 
-**Present from HTML:** every deck is published as an HTML presentation at https://kcoconnor.github.io/ai-engineer-course/ (files in [`presentations/`](../presentations/)). Open a deck in a browser. Press **F** for full screen, the arrow keys to move, and **P** for presenter view with speaker notes and a timer.
+**Present from HTML:** every deck is published as an HTML presentation at https://kcoconnor.github.io/ai-engineer-course/. Open a deck in a browser. Press **F** for full screen, the arrow keys to move, and **P** for presenter view with speaker notes and a timer.
 
 The Markdown files here are the source. Edit them, never the HTML.
 
@@ -40,7 +40,7 @@ After you change any deck or review file, run from the repository root:
 python3 tools/build_html_decks.py
 ```
 
-This rebuilds the review decks, then writes one HTML file per deck and an `index.html` into `presentations/`. Commit the result. CI runs `python3 tools/build_html_decks.py --check` and fails if `presentations/` does not match the Markdown. A push to `main` that changes `presentations/` publishes it to GitHub Pages.
+This rebuilds the review decks, then writes one HTML file per deck and an `index.html` into `presentations/` for local use. Do not commit `presentations/`; it is ignored by Git. Commit the Markdown. A push to `main` that changes `slides/`, `reviews/`, or `tools/` rebuilds the HTML and publishes it to GitHub Pages. CI checks that every deck builds.
 
 ## Preview while you edit
 
