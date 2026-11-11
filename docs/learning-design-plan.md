@@ -1,6 +1,6 @@
 # Learning Design Upgrade Plan
 
-Status: Phases 1 to 5 done (all four modules; fact-check items resolved during the readability loop). Phase 6 (cumulative review sessions) in progress.
+Status: Phases 1 to 6 done. All four modules have recall, self-checks, and cards; two cumulative review sessions exist.
 
 ## Why
 

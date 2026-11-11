@@ -75,6 +75,7 @@ Learners who leave a session able to explain an idea often cannot recall it thre
 | Spacing | Recall slide Q1 reaches back 1 week. Q2 reaches back 2 or more weeks. | Keep both questions. The older one is the important one. |
 | Interleaving | Mixed review at the end of each module self-check | Learners first decide which idea applies, then answer. |
 | Self-check | `checks/module-N.md`, each week and again one week later | Ask learners for their score in the pair review. |
+| Cumulative review | `reviews/review-a-modules-1-2.md` (start of Week 6), `reviews/review-b-all-modules.md` (after Week 13, and 3 months later) | Run them as sessions with no new material. Record the Review B quiz scores. |
 | Reference card | `cards/module-N.md` | Learners review from the card, not from the teaching notes. |
 | Learning log | Template T12 | Read it before the pair review. Repeat misses tell you what to re-teach. |
 
@@ -153,4 +154,4 @@ Collect these measures before the course and 3 months after:
 | Security | Number of AI systems with a current threat model; attack cases in CI |
 | Cost | Cost per task on systems built by alumni, before and after optimization |
 | Reach | Number of alumni who have taught at least one session |
-| Retention | Score on a no-notes recall check of Modules 1–2 at the end of the course and 3 months after |
+| Retention | Review session B quiz score (no notes) after Week 13 and again 3 months later, with the same 16 questions |
