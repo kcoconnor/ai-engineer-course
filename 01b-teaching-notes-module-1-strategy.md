@@ -56,7 +56,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 ### How to teach it
 - **Open (15 min):** Ask: "Name an AI tool that your team adopted. Did the team's main result change?" Most answers: the tool helped individuals, but the result did not change. This is the bolt-on effect.
 - **Explain (20 min):** The four points. Use one case from the HDSR article (for example, the safety-audit case: report creation from about 24 hours to about 2 hours). State that the figures are practitioner-reported.
-- **Exercise (40 min):** Pairs interview each other for 10 minutes each about a workflow they know. The interviewer maps it. Then they swap. Each map must show at least one wait, one rework loop, and one tacit decision.
+- **Exercise (40 min):** Pairs interview each other for 10 minutes each about a workflow they know. The interviewer maps it on the current-state workflow map (T9, Part A). Then they swap. Each map must show at least one wait, one rework loop, and one tacit decision.
 - **Close (15 min):** Each learner rewrites one output as an outcome.
 
 ### Interview prompts for learners to use
@@ -133,7 +133,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 
 ### How to teach it
 - **Explain (25 min):** Agent OS, agent types, and the tensions table.
-- **Exercise (45 min):** Each learner draws the future-state workflow and classifies each step. Partners challenge every Orchestrator. They also challenge every step that has all three trifecta legs and no human checkpoint.
+- **Exercise (45 min):** Each learner draws the future-state workflow on the workflow map (T9, Part B) and classifies each step. Partners challenge every Orchestrator. They also challenge every step that has all three trifecta legs and no human checkpoint.
 - **Close (20 min):** Each learner writes the role definition for one human role.
 
 ### Expert depth
