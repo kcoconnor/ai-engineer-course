@@ -2,6 +2,8 @@
 
 Use these notes after you complete Module 2 yourself. Each session is approximately 90 minutes. Adapt the examples to your organization.
 
+Use the terms in [GLOSSARY.md](GLOSSARY.md). Learners check their own recall each week with [checks/module-2.md](checks/module-2.md). The one-page summary for review is [cards/module-2.md](cards/module-2.md).
+
 **Stability:** Nearly evergreen. Review every 2–3 years.
 
 ---
@@ -30,6 +32,14 @@ Agents now write code faster than people can review it. The leverage moves to th
 
 ## Session 2.1 – Why design is the leverage point
 
+**Primary source:** Meng and Jackson, ["What You See Is What It Does: A Structural Pattern for Legible Software"](https://arxiv.org/abs/2508.14511) (2025). Read the abstract and Section 1. It states why LLM coders demand a new look at software structure.
+
+### Recall warm-up (5 min, no notes)
+1. Name the five agent types. Say what each one does. *(Week 2)*
+   - Assistant drafts, summarizes, retrieves. Analyst analyzes and recommends. Tasker does one bounded action through tools. Orchestrator plans and runs multi-step work. Guardian monitors other agents.
+2. What is the difference between an outcome and an output? Give one of each from your workflow. *(Week 1)*
+   - An output is what a step produces. An outcome is what the business needs, and it is measurable.
+
 ### Objectives
 - Learners can explain why a specification matters more with coding agents than without them.
 - Learners can name the six failure symptoms from the course summary and trace each to a missing design.
@@ -41,7 +51,8 @@ Agents now write code faster than people can review it. The leverage moves to th
 4. Knowledge of a framework expires. Knowledge of why a design is right does not.
 
 ### How to teach it
-- **Open (15 min):** Ask each learner: "Describe an AI project that worked in demo and failed in production." Write the failures on a board. Group them. Most groups map to "nobody defined correct".
+- **Recall (5 min):** The two questions above. Learners write alone, then compare with a partner.
+- **Open (10 min):** Ask each learner: "Describe an AI project that worked in demo and failed in production." Write the failures on a board. Group them. Most groups map to "nobody defined correct".
 - **Explain (20 min):** Present the three layers and their rates of change (principles, patterns, techniques). Use a dated example from your organization: a technique you used in 2023 that you no longer use.
 - **Exercise (40 min):** Pairs take one failure from the board. They write one sentence: "The system was correct if ___." Most pairs find this hard. That difficulty is the point of the session.
 - **Close (15 min):** Each pair reads its sentence. The group asks: "Can you check this automatically?"
@@ -60,6 +71,14 @@ Agents now write code faster than people can review it. The leverage moves to th
 ---
 
 ## Session 2.2 – Concepts: purpose, principle, state, actions
+
+**Primary source:** Jackson, ["On concept design"](https://essenceofsoftware.com/tutorials/concept-basics/) (essenceofsoftware.com tutorial). Then *The Essence of Software* (2021), Part I.
+
+### Recall warm-up (5 min, no notes)
+1. Why does a coding agent make a vague specification more dangerous, not less? *(Session 2.1)*
+   - The agent amplifies the spec it gets. A vague spec gives plausible wrong code, faster than people can review it.
+2. Name the three legs of the lethal trifecta. *(Week 1)*
+   - Access to private data. Exposure to untrusted content. Ability to communicate externally.
 
 ### Objectives
 - Learners can write a complete concept specification.
@@ -107,10 +126,11 @@ Point out:
 - The rule "approver is not the requester" is a refusal. It lives in a precondition.
 
 ### How to teach it
+- **Recall (5 min):** The two questions above.
 - **Explain (20 min):** Present the six parts with `Approving`.
 - **Exercise 1 (25 min):** Groups choose a familiar product (an email client, a chat tool, an AI assistant). They find 5 concepts and write one purpose sentence for each.
 - **Exercise 2 (30 min):** Each group writes one full concept spec. Then they swap with another group. The other group tries to find a reference to a different concept. If they find one, the spec is not independent.
-- **Close (15 min):** Discuss the specs that failed the independence test.
+- **Close (10 min):** Discuss the specs that failed the independence test.
 
 ### Expert depth
 - Purposes and operational principles are the parts that people skip. They are also the parts that make concepts reusable and checkable. Push on them.
@@ -128,6 +148,16 @@ Point out:
 
 ## Session 2.3 – Composition with synchronizations
 
+**Primary source:** Meng and Jackson, ["What You See Is What It Does"](https://arxiv.org/abs/2508.14511) (2025). Read the sections on synchronizations and the RealWorld case study.
+
+### Recall warm-up (5 min, no notes)
+1. Name the six parts of a concept. *(Week 3)*
+   - Name and type parameters, purpose, operational principle, state, actions, independence.
+2. Which kind of step in your Module 1 future-state workflow becomes a use of `Approving`? *(Week 2)*
+   - Each Human-approves-Agent step.
+
+Ask: "Which part did you forget?" Most learners forget the operational principle. Tell them it becomes the acceptance scenarios in Session 2.4.
+
 ### Objectives
 - Learners compose independent concepts without shared state.
 - Learners can read and write a synchronization.
@@ -136,7 +166,7 @@ Point out:
 1. Concepts do not call each other. Synchronizations connect them.
 2. A synchronization says: "When action A happens in concept 1, and condition C holds, then action B happens in concept 2."
 3. This makes the behavior of the full system readable in one place: the list of syncs.
-4. Meng and Jackson (2025) call this structure "what you see is what it does": the code that you read is the behavior that runs.
+4. [Meng and Jackson (2025)](https://arxiv.org/abs/2508.14511) call this structure "what you see is what it does": the code that you read is the behavior that runs.
 
 ### Worked example
 
@@ -170,10 +200,11 @@ From *The Essence of Software*:
 | Redundancy | Two concepts serve the same purpose. | Two separate approval flows for drafts and for refunds. |
 
 ### How to teach it
+- **Recall (5 min):** The two questions above.
 - **Explain (20 min):** Syncs and the worked example.
 - **Exercise (40 min):** Each learner writes the syncs for their own anchor system. Partners read only the syncs and describe the system's behavior. The author checks the description.
 - **Defect hunt (20 min):** Each learner finds one defect from the table in a real system at your organization.
-- **Close (10 min):** Share defects. Do not name teams. Focus on the pattern.
+- **Close (5 min):** Share defects. Do not name teams. Focus on the pattern.
 
 ### Expert depth
 - The LLM inside an action is the main source of non-determinism. The syncs are deterministic. This separation is the reason concept design works for AI systems: you can test syncs exactly and evaluate actions statistically.
@@ -182,6 +213,16 @@ From *The Essence of Software*:
 ---
 
 ## Session 2.4 – Correctness, refusals, and cost, before code
+
+**Primary source:** Hamel Husain, ["Your AI Product Needs Evals"](https://hamel.dev/blog/posts/evals/). It shows how a quality criterion becomes an eval. Module 3 builds on it.
+
+### Recall warm-up (5 min, no notes)
+1. Concept A must cause an action in concept B. Where does that rule live? Why not inside A? *(Week 4)*
+   - In a synchronization. If A calls B, A is no longer independent. A sync keeps the behavior readable in one place.
+2. What is a baseline? Why must you measure it before you build? *(Week 2)*
+   - The measured value of an outcome before the system exists. Every claimed gain is compared with it. After launch, the old process is gone.
+
+Question 2 sets up the purpose-to-outcome trace in this session.
 
 ### Objectives
 - Learners turn principles into acceptance scenarios.
@@ -217,10 +258,11 @@ The design sets most of the cost. Ask:
 Each business outcome from Module 1 must have at least one concept that serves it. Each concept must serve an outcome, or have a stated supporting role (for example, security or audit). A concept with neither is a candidate for removal. An outcome with no concept is a gap in the design.
 
 ### How to teach it
+- **Recall (5 min):** The two questions above.
 - **Explain (20 min):** The five points with your worked example.
 - **Exercise 1 (25 min):** Learners write acceptance scenarios and refusals for their system.
 - **Exercise 2 (25 min):** Learners hand one concept spec to a coding agent. They compare the output with their intent and note each difference.
-- **Close (20 min):** Discuss: "Was the difference a spec gap or an agent error?" Most are spec gaps.
+- **Close (15 min):** Discuss: "Was the difference a spec gap or an agent error?" Most are spec gaps.
 
 ### Expert depth
 - A good test of a spec: two independent implementations (one human, one agent) pass the same acceptance scenarios.

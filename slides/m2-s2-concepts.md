@@ -58,7 +58,8 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Warm-up: features vs. concepts | Pairs |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up: features vs. concepts | Pairs |
 | 10–30 | The six parts; worked example `Approving` | Explain + check |
 | 30–55 | Find 5 concepts in a product | Groups |
 | 55–80 | Write one full spec; swap and test | Groups |
@@ -67,6 +68,26 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 
 <!--
 Explanation is 20 minutes. Practice is 55 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Why does a coding agent make a vague specification **more** dangerous, not less?
+2. Name the three legs of the lethal trifecta.
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Session 2.1. Q2 is from Week 1.
+Answer to 1: The agent amplifies the spec it gets. A vague spec gives plausible code that does the wrong thing, faster than people can review it.
+Answer to 2: Access to private data. Exposure to untrusted content. Ability to communicate externally.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Questions reach back 1 week and 2 or more weeks on purpose. Do not skip this slide when time is short. Cut the warm-up instead.
 -->
 
 ---
@@ -296,3 +317,4 @@ Good answer to 2: "No. It is a data entity. Concepts such as Subscribing or Bill
 - Daniel Jackson, *The Essence of Software: Why Concepts Matter for Great Design*, Princeton University Press, 2021.
 - essenceofsoftware.com.
 - Course files: `02-teaching-notes-module-2-design.md`, `05-templates.md` (T1).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-2.md`.

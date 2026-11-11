@@ -57,7 +57,8 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–15 | Warm-up: demo worked, production failed | Discussion |
+| 0–5 | Recall: no notes | Individual |
+| 5–15 | Warm-up: demo worked, production failed | Discussion |
 | 15–35 | Specs, coding agents, and the three layers | Explain + check |
 | 35–75 | Define "correct" for one failure | Pairs |
 | 75–85 | Debrief and takeaways | Group |
@@ -65,6 +66,27 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 
 <!--
 Explanation is 20 minutes. Practice and discussion are 65 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Name the five agent types. Say what each one does in a few words.
+2. What is the difference between an **outcome** and an **output**? Give one of each from your workflow.
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 2. Q2 is from Week 1.
+Answer to 1: Assistant drafts, summarizes, retrieves. Analyst analyzes and recommends. Tasker does one bounded action through tools. Orchestrator plans and runs multi-step work. Guardian monitors other agents (not a security boundary).
+Answer to 2: An output is what a step produces (a draft). An outcome is what the business needs (a decision made faster). Outcomes are measurable.
+If most learners miss Q1, spend 2 minutes on it. Module 2 maps steps to concepts, so the types matter today.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Questions reach back 1 week and 2 or more weeks on purpose. Do not skip this slide when time is short. Cut the warm-up instead.
 -->
 
 ---
@@ -249,3 +271,4 @@ Use the answers to 2 as examples in Session 2.2.
 - Daniel Jackson, *The Essence of Software: Why Concepts Matter for Great Design*, Princeton University Press, 2021.
 - essenceofsoftware.com.
 - Course files: `00-course-summary.md`, `02-teaching-notes-module-2-design.md`.
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-2.md`.

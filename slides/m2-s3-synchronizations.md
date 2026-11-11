@@ -59,7 +59,8 @@ Tell learners that the exit ticket checks objectives 2 and 3.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Warm-up: how do your concepts connect? | Pairs |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up: how do your concepts connect? | Pairs |
 | 10–30 | Syncs; worked example; where the LLM sits | Explain + check |
 | 30–65 | Write syncs for your system; partner reads them | Pairs |
 | 65–80 | Defect hunt | Individual + group |
@@ -68,6 +69,27 @@ Tell learners that the exit ticket checks objectives 2 and 3.
 
 <!--
 Explanation is 20 minutes. Practice is 55 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Name the six parts of a concept.
+2. Which kind of step in your Module 1 future-state workflow becomes a use of the `Approving` concept?
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 3. Q2 is from Week 2.
+Answer to 1: Name and type parameters, purpose, operational principle, state, actions, independence.
+Answer to 2: Each Human-approves-Agent step.
+Ask: "Which part did you forget?" Most learners forget the operational principle. Say that it becomes the acceptance scenarios in Session 2.4.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Questions reach back 1 week and 2 or more weeks on purpose. Do not skip this slide when time is short. Cut the warm-up instead.
 -->
 
 ---
@@ -311,3 +333,4 @@ Good answer to 2: "Inside the implementation of an action, not as a concept of i
 - Daniel Jackson, *The Essence of Software: Why Concepts Matter for Great Design*, Princeton University Press, 2021.
 - Eagon Meng and Daniel Jackson, "What You See Is What It Does: A Structural Pattern for Legible Software," arXiv:2508.14511, 2025.
 - Course files: `02-teaching-notes-module-2-design.md`, `05-templates.md` (T2).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-2.md`.
