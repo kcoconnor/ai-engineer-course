@@ -108,6 +108,8 @@ Date: <YYYY-MM-DD>
 <Eval results, benchmarks, or traces that support the decision.>
 ```
 
+See `reference/artifacts/design.md` for a worked T1-T3 example.
+
 ---
 
 ## T4 – Threat model
@@ -137,6 +139,8 @@ Date: <YYYY-MM-DD>
 ## 6. Residual risk
 <What remains. Who accepted it.>
 ```
+
+See `reference/artifacts/threat-model.md` for a worked T4 example.
 
 ---
 
@@ -178,6 +182,8 @@ Date: <YYYY-MM-DD>
 | Date | Traces read | Top failure category | Fix | Result |
 |---|---|---|---|---|
 ```
+
+See `reference/artifacts/evaluation.md` for a worked T5-T7 example.
 
 ---
 
