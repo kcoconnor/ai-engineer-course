@@ -1,6 +1,6 @@
 # Learning Design Upgrade Plan
 
-Status: Phase 1 (foundation and Module 2 pilot) in progress on branch `learning-design`.
+Status: Phase 1 (foundation and Module 2 pilot) done. Phase 5 fact-check items resolved early during the readability loop (see Issues). Phases 2, 3, 4 and 6 not started.
 
 ## Why
 
