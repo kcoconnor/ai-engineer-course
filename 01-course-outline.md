@@ -138,7 +138,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 - Hand the specification to a coding agent and compare the result with your intent.
 
 **Study**
-- Hamel Husain, "Your AI Product Needs Evals" (reading list, Module 3). Use it for the eval-criteria exercise below.
+- Reading list, Module 2: "Specification and evals (Week 5)" table (GitHub Spec Kit; Husain and Shankar's evals FAQ; Husain, "Your AI Product Needs Evals"). Use it for the eval-criteria exercise below.
 
 **Exercises**
 1. For each concept, write 1–3 acceptance scenarios from its operational principle.

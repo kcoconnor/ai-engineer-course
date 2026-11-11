@@ -29,6 +29,14 @@ Start with the first row of each module's table. That row is the core, required 
 | [MIT EECS News: "MIT researchers propose a new model for legible, modular software"](https://www.eecs.mit.edu/mit-researchers-propose-a-new-model-for-legible-modular-software/) | A short summary of the paper above. Good for learners who need an introduction first. |
 | Daniel Jackson, *Software Abstractions: Logic, Language, and Analysis* (Alloy), MIT Press, 2nd ed. 2012 | Optional. For learners who want formal specification and model checking. |
 
+### Specification and evals (Week 5)
+
+| Source | Use it for |
+|---|---|
+| GitHub, [Spec Kit](https://github.com/github/spec-kit), and the announcement ["Spec-driven development with AI: Get started with a new open source toolkit"](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/) | A real toolkit that turns a written spec into a plan, then tasks, then code with a coding agent. Shows what "hand the spec to a coding agent" looks like in practice. |
+| Hamel Husain and Shreya Shankar, ["AI Evals: Everything You Need to Know"](https://hamel.dev/blog/posts/evals-faq/) | A long FAQ that answers practical questions on writing eval criteria and test cases. Use it when you write the eval criterion that defines "correct enough" for an action. |
+| Hamel Husain, ["Your AI Product Needs Evals"](https://hamel.dev/blog/posts/evals/) | Already cited in Module 3. Read it again here: it is the basic case for why you need evals at all, before you write your first cost model. |
+
 ## Module 3 – Systems
 
 | Source | Use it for |
