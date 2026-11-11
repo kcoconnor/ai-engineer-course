@@ -43,7 +43,7 @@ Real systems mix these. Teach learners to read the mix from the design.
 
 ### Agent types and the continuum
 
-Module 1 classified each step by agent type (from the HDSR article). Map each type to an architecture. The type says *what the step does*. The continuum says *how to build it*.
+Module 1 classified each step by agent type (from the HDSR article). Map each type to an architecture. The type says *what the step does*. The continuum (the workflow-agent continuum: a line of build options from a single fixed call up to a full autonomous agent, explained in Session 3.1 below) says *how to build it*.
 
 | Agent type (Module 1) | Typical place on the continuum | Note |
 |---|---|---|
