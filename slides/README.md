@@ -1,5 +1,9 @@
 # Session Slides (Marp)
 
+**Present from HTML:** every deck is published as an HTML presentation at https://kcoconnor.github.io/ai-engineer-course/ (files in [`presentations/`](../presentations/)). Open a deck in a browser. Press **F** for full screen, the arrow keys to move, and **P** for presenter view with speaker notes and a timer.
+
+The Markdown files here are the source. Edit them, never the HTML.
+
 One Marp deck for each 90-minute class session. Each deck follows the teaching notes for its session.
 
 ## Decks
@@ -26,9 +30,19 @@ One Marp deck for each 90-minute class session. Each deck follows the teaching n
 | Reviews | Review A: Modules 1–2 (start of Week 6) | [review-a-modules-1-2.md](review-a-modules-1-2.md) |
 | | Review B: all modules (after Week 13; repeat at 3 months) | [review-b-all-modules.md](review-b-all-modules.md) |
 
-The review decks are generated from `reviews/*.md`, which hold the questions and answers. Edit the review file, then run `python3 tools/build_review_decks.py` from the repository root.
+The review decks are generated from `reviews/*.md`, which hold the questions and answers. Edit the review file, not the review deck.
 
-## Render the slides
+## Build the HTML presentations
+
+After you change any deck or review file, run from the repository root:
+
+```bash
+python3 tools/build_html_decks.py
+```
+
+This rebuilds the review decks, then writes one HTML file per deck and an `index.html` into `presentations/`. Commit the result. CI runs `python3 tools/build_html_decks.py --check` and fails if `presentations/` does not match the Markdown. A push to `main` that changes `presentations/` publishes it to GitHub Pages.
+
+## Preview while you edit
 
 Option 1 – VS Code:
 1. Install the "Marp for VS Code" extension.
@@ -37,9 +51,7 @@ Option 1 – VS Code:
 
 Option 2 – Command line:
 ```bash
-npx @marp-team/marp-cli@4.5.1 m1-s1-audit.md --html          # HTML
 npx @marp-team/marp-cli@4.5.1 m1-s1-audit.md --pdf --pdf-notes  # PDF with speaker notes
-npx @marp-team/marp-cli@4.5.1 -I . -o out/ --html               # all decks
 ```
 
 ## Speaker notes
