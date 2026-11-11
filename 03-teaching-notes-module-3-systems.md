@@ -61,7 +61,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ## Session 3.1 – Building blocks and the workflow–agent continuum
 
-**Primary source:** Anthropic, ["Building effective AI agents"](https://www.anthropic.com/research/building-effective-agents) (2024). Then ["Writing effective tools for agents"](https://www.anthropic.com/engineering/writing-tools-for-agents) (2025) for the tool clinic.
+**Primary source:** Anthropic, ["Building effective AI agents"](https://www.anthropic.com/research/building-effective-agents) (2024). **[dated November 2026]** The page says its tooling details changed after December 2024. Read it for the patterns, which still hold. Then ["Writing effective tools for agents"](https://www.anthropic.com/engineering/writing-tools-for-agents) (2025) for the tool clinic.
 
 ### Recall warm-up (5 min, no notes)
 1. Name the three things that specify an LLM-backed action. *(Week 5, Module 2)*
@@ -79,7 +79,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 2. **The rule.** Start at the left. Move right only when the design requires it.
 3. **Context engineering.** The model sees only its context. Decide what goes in, in what order, and what stays out. This is a design decision, not a prompt trick.
 4. **Tools are interfaces for a model.** Write clear names, few parameters, specific descriptions, and error messages that tell the model what to do next. Return only what the model needs.
-5. **Protocols.** The Model Context Protocol (MCP) standardizes how tools and data connect to models. It changes the integration cost, not the design reasoning.
+5. **Protocols.** The Model Context Protocol (MCP) standardizes how tools and data connect to models. It changes the integration cost, not the design reasoning. **[dated November 2026]**
 
 ### How to teach it
 - **Recall (5 min):** The two questions above. Question 2 sets up today's mapping from agent type to continuum.
@@ -94,6 +94,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 |---|---|
 | "Agents are the modern way. Workflows are old." | Workflows are cheaper, faster, and easier to test. Use an agent only where the steps are not known in advance. |
 | "More tools make the agent more capable." | More tools make selection harder and increase the attack surface. |
+| "A bigger model will pick the right tool." | A bigger model does not fix a bad tool interface. Fix the names, the descriptions, and the number of tools first. |
 | "The framework handles context." | The framework assembles context. You still decide what belongs in it. |
 
 ### Expert depth

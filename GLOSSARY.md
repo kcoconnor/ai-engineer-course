@@ -74,6 +74,7 @@ The **Module** column shows where the course introduces the term.
 
 | Term | Definition | Module |
 |---|---|---|
+| MCP (Model Context Protocol) | An open standard for how tools and data connect to models. It changes the integration cost, not the design reasoning. **[dated November 2026]** | 3 |
 | Augmented LLM | A model plus context, tools, and memory. The basic building block. (Anthropic, 2024.) | 3 |
 | Workflow–agent continuum | Single call, prompt chain, routing, parallelization, orchestrator-workers, evaluator-optimizer, autonomous agent. Each step to the right adds flexibility, cost, latency, and risk. The five workflow patterns and their order come from Anthropic's "Building effective agents" (2024). The name "continuum" and "single call" as its first step are this course's own framing, not Anthropic's wording. | 3 |
 | Workflow | A system whose steps you can list in advance. | 3 |

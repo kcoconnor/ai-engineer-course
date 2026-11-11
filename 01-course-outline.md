@@ -245,7 +245,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 **Exercises**
 1. Add tracing: inputs, outputs, tokens, latency, cost, tool calls, per request.
 2. Turn the Module 2 acceptance scenarios into automated evals.
-3. Do an error analysis on 50 real or realistic traces. Categorize failures. Fix the top category.
+3. Do an error analysis on 30 real or realistic traces. Bring them to Session 3.4. Categorize failures. Fix the top category.
 4. Add the Module 1 outcome KPIs to the dashboard, next to quality, cost, and latency. Record approval rates and override rates.
 5. Write ADR-004 for deployment and operations.
 

@@ -140,7 +140,7 @@ single call → prompt chain → routing → parallelization
 Each step to the right adds **flexibility**.
 Each step to the right also adds **cost, latency, and risk**.
 
-<p class="small">Source: Anthropic, "Building effective agents"</p>
+<p class="small">Pattern order: Anthropic, "Building effective AI agents". The "continuum" framing and the single-call step are this course's.</p>
 
 <!--
 Give one example at each step, from one domain (e.g. support tickets):
@@ -237,7 +237,7 @@ A good tool has:
 More tools make selection harder and increase the attack surface.
 
 <!--
-Mention MCP briefly: a protocol standardizes how tools and data connect. It changes integration cost, not the design reasoning.
+Mention MCP briefly: a protocol standardizes how tools and data connect. It changes integration cost, not the design reasoning. [dated November 2026]
 -->
 
 ---
@@ -360,7 +360,7 @@ Read all tickets before Session 3.2.
 
 ## Sources
 
-- Anthropic, "Building effective agents," 2024.
+- Anthropic, "Building effective AI agents," 2024. **[dated November 2026]** The page says its tooling details changed after December 2024; the patterns still hold.
 - Anthropic, "Writing effective tools for agents," 2025.
 - Model Context Protocol specification: overview.
 - Kruhse-Lehtonen, Hofmann et al., "The Agent-Centric Enterprise," *HDSR* 8.1, 2026 (agent types).

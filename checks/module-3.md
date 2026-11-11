@@ -48,7 +48,7 @@ A. The model plus the context it sees, the tools it can call, and the memory it 
 
 <details><summary>Answer</summary>
 
-C. More tools make selection harder and increase the attack surface. Tools are interfaces for a model: clear names, few parameters, specific descriptions, and error messages that say what to do next.
+C. More tools make selection harder and increase the attack surface. A bigger model does not fix a bad tool interface. Tools are interfaces for a model: clear names, few parameters, specific descriptions, and error messages that say what to do next.
 </details>
 
 **4.** Write the steps of the workflow–agent continuum, from left to right.
@@ -174,10 +174,10 @@ D. A durable workflow engine persists the workflow state, so the task can resume
 
 **3.** When are multiple agents justified?
 
-- A. When the team wants more flexibility
-- B. When parts need their own tools
-- C. When one agent feels too slow
-- D. When the framework supports them well
+- A. When the team wants much more flexibility
+- B. When parts need separate context and tools
+- C. When one agent feels a bit slow
+- D. When the framework supports them very well
 
 <details><summary>Answer</summary>
 

@@ -17,7 +17,8 @@ An architecture is a set of reasons. Each component traces to a property of the 
 | Actions with high consequence | Human approval (`Approving`) | Low-risk, reversible actions |
 | Long tasks that must survive failure | Durable execution | Single-request interactions |
 
-## The continuum (order from Anthropic, "Building effective AI agents")
+## The continuum
+The five workflow patterns and their order come from Anthropic, "Building effective AI agents". The name "continuum" and "single call" as the first step are this course's framing.
 Single call → prompt chain → routing → parallelization → orchestrator-workers → evaluator-optimizer → autonomous agent. **Rule:** start at the left. Move right only when the design requires it.
 
 | Agent type (Module 1) | Usual place |
