@@ -96,6 +96,8 @@ A concept has six parts:
 
 ### Worked example: `Approving [Actor, Item]`
 
+Notation key for the state block: `set of` means any number, `one` means exactly one, `lone` means zero or one.
+
 ```
 concept Approving [Actor, Item]
 purpose
