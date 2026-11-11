@@ -167,13 +167,13 @@ Rebuild the first half of this session every quarter.
 5. Keep it only if 1–4 pass.
 
 ### Capstone presentation (50 min)
-Each learner presents for 12 minutes:
+Each learner presents for 10 minutes, then gets 1 minute of rubric scoring and 1 minute of peer feedback (12 minutes total per learner):
 1. The workflow, the outcome, and the baseline (2 min).
 2. The design: concepts and syncs (2 min).
 3. The architecture and one ADR that they would defend (2 min).
 4. The threat model and one attack that they stopped (2 min).
-5. Before-and-after cost, latency, quality, and outcome (2 min).
-6. Three things they would change (2 min).
+5. Before-and-after cost, latency, quality, and outcome (1 min).
+6. Three things they would change (1 min).
 
 Ask learners to report the outcome as measured, with sample size. Do not accept extrapolated productivity multiples.
 
