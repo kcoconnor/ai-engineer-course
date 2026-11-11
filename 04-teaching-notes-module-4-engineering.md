@@ -79,7 +79,7 @@ Security and efficiency have the same shape. Each rests on a few principles that
 ### Key points
 1. **Evaluation before optimization.** No change without a quality baseline. A cheaper system that is wrong is not cheaper.
 2. **Cost model.** Cost per task = Σ (calls × (input tokens × input price + output tokens × output price)). Find the top drivers from traces, not from intuition.
-3. **Latency model.** Separate time to first token, generation time, tool time, and queue time. Measure p50 and p95.
+3. **Latency model.** Separate time to first token, generation time, tool time, and queue time. Measure p50 (the median: half of requests are faster than this) and p95 (the 95th percentile: your slow outliers).
 4. **Context budgets.** Set a maximum context size for each action. Remove content that does not change the output.
 5. **Routing.** Send each task to the cheapest model that passes its eval. Use a cascade when a cheap model can detect its own uncertainty.
 6. **Design-level savings.** Replace model calls with deterministic code. Remove retries that do not improve quality. Merge or split calls. These changes often save more than any model change.
