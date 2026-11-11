@@ -112,8 +112,8 @@ Rebuild this session every quarter. Keep the structure. Replace the specifics.
 - Indirect injection through tool results and retrieved documents.
 - Injection through agent memory that persists across sessions.
 - Tool poisoning: malicious tool descriptions or results from third-party MCP servers.
-- Exfiltration through rendered content (for example, image URLs or links that carry data).
-- Confused-deputy attacks across agents in multi-agent systems.
+- Exfiltration (private data leaving the system to an attacker) through rendered content, for example image URLs or links that carry data.
+- Confused-deputy attacks across agents in multi-agent systems. A confused deputy is a less-privileged party that tricks a more-privileged agent into acting for it.
 
 **Architectural patterns** (Beurer-Kellner et al., 2025)
 | Pattern | Idea | Tradeoff |
