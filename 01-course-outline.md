@@ -63,7 +63,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 
 **Study**
 - Kruhse-Lehtonen, Hofmann et al.: sections on Agent OS, agent types, and the phased roadmap.
-- Anthropic, "Building effective agents" (first read; Module 3 returns to it).
+- Anthropic, "Building effective AI agents" (first read; Module 3 returns to it).
 
 **Exercises**
 1. Draw the future-state workflow (T9, part B). Mark each step: Agent, Human, or Human-approves-Agent.
@@ -171,7 +171,7 @@ as a worked example, then apply each deliverable to your own anchor workflow.
 - Design tools as interfaces: names, parameters, errors, and descriptions for a model.
 
 **Study**
-- Anthropic, "Building effective agents".
+- Anthropic, "Building effective AI agents".
 - Anthropic, "Writing effective tools for agents".
 - Model Context Protocol specification: overview.
 

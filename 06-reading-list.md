@@ -33,7 +33,7 @@ Start with the first row of each module's table. That row is the core, required 
 
 | Source | Use it for |
 |---|---|
-| Anthropic, ["Building effective agents"](https://www.anthropic.com/engineering/building-effective-agents), 2024 | The workflow–agent continuum and the "start simple" rule. |
+| Anthropic, ["Building effective AI agents"](https://www.anthropic.com/research/building-effective-agents), 2024 | The workflow–agent continuum and the "start simple" rule. The page itself now says its tooling details are dated (since December 2024), but the patterns it describes still hold. |
 | Anthropic, ["Effective context engineering for AI agents"](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), 2025 | How to decide what goes into the context. |
 | Anthropic, ["Writing effective tools for agents"](https://www.anthropic.com/engineering/writing-tools-for-agents), 2025 | Tool interface design for a model reader. |
 | Anthropic, ["How we built our multi-agent research system"](https://www.anthropic.com/engineering/multi-agent-research-system), 2025 | A case for multiple agents, with costs stated. |
