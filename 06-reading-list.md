@@ -4,6 +4,8 @@ Sources are grouped by module. Each entry says what it is for. Items marked **[F
 
 List compiled October 2026. Verify the links before you distribute the list.
 
+Start with the first row of each module's table. That row is the core, required text. The rows below it are optional background and further reading.
+
 ---
 
 ## Module 1 – Strategy
