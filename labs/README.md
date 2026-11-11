@@ -50,7 +50,8 @@ claim that strategy interviews or human judgment were completed.
 Run `python3 -m support_lab lab 1`.
 
 Inspect the three candidates and their six T8 scores. The example selects
-support drafts; higher business/security risk scores mean **lower** risk.
+support drafts; a score of 5 on business or security risk means low risk,
+by the T8 scoring convention.
 The dimensions are impact, feasibility, strategic fit, repeatability, business
 risk and security risk, in that order. Equal-weight totals are a discussion
 aid, not a validated prioritization method.
@@ -151,8 +152,9 @@ fixture may need corresponding evidence updates when you extend it.
 
 Run `python3 -m support_lab lab 7`.
 
-Two lightweight strategies compare set overlap with title-weighted lexical
-overlap. Neither is BM25 or dense search. Both get recall@2 of 1.0 on three
+Two lightweight retrieval strategies are compared: `overlap` (raw word
+overlap) and `lexical` (word overlap with extra weight for title matches).
+Neither is BM25 or dense search. Both get recall@2 of 1.0 on three
 cases. Support access excludes the finance policy before generation.
 
 **Learner task:** Expand to at least ten questions before tuning either
