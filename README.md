@@ -26,7 +26,7 @@ It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, 
 | [reviews/](reviews/) | Two cumulative review sessions with no new material: Review A (start of Week 6, Modules 1–2) and Review B (after Week 13, all modules; repeat 3 months later to measure retention). |
 | [docs/learning-design-plan.md](docs/learning-design-plan.md) | Plan for the retention upgrade: diagnosis, components, phases. |
 | [slides/](slides/README.md) | Marp slide decks (Markdown source), one per class session, with speaker notes. |
-| [presentations/](presentations/) | The decks as HTML presentations, generated from `slides/`. Present them from https://kcoconnor.github.io/ai-engineer-course/. |
+| [https://kcoconnor.github.io/ai-engineer-course](https://kcoconnor.github.io/ai-engineer-course/) | The decks as HTML presentations, built from `slides/` on each push to `main`. Present from here. |
 | [labs/](labs/README.md) | Thirteen executable weekly labs with learner tasks, evidence, and checkpoints. |
 | [reference/](reference/README.md) | Offline Python support-workflow implementation, synthetic data, tests, and worked design artifacts. |
 
