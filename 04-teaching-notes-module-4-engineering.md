@@ -152,7 +152,7 @@ Rebuild the first half of this session every quarter.
 - Learners present the full system.
 
 ### Current specifics (verify before teaching)
-- **Prompt caching.** Put stable content (system prompt, tool definitions, reference documents) first. Put variable content last. Measure the cache hit rate.
+- **Prompt caching.** The provider stores a processed copy of content it has already seen, so a later call that starts with the same content skips reprocessing it and costs less. Put stable content (system prompt, tool definitions, reference documents) first. Put variable content last, so it does not break the match. Measure the cache hit rate.
 - **Batch processing.** Most providers offer discounted asynchronous batch APIs. Move non-interactive work there.
 - **Model tiers.** Check the current tiers and prices from your providers. They change several times per year.
 - **Reasoning budgets.** Many models let you control how much they reason. Set the budget per action from evals.
