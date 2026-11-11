@@ -1,6 +1,6 @@
 # Learning Design Upgrade Plan
 
-Status: Phase 1 (foundation and Module 2 pilot) done. Phase 5 fact-check items resolved early during the readability loop (see Issues). Phases 2, 3, 4 and 6 not started.
+Status: Phases 1 and 2 done (Modules 2 and 1). Phase 5 fact-check items resolved early during the readability loop (see Issues). Phases 3, 4 and 6 not started.
 
 ## Why
 
@@ -50,7 +50,7 @@ Each component is reusable. Each module uses the same components in the same way
 | Phase | Scope | Exit check |
 |---|---|---|
 | 1 | Plan, glossary, Module 2 pilot (notes, slides, self-check, reference card), facilitator guide section, T12. | KC reviews the Module 2 pilot and accepts or changes the pattern. |
-| 2 | Apply the pattern to Module 1. | Same components present; recall questions reach back into Module 2 only after Module 2 exists in sequence (Module 1 recalls Module 1). |
+| 2 | Apply the pattern to Module 1. | Same components present. Session 1.1 uses a pretest (no earlier content exists). Sessions 1.2 to 1.4 recall Module 1. Session 1.5 (Week 14) recalls Modules 1 and 4. |
 | 3 | Apply the pattern to Module 3. | Recall questions interleave Modules 1 and 2. |
 | 4 | Apply the pattern to Module 4. | Recall questions interleave Modules 1 to 3. Frontier questions dated. |
 | 5 | Fact-check pass. Verify each inline citation and each glossary definition against its source. | Each citation link resolves. Each claim matches its source. |

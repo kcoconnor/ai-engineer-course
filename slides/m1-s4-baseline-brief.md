@@ -72,11 +72,31 @@ By the end of this session, you can:
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–5 | Exit-ticket gaps | Group |
+| 0–5 | Recall: no notes (from exit-ticket gaps) | Individual |
 | 5–25 | Baselines, claims, the brief | Explain + check |
 | 25–65 | Draft the brief | Individual |
 | 65–85 | Hand-off drill | Pairs |
 | 85–90 | Takeaways and exit ticket | Individual |
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Why is a Guardian agent not a security boundary?
+2. What makes a good first workflow for your first system?
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Session 1.3. Q2 is from Week 1, Session 1.2.
+Answer to 1: It reads the same untrusted content as the agents it watches. The same hidden instruction can affect it.
+Answer to 2: High impact, high feasibility, recoverable failures. Not mission-critical.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Do not skip this slide when time is short. Cut the warm-up instead.
+-->
 
 ---
 
@@ -265,3 +285,4 @@ Most differences are gaps in the brief. Connect this to Module 2: the same test 
 
 - Kruhse-Lehtonen, Hofmann et al., "The Agent-Centric Enterprise," *Harvard Data Science Review* 8.1, Winter 2026.
 - Course files: `01b-teaching-notes-module-1-strategy.md`, `05-templates.md` (T10).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-1.md`.

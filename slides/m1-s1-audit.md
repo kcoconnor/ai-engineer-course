@@ -58,7 +58,8 @@ Read the objectives aloud. Tell learners that the exit ticket checks objectives 
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–15 | Warm-up: what changed after AI? | Discussion |
+| 0–5 | Pretest: guess first | Individual |
+| 5–15 | Warm-up: what changed after AI? | Discussion |
 | 15–35 | Bolt-on vs. redesign; outcomes vs. outputs | Explain + check |
 | 35–75 | Interview and map a workflow | Pairs |
 | 75–85 | Debrief and takeaways | Group |
@@ -66,6 +67,26 @@ Read the objectives aloud. Tell learners that the exit ticket checks objectives 
 
 <!--
 Explanation is 20 minutes. Practice is 40 minutes. Keep to the times.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Pretest: guess first <span class="timer">5 min</span>
+
+You have not learned this yet. Guess anyway. Write your answers down.
+
+1. An agent makes one step in a workflow ten times faster. Does the whole workflow get ten times faster? Why or why not?
+2. Where in a workflow do AI agents most often fail? Guess.
+
+Keep your answers. We check them after the explanation.
+
+<!--
+Pretest. Learners are not expected to know the answers. A wrong guess before the lesson makes the correct answer easier to remember. Reveal the answers at the end of the Explain block.
+Answer to 1: Usually no. If the step still waits in a human queue, the wait sets the speed. The constraint is the workflow, not the step (the bolt-on effect).
+Answer to 2: At tacit decisions: judgments that people make with no written rule.
+Do not skip this slide when time is short. Cut the warm-up instead.
 -->
 
 ---
@@ -286,3 +307,4 @@ Good answer to 2: e.g. "Compliance issues are found and fixed within the month i
 
 - Kruhse-Lehtonen, Hofmann et al., "The Agent-Centric Enterprise: Why 2–10x Productivity Gains Demand Radical Workflow Redesign," *Harvard Data Science Review* 8.1, Winter 2026.
 - Course files: `01b-teaching-notes-module-1-strategy.md`, `05-templates.md` (T9).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-1.md`.

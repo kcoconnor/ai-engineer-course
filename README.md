@@ -21,8 +21,8 @@ It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, 
 | [07-facilitator-guide.md](07-facilitator-guide.md) | How to run this course for a team: formats, tracks, rubrics, refresh cadence. |
 | [08-addendum-agentic-workflow-strategy.md](08-addendum-agentic-workflow-strategy.md) | Analysis of the HDSR course: gap analysis, tensions, and the integration record. |
 | [GLOSSARY.md](GLOSSARY.md) | One definition for each course term. All files use these terms. |
-| [checks/](checks/) | Weekly self-checks: recall questions with hidden answers, including questions from earlier weeks. Module 2 is done; Modules 1, 3, and 4 are planned. |
-| [cards/](cards/) | One-page reference card per module, for review and print. Module 2 is done. |
+| [checks/](checks/) | Weekly self-checks: recall questions with hidden answers, including questions from earlier weeks. Modules 1 and 2 are done; Modules 3 and 4 are planned. |
+| [cards/](cards/) | One-page reference card per module, for review and print. Modules 1 and 2 are done. |
 | [docs/learning-design-plan.md](docs/learning-design-plan.md) | Plan for the retention upgrade: diagnosis, components, phases. |
 | [slides/](slides/README.md) | Marp slide decks, one per class session, with speaker notes. |
 | [labs/](labs/README.md) | Thirteen executable weekly labs with learner tasks, evidence, and checkpoints. |

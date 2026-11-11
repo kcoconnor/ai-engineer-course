@@ -58,7 +58,8 @@ Tell learners: the exit ticket checks objectives 2 and 3.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Exit-ticket review and warm-up | Group |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Exit-ticket review and warm-up | Group |
 | 10–30 | The canvas and the six dimensions | Explain + check |
 | 30–75 | Score, present, challenge | Individual + triads |
 | 75–85 | Write the justification; debrief | Individual + group |
@@ -66,6 +67,26 @@ Tell learners: the exit ticket checks objectives 2 and 3.
 
 <!--
 Explanation 20 minutes. Practice 55 minutes.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Why can a step that gets ten times faster leave the workflow no faster?
+2. What is a tacit decision? Why does it matter when you design for agents?
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Session 1.1. Q2 is from Session 1.1.
+Answer to 1: The step still waits in queues and hand-offs. The workflow is the constraint, not the step.
+Answer to 2: A judgment that people make with no written rule. Agents fail there most often, so the design must make it explicit.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Do not skip this slide when time is short. Cut the warm-up instead.
 -->
 
 ---
@@ -275,3 +296,4 @@ Read tickets before Session 1.3. Common gap: confusing "sensitive data" with all
 - Kruhse-Lehtonen, Hofmann et al., "The Agent-Centric Enterprise," *Harvard Data Science Review* 8.1, Winter 2026.
 - Simon Willison, "The lethal trifecta for AI agents," 2025.
 - Course files: `01b-teaching-notes-module-1-strategy.md`, `05-templates.md` (T8).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-1.md`.
