@@ -125,5 +125,5 @@ This removes the common hand-off failure where a leader's strategy deck does not
 
 ## Sources
 - [HDSR Agentic AI 2.5-Week Intensive](https://live.hdsrcourses.org/agentic-ai-2.5-week-intensive-app-portal)
-- Kruhse-Lehtonen, Hofmann et al., ["The Agent-Centric Enterprise: Why 2–10x Productivity Gains Demand Radical Workflow Redesign"](https://hdsr.mitpress.mit.edu/pub/0mrfxamu/release/1), *Harvard Data Science Review* 8.1, Winter 2026
+- Kruhse-Lehtonen, Hofmann et al., ["The Agent-Centric Enterprise: Why 2–10x Productivity Gains Demand Radical Workflow Redesign"](https://hdsr.mitpress.mit.edu/pub/0mrfxamu/release/3), *Harvard Data Science Review* 8.1, Winter 2026
 - [DAIN Studios summary of the article](https://dainstudios.com/insights/dain-studios-new-harvard-data-science-review-article-is-now-available/)
