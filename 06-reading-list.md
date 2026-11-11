@@ -26,7 +26,7 @@ Start with the first row of each module's table. That row is the core, required 
 | Daniel Jackson, *The Essence of Software: Why Concepts Matter for Great Design*, Princeton University Press, 2021 | The core text. Concepts, purposes, operational principles, composition, and design defects. Read Parts I and II fully. |
 | [essenceofsoftware.com](https://essenceofsoftware.com) | Essays, example concepts, workshop materials, and a discussion forum. |
 | Eagon Meng and Daniel Jackson, ["What You See Is What It Does: A Structural Pattern for Legible Software"](https://arxiv.org/abs/2508.14511), 2025 | Concepts plus synchronizations as a code structure. Directly relevant to code generation by agents. |
-| [MIT News: "MIT researchers propose a new model for legible, modular software"](https://www.eecs.mit.edu/mit-researchers-propose-a-new-model-for-legible-modular-software/) | A short summary of the paper above. Good for learners who need an introduction first. |
+| [MIT EECS News: "MIT researchers propose a new model for legible, modular software"](https://www.eecs.mit.edu/mit-researchers-propose-a-new-model-for-legible-modular-software/) | A short summary of the paper above. Good for learners who need an introduction first. |
 | Daniel Jackson, *Software Abstractions: Logic, Language, and Analysis* (Alloy), MIT Press, 2nd ed. 2012 | Optional. For learners who want formal specification and model checking. |
 
 ## Module 3 – Systems
