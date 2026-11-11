@@ -51,7 +51,7 @@ Start with the first row of each module's table. That row is the core, required 
 | Source | Use it for |
 |---|---|
 | [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/llm-top-10/) | Checklist of risk categories for LLM systems. |
-| [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/) | Checklist of risk categories specific to agents. Published December 2025. |
+| [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | Checklist of risk categories specific to agents. Published December 2025. |
 | Simon Willison, ["The lethal trifecta for AI agents"](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/), 2025 | The simplest model of data exfiltration risk. |
 | Greshake et al., ["Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"](https://arxiv.org/abs/2302.12173), 2023 | The original indirect injection paper. |
 | Adam Shostack, *Threat Modeling: Designing for Security*, Wiley, 2014 | General threat modeling method (STRIDE). |
