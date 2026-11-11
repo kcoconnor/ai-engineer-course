@@ -33,6 +33,7 @@ How to run this curriculum for others in your organization.
 3. Prepare the prompt-injection demo for Session 4.1 on a test system. Never use production data.
 4. Ask each learner to bring a short list of 3–5 candidate workflows from their business area.
 5. Check every **[FRONTIER]** section. Update dates.
+6. Run a 30-minute kickoff with the course overview deck ([slides/m0-course-overview.md](slides/m0-course-overview.md)). Self-paced learners read it alone.
 
 ### Approve learner workflows
 Learners choose their workflow in Module 1. Approve each choice at the end of Week 1. Use the criteria in the course summary. Reject workflows that:

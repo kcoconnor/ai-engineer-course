@@ -19,6 +19,7 @@ SLIDES = ROOT / "slides"
 OUT = ROOT / "presentations"
 
 GROUPS = [
+    ("Course overview", "m0-"),
     ("Module 1 – Strategy", "m1-"),
     ("Module 2 – Design", "m2-"),
     ("Module 3 – Systems", "m3-"),

@@ -4,12 +4,13 @@
 
 The Markdown files here are the source. Edit them, never the HTML.
 
-One Marp deck for each 90-minute class session. Each deck follows the teaching notes for its session.
+One Marp deck for each 90-minute class session, plus a 30-minute course overview for the kickoff. Each deck follows the teaching notes for its session.
 
 ## Decks
 
 | Module | Session | File |
 |---|---|---|
+| Overview | Course overview (kickoff, before Week 1) | [m0-course-overview.md](m0-course-overview.md) |
 | 1 – Strategy | 1.1 Audit: how work is done today | [m1-s1-audit.md](m1-s1-audit.md) |
 | | 1.2 Gauge: choose the workflow | [m1-s2-gauge.md](m1-s2-gauge.md) |
 | | 1.3 Redesign the work | [m1-s3-redesign.md](m1-s3-redesign.md) |
