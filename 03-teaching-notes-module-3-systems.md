@@ -31,7 +31,7 @@ Teach this table in every session of the module. Add rows as learners find new c
 | If the design has… | Reach for… | Not for… |
 |---|---|---|
 | A large document set that changes often | Retrieval (lexical + dense, with reranking: reordering top results with a stronger model) | Small, stable corpora that fit in context |
-| A small, stable corpus | Long context, with prompt caching | Corpora that change daily or exceed the window |
+| A small, stable corpus | Long context, with prompt caching (the model provider stores and reuses a previously-processed prompt prefix, so you pay less and wait less on repeat calls) | Corpora that change daily or exceed the window |
 | Answers that depend on relations between entities | A graph, or structured queries over relational data | Free-text questions about single documents |
 | Exact facts in a system of record | A tool call or a structured query | Embedding search |
 | Steps that you can list in advance | A workflow (fixed code path with LLM calls) | Open-ended tasks |
