@@ -125,7 +125,7 @@ Rebuild this session every quarter. Keep the structure. Replace the specifics.
 | Code-then-execute | The model writes a program; the program handles the data. | Needs a sandbox. |
 | Context minimization | Remove unneeded content (including the user prompt) from context before later steps. | Can lose useful information. |
 
-**Capability-based defense:** CaMeL (Debenedetti et al., 2025) separates control flow from data flow and tracks capabilities on values. It gives provable limits for some attack classes.
+**Capability-based defense:** CaMeL (Capabilities for Machine Learning; Debenedetti et al., 2025) is a system that separates control flow (the steps the program runs) from data flow (the untrusted content itself), and tracks what each piece of data is allowed to do. It gives provable limits for some attack classes.
 
 ### How to teach it
 - **Update (15 min):** What changed since the last session. Use recent advisories.
