@@ -64,7 +64,7 @@ Security and efficiency have the same shape. Each rests on a few principles that
 
 ### Expert depth
 - Map threats to concepts. The `Approving` concept from Module 2 is a security control. Its precondition (approver ≠ requester) is a refusal. Security that is in the design is easier to verify than security added afterwards.
-- STRIDE still works. Add AI-specific questions to each category: "Can injected content cause this?"
+- STRIDE still works. STRIDE is an older threat-modeling checklist: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. Add AI-specific questions to each category: "Can injected content cause this?"
 
 ---
 
