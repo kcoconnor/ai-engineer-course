@@ -326,3 +326,34 @@ Signals that trigger a redesign (for example, approval rate > 98%, rising overri
 ## Next workflow
 <From the T8 comparison table.>
 ```
+
+---
+
+## T12 – Learning log (all modules)
+
+Keep one log for the whole course. Add one entry each week, after the self-check. Your facilitator reads it before the pair review. When you teach (Week 15), your log shows which ideas were hard to keep.
+
+```
+# Learning log: <your name>
+
+## Week <N> – <topic>
+Date:
+
+### I can now (shown, not read)
+- <A skill you showed: "Wrote a concept spec that passed the independence test.">
+
+### Self-check score
+Right: <n>   Partly: <n>   Wrong: <n>
+Missed from earlier weeks: <question numbers and topics>
+
+### I still confuse
+- <Two terms or ideas you mix up. Check them against GLOSSARY.md.>
+
+### Changed my mind
+- <A belief you held at the start of the week that you no longer hold, and why.>
+
+### Next action
+- <One thing to practice before next week.>
+```
+
+**Rule:** Write "I can now" entries only for things you did, not things you read.
