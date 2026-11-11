@@ -120,7 +120,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ### Key points
 1. **Ask the requirements first:** corpus size, change rate, query type, freshness, access control, citation needs.
-2. **Lexical search** (for example, BM25) finds exact terms, names, and codes. **Dense search** finds meaning. **Hybrid** combines them. **Reranking** reorders the top results with a stronger model.
+2. **Lexical search** (for example, BM25, a standard scoring method that weights rare words more) finds exact terms, names, and codes. **Dense search** finds meaning. **Hybrid** combines them. **Reranking** reorders the top results with a stronger model.
 3. **Agentic search** lets the model write queries, read results, and search again. It is better for complex questions. It costs more and is harder to evaluate.
 4. **Long context** is a strong option when the corpus is small and stable. Combine it with prompt caching.
 5. **Graphs and structured queries** answer relational questions ("Which teams own services that depend on X?"). Embeddings do not answer these well.

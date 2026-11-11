@@ -11,7 +11,7 @@ Security and efficiency have the same shape: a few principles that hold for year
 3. **Lethal trifecta** (Willison): private data + untrusted content + external communication. Remove one leg, or put human approval on the path.
 4. **Least privilege:** minimum permissions per tool. Credentials belong to the user or the task.
 5. Prompts and classifiers reduce risk. Architectural limits are the boundary.
-6. OWASP Top 10 lists are checklists, not the threat model.
+6. OWASP (Open Worldwide Application Security Project) Top 10 lists are checklists, not the threat model.
 
 **Threat model (T4):** data-flow diagram, trust boundaries, trifecta paths, mitigation per threat. STRIDE + "Can injected content cause this?"
 

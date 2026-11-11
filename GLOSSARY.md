@@ -19,6 +19,7 @@ The **Module** column shows where the course introduces the term.
 
 | Term | Definition | Module |
 |---|---|---|
+| HDSR | *Harvard Data Science Review*, the journal that published the A.G.E.N.T. article (Kruhse-Lehtonen and Hofmann, 2026). | 1 |
 | A.G.E.N.T. | The playbook from Kruhse-Lehtonen, Hofmann et al. (2026): Audit, Gauge, Engineer, Navigate, Track. | 1 |
 | Agent OS | A workflow model in which agents are the main actors and people are supervisors, coaches, approvers, and exception handlers. | 1 |
 | Agent-first | A workflow redesigned so software does the work and people supervise. Not the same as an autonomous agent architecture. | 1 |
@@ -82,6 +83,7 @@ The **Module** column shows where the course introduces the term.
 | Walking skeleton | A minimal end-to-end path through the whole system, built before adding retrieval or other features. It proves the pieces connect before the system gets complex. | 3 |
 | ADR | Architecture decision record (T3). Fields: design property, context, decision, alternatives considered, consequences, change trigger. | 3 |
 | Lexical search | Search for exact terms, names, and codes (for example, BM25). | 3 |
+| BM25 | A standard scoring method for lexical search. It ranks documents by how often the query words appear, and gives rare words more weight. | 3 |
 | Dense search | Search by meaning, with embeddings. | 3 |
 | Hybrid search | Lexical and dense search combined. | 3 |
 | Reranking | Reordering the top search results with a stronger model. | 3 |
@@ -89,6 +91,8 @@ The **Module** column shows where the course introduces the term.
 | Recall@k | The share of questions where the correct source appears in the top k results. Measures retrieval alone. | 3 |
 | Durable execution | Workflow state that is persisted, so a long task can resume after a failure. | 3 |
 | Digest | The SHA-256 hash of the exact payload a human reviewed. The system checks it again at decision time and at send time, so an approval cannot be reused on a changed payload. | 3 |
+| Idempotent | An operation is idempotent if doing it twice has the same effect as doing it once. A retried send that creates one outbox row, not two, is idempotent. | 3 |
+| ACL | Access control list: the list of who may read or change a resource. Retrieval filters documents by the user's ACL before the model sees them. | 3 |
 | Idempotency key | A value a client sends with a request so a provider can recognize a retried request and avoid doing it twice. Needed because a crash or timeout can leave a delivery outcome ambiguous. | 3 |
 | Approver's view | What the approver sees, decides, overrides, and escalates. Shows the real action, not only a model summary. | 3 |
 | Error analysis | Reading real traces, putting failures into categories, and fixing the largest category first. | 3 |
@@ -99,6 +103,7 @@ The **Module** column shows where the course introduces the term.
 |---|---|---|
 | Trust boundary | A line in a data-flow diagram where the party that controls the input changes. | 4 |
 | Least privilege | Each tool gets the minimum permissions. Credentials belong to the user or the task, not to the agent in general. | 4 |
+| OWASP | Open Worldwide Application Security Project: a nonprofit foundation that publishes security guidance, including the Top 10 risk lists for LLM and agentic applications. | 4 |
 | Indirect prompt injection | An instruction hidden in content the model reads (a document, a tool result, a memory), not typed by the user. (Greshake et al., 2023.) | 4 |
 | Threat model | Template T4. Trust boundaries, threats, trifecta paths, and the mitigation for each. | 4 |
 | STRIDE | An older threat-modeling checklist: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. Add an AI-specific question to each category, for example "can injected content cause this?" | 4 |

@@ -191,6 +191,8 @@ Connect to Module 2: a fixed plan is a fixed set of synchronizations.
 
 ## Capability-based defense: CaMeL
 
+CaMeL: Capabilities for Machine Learning.
+
 - Separates **control flow** (from the trusted request) from **data flow** (from untrusted content).
 - Tracks **capabilities** on each value: where it came from, where it may go.
 - A policy blocks a value from untrusted content from reaching a sensitive action.

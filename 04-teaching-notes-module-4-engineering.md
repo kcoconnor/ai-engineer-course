@@ -54,7 +54,7 @@ Security and efficiency have the same shape. Each rests on a few principles that
    Remove one leg, or put a human approval step on the path.
 4. **Least privilege.** Each tool gets the minimum permissions. Credentials belong to the user or the task, not to the agent in general.
 5. **Defense in the architecture.** Prompt instructions and classifiers reduce risk. They do not remove it. Architectural limits (what the agent can do, with which data) are the real boundary.
-6. **Reference lists.** OWASP Top 10 for LLM Applications (2025) and OWASP Top 10 for Agentic Applications (2026). Use them as checklists, not as the threat model itself.
+6. **Reference lists.** OWASP (Open Worldwide Application Security Project) Top 10 for LLM Applications (2025) and OWASP Top 10 for Agentic Applications (2026). Use them as checklists, not as the threat model itself.
 
 ### How to teach it
 - **Recall (5 min):** The two questions above. Question 2 sets up today's demo: instructions in data reach every model that reads them.

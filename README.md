@@ -2,7 +2,7 @@
 
 A self-paced curriculum for experienced engineers who will mentor and teach others.
 
-This curriculum follows the structure of the MIT CSAIL *AI Engineer Intensive* (Design → Systems → Engineering). It adds a strategy module (Module 1) based on the A.G.E.N.T. playbook used in the Harvard Data Science Review *Agentic AI 2.5-Week Intensive*.
+This curriculum follows the structure of the MIT CSAIL *AI Engineer Intensive* (Design → Systems → Engineering). It adds a strategy module (Module 1) based on the [A.G.E.N.T. playbook](GLOSSARY.md) (Audit, Gauge, Engineer, Navigate, Track) used in the Harvard Data Science Review *Agentic AI 2.5-Week Intensive*.
 
 It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, HDSR, DAIN Studios, or NGL, and it does not reproduce their course materials. It uses public sources, mainly Daniel Jackson's published work on concept design and the HDSR article "The Agent-Centric Enterprise" (2026).
 
@@ -16,7 +16,7 @@ It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, 
 | [02-teaching-notes-module-2-design.md](02-teaching-notes-module-2-design.md) | Teaching notes for Module 2: concept design and specification. |
 | [03-teaching-notes-module-3-systems.md](03-teaching-notes-module-3-systems.md) | Teaching notes for Module 3: architecture and deployment. |
 | [04-teaching-notes-module-4-engineering.md](04-teaching-notes-module-4-engineering.md) | Teaching notes for Module 4: security and efficiency. |
-| [05-templates.md](05-templates.md) | Templates: use case canvas, workflow map, implementation brief, concept spec, sync spec, ADR, threat model, cost model, eval plan, rollout plan, learning log. |
+| [05-templates.md](05-templates.md) | Templates: use case canvas, workflow map, implementation brief, concept spec, sync spec, ADR (architecture decision record), threat model, cost model, eval plan, rollout plan, learning log. |
 | [06-reading-list.md](06-reading-list.md) | Primary sources, by module, with notes on what each one is for. |
 | [07-facilitator-guide.md](07-facilitator-guide.md) | How to run this course for a team: formats, tracks, rubrics, refresh cadence. |
 | [08-addendum-agentic-workflow-strategy.md](08-addendum-agentic-workflow-strategy.md) | Analysis of the HDSR course: gap analysis, tensions, and the integration record. |

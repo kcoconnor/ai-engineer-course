@@ -14,7 +14,7 @@ python3 -m support_lab lab all
 ```
 
 `demo` creates three pending drafts; it does not approve them. Inspect `T1`,
-read the exact ticket, customer, draft and citations, then copy its `digest`:
+read the exact ticket, customer, draft and citations, then copy its `digest` (a hash of the exact content you reviewed; approval is valid only for that content):
 
 ```sh
 python3 -m support_lab approve T1 --actor alice --digest COPY_DIGEST_FROM_INSPECT
@@ -53,7 +53,7 @@ flowchart LR
 ```
 
 - `support_lab/core.py`: role-scoped retrieval, model protocol, output validation,
-  approval state, SQLite persistence, idempotent local effects and traces.
+  approval state, SQLite persistence, idempotent local effects (repeating an action has no extra effect) and traces.
 - `support_lab/evaluation.py`: separate retrieval and draft citation checks.
 - `support_lab/labs.py`: 13 guided experiments with executable assertions.
 - `data/scenario.json`: three synthetic tickets and four access-scoped policies.
