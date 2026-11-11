@@ -37,6 +37,7 @@ The **Module** column shows where the course introduces the term.
 | Output | What one step produces: a report, a draft. Not an outcome. | 1 |
 | Tacit decision | A judgment made in a workflow with no written rule behind it, for example which customers always need sign-off. Tacit decisions are where agents most often fail, and must become explicit rules or eval criteria in Module 2. | 1 |
 | Use case canvas | Template T8. Scores a candidate workflow for impact, feasibility, strategic fit, repeatability, business risk, and security risk. | 1 |
+| KPI | Key performance indicator. Set with a baseline in the implementation brief (T10). An outcome measure put on the same dashboard as quality, cost, and latency in Module 3, and tracked against the Module 1 baseline. | 1, 3 |
 
 ## Module 2 – Design
 
@@ -88,7 +89,6 @@ The **Module** column shows where the course introduces the term.
 | Idempotency key | A value a client sends with a request so a provider can recognize a retried request and avoid doing it twice. Needed because a crash or timeout can leave a delivery outcome ambiguous. | 3 |
 | Approver's view | What the approver sees, decides, overrides, and escalates. Shows the real action, not only a model summary. | 3 |
 | Error analysis | Reading real traces, putting failures into categories, and fixing the largest category first. | 3 |
-| KPI | Key performance indicator. An outcome measure put on the same dashboard as quality, cost, and latency, and tracked against the Module 1 baseline. | 3 |
 
 ## Module 4 – Engineering
 
