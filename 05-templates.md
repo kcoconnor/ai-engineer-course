@@ -2,6 +2,8 @@
 
 Copy each template into your project. Use the same templates when you review the work of others.
 
+Terms used in these templates (purpose, principle, state, action, precondition, sync, independence, refusal) are defined in [GLOSSARY.md](GLOSSARY.md).
+
 ---
 
 ## T1 – Concept specification
