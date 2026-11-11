@@ -143,9 +143,10 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 5. **Multiple agents.** Use them when the task divides into parts with separate context and separate tools. They multiply cost and make failures harder to trace. Compare with one agent on real tasks before you commit.
 
 ### How to teach it
+- **Warm-up (5 min):** A task in your system stops mid-way. Predict what happens.
 - **Explain (20 min):** The five points.
 - **Failure drill (30 min):** Each learner stops their system during a multi-step task. Does it resume, fail safely, or leave partial effects? Discuss results.
-- **Approval review (25 min):** Pairs review each other's approval flow. Questions: "Can the model skip it? Does the approver see the real action?"
+- **Approval review (20 min):** Pairs review each other's approval flow. Questions: "Can the model skip it? Does the approver see the real action?"
 - **Close (15 min):** Multi-agent debate. One side argues for, one side against, for a real case.
 
 ### Expert depth
