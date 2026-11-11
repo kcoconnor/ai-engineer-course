@@ -79,7 +79,7 @@ Work in groups of three. Read the proposal. Find every problem you can, and name
 - **Orchestrator by default (Modules 1 and 3):** onboarding steps can be listed in advance. Build a workflow, not an autonomous agent.
 - **Knowledge strategy (Module 3):** contract terms and vendor records are exact facts in a system of record. Use structured queries or tool calls, not embedding search. Bank details in a vector store also fail least privilege and access control at retrieval time.
 - **Memory without a purpose (Module 3):** "remember vendors" names no concept. A memory without a concept is a store of untrusted text.
-- **Least privilege (Module 4):** the agent's ERP credential should be scoped to creating a vendor, not general access.
+- **Least privilege (Module 4):** the proposal does not state the agent's ERP access. That silence is the gap: scope the credential to creating a vendor, nothing more.
 - **Cheapest model (Module 4):** no change without a quality baseline. Route by eval, not by price.
 - **Design (Module 2):** no concepts, no refusals. For example, `Approving [Actor, Vendor]` with the refusal "approver is not the requester", and a refusal that bank details never leave in outbound email.
 </details>

@@ -67,7 +67,7 @@ Work in pairs. For each case, first say which module's idea applies. Then answer
 
 <details><summary>Answers</summary>
 
-**Case 1.** The outcome is an output, not a measurable business result (Module 1). The baseline must be measured before the build, or no gain can be shown (Module 1). `ClaimsAgent` is not a concept: it has no specific purpose, it bundles many purposes (overloading), and "the agent" is not a unit of behavior (Module 2). Fixes: write a measurable outcome; measure the baseline on 20–50 recent cases; derive 5–9 concepts from the future-state workflow steps.
+**Case 1.** The "outcome" describes a solution, not a measurable business result (Module 1). The baseline must be measured before the build, or no gain can be shown (Module 1). `ClaimsAgent` is not a concept: it has no specific purpose, it bundles many purposes (overloading), and "the agent" is not a unit of behavior (Module 2). Fixes: write a measurable outcome; measure the baseline on 20–50 recent cases; derive 5–9 concepts from the future-state workflow steps.
 
 **Case 2.** `Drafting.draft` refers to other concepts, so it fails the independence test. Connect the concepts with syncs instead (Module 2). "Approve own requests when urgent" breaks the refusal "approver is not the requester", which is the reason `Approving` exists: to catch mistaken or unauthorized actions. Remove the exception. An urgent case needs a faster approver, not self-approval (Modules 1 and 2).
 </details>
