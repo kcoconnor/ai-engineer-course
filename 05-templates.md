@@ -136,6 +136,9 @@ See `reference/artifacts/design.md` for a worked T1-T3 example.
 | ID | Threat | Entry point | Impact | Likelihood | OWASP ref | Mitigation | Status |
 |---|---|---|---|---|---|---|---|
 
+Example OWASP ref format: `LLM01:2025` (prompt injection). See the OWASP lists
+in [06-reading-list.md](06-reading-list.md).
+
 ## 6. Residual risk
 <What remains. Who accepted it.>
 ```
@@ -241,7 +244,7 @@ Reason:
 ### Part A – Current state
 
 ```
-| # | Step | Role | System / data | Time | Wait before | Rework? | Tacit decision? | Pain point |
+| # | Step | Role | System / data | Time | Wait before | Rework? | Tacit decision? (a judgment with no written rule) | Pain point |
 |---|---|---|---|---|---|---|---|---|
 ```
 
