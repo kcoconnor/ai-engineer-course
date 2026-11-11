@@ -103,7 +103,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 3. **Agentic search** lets the model write queries, read results, and search again. It is better for complex questions. It costs more and is harder to evaluate.
 4. **Long context** is a strong option when the corpus is small and stable. Combine it with prompt caching.
 5. **Graphs and structured queries** answer relational questions ("Which teams own services that depend on X?"). Embeddings do not answer these well.
-6. **Evaluate retrieval alone.** Use recall@k on a labeled set. If retrieval fails, generation cannot recover.
+6. **Evaluate retrieval alone.** Use recall@k (the share of test questions where the correct source shows up in the top k results) on a labeled set. If retrieval fails, generation cannot recover.
 7. **Access control.** Filter at retrieval time. Never rely on the model to hide documents that the user must not see.
 
 ### How to teach it
