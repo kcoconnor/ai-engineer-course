@@ -150,7 +150,7 @@ Set a maximum context size for each action. Remove content that does not change 
 
 **5. Routing.**
 Send each task to the **cheapest model that passes its eval**.
-Use a **cascade** when a cheap model can detect its own uncertainty.
+Use a **cascade** (try the cheap model first, escalate to a bigger one only when needed) when a cheap model can detect its own uncertainty.
 
 <p class="small">See: FrugalGPT (Chen et al., 2023); RouteLLM (Ong et al., 2024)</p>
 
