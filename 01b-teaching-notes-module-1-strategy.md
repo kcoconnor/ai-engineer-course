@@ -2,6 +2,8 @@
 
 Use these notes after you complete Module 1 yourself. Each session is approximately 90 minutes. Sessions 1.1–1.4 cover Weeks 1–2. Session 1.5 covers optional Week 14.
 
+Use the terms in [GLOSSARY.md](GLOSSARY.md). Learners check their own recall each week with [checks/module-1.md](checks/module-1.md). The one-page summary for review is [cards/module-1.md](cards/module-1.md).
+
 **Stability:** The method is stable. The case examples and productivity figures change. Review every year.
 
 **Primary source:** Kruhse-Lehtonen, Hofmann et al., "The Agent-Centric Enterprise: Why 2–10x Productivity Gains Demand Radical Workflow Redesign," *Harvard Data Science Review* 8.1, Winter 2026. This module uses its A.G.E.N.T. playbook (Audit, Gauge, Engineer, Navigate, Track) and its Agent OS model.
@@ -42,6 +44,14 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 
 ## Session 1.1 – Audit: how work is done today
 
+**Primary source:** Kruhse-Lehtonen and Hofmann, ["The Agent-Centric Enterprise"](https://hdsr.mitpress.mit.edu/pub/0mrfxamu/release/3) (HDSR, 2026), Section 1 (the productivity paradox) and Section 4 (the transformation cases, including the audit-report case).
+
+### Pretest (5 min, guess first)
+1. An agent makes one step in a workflow ten times faster. Does the whole workflow get ten times faster? Why or why not?
+   - Usually no. If the step still waits in a human queue, the wait sets the speed. The constraint is the workflow, not the step (the bolt-on effect).
+2. Where in a workflow do AI agents most often fail? Guess.
+   - At tacit decisions: judgments that people make with no written rule.
+
 ### Objectives
 - Learners explain why "bolt-on" AI gives small gains.
 - Learners map a current workflow: goals, data, systems, roles, pain points.
@@ -54,7 +64,8 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 4. **Find the tacit decisions.** These are the judgments that people make without a written rule. They are where agents most often fail, and where the design (Module 2) must be precise.
 
 ### How to teach it
-- **Open (15 min):** Ask: "Name an AI tool that your team adopted. Did the team's main result change?" Most answers: the tool helped individuals, but the result did not change. This is the bolt-on effect.
+- **Pretest (5 min):** The two questions above. Learners guess alone and keep their answers. Reveal the answers at the end of the Explain block.
+- **Open (10 min):** Ask: "Name an AI tool that your team adopted. Did the team's main result change?" Most answers: the tool helped individuals, but the result did not change. This is the bolt-on effect.
 - **Explain (20 min):** The four points. Use one case from the HDSR article (for example, the safety-audit case: report creation from about 24 hours to about 2 hours). State that the figures are practitioner-reported.
 - **Exercise (40 min):** Pairs interview each other for 10 minutes each about a workflow they know. The interviewer maps it on the current-state workflow map (T9, Part A). Then they swap. Each map must show at least one wait, one rework loop, and one tacit decision.
 - **Close (15 min):** Each learner rewrites one output as an outcome.
@@ -77,6 +88,14 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 
 ## Session 1.2 – Gauge: choose the workflow
 
+**Primary source:** Kruhse-Lehtonen and Hofmann, ["The Agent-Centric Enterprise"](https://hdsr.mitpress.mit.edu/pub/0mrfxamu/release/3), Section 7 (the A.G.E.N.T. playbook: Audit and Gauge). For the security score: Willison, ["The lethal trifecta for AI agents"](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) (2025).
+
+### Recall warm-up (5 min, no notes)
+1. Why can a step that gets ten times faster leave the workflow no faster? *(Session 1.1)*
+   - The step still waits in queues and hand-offs. The workflow is the constraint, not the step.
+2. What is a tacit decision? Why does it matter when you design for agents? *(Session 1.1)*
+   - A judgment that people make with no written rule. Agents fail there most often, so the design must make it explicit.
+
 ### Objectives
 - Learners score candidate workflows with the use case canvas.
 - Learners include security risk in the score.
@@ -89,9 +108,11 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 4. **First-system rule.** High impact, high feasibility, recoverable failures. Not mission-critical.
 
 ### How to teach it
+- **Recall (5 min):** The two questions above. Learners write alone, then compare with a partner.
+- **Warm-up (5 min):** Review the most common exit-ticket gap. Learners write down their instinct choice of workflow.
 - **Explain (20 min):** The canvas (T8) and the six dimensions.
 - **Exercise (45 min):** Each learner scores 3–5 candidates. In groups of three, each learner presents a top choice in 3 minutes. The group challenges the scores.
-- **Close (25 min):** Each learner writes a one-paragraph justification for the chosen workflow.
+- **Close (15 min):** Each learner writes a one-paragraph justification for the chosen workflow.
 
 ### Expert depth
 - Feasibility often depends on data access more than on model capability. Ask: "Can the system read the data the person reads today, with the same permissions?"
@@ -100,6 +121,14 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 ---
 
 ## Session 1.3 – Redesign the work: agent-first, human-supervised
+
+**Primary source:** Kruhse-Lehtonen and Hofmann, ["The Agent-Centric Enterprise"](https://hdsr.mitpress.mit.edu/pub/0mrfxamu/release/3), Section 2 (the Agent OS) and Section 3 (agent types).
+
+### Recall warm-up (5 min, no notes)
+1. Name the six dimensions of the use case canvas. *(Week 1, Session 1.2)*
+   - Impact, feasibility, strategic fit, repeatability, business risk, security risk.
+2. Rewrite this output as an outcome: "An agent drafts the weekly status report." *(Week 1, Session 1.1)*
+   - Any measurable business result, for example: "Project risks reach the steering group within one week of first signal."
 
 ### Objectives
 - Learners draw a future-state workflow.
@@ -132,9 +161,11 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 | Orchestrator by default | An Orchestrator is the most flexible type and the hardest to test. Use it only when the steps cannot be listed in advance. |
 
 ### How to teach it
+- **Recall (5 min):** The two questions above.
+- **Warm-up (5 min):** Review the most common exit-ticket gap. Then the warm-up on the slide.
 - **Explain (25 min):** Agent OS, agent types, and the tensions table.
 - **Exercise (45 min):** Each learner draws the future-state workflow on the workflow map (T9, Part B) and classifies each step. Partners challenge every Orchestrator. They also challenge every step that has all three trifecta legs and no human checkpoint.
-- **Close (20 min):** Each learner writes the role definition for one human role.
+- **Close (10 min):** Each learner writes the role definition for one human role.
 
 ### Expert depth
 - Ask for each Human-approves-Agent step: "What does the approver see?" If the answer is "the agent's summary", the approval is weak. The approver must see the real action.
@@ -143,6 +174,14 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 ---
 
 ## Session 1.4 – Baseline and implementation brief
+
+**Primary source:** Kruhse-Lehtonen and Hofmann, ["The Agent-Centric Enterprise"](https://hdsr.mitpress.mit.edu/pub/0mrfxamu/release/3), Section 5 (methodology and limitations: why the published gains are not proof for your workflow).
+
+### Recall warm-up (5 min, no notes)
+1. Why is a Guardian agent not a security boundary? *(Session 1.3)*
+   - It reads the same untrusted content as the agents it watches. The same hidden instruction can affect it.
+2. What makes a good first workflow for your first system? *(Week 1, Session 1.2)*
+   - High impact, high feasibility, recoverable failures. Not mission-critical.
 
 ### Objectives
 - Learners measure the outcome baseline.
@@ -155,7 +194,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 4. **The brief is a contract with the builders.** It must answer "what must the system do?" and "how do we know it worked?"
 
 ### How to teach it
-- **Open (5 min):** Review the gaps from the last exit tickets.
+- **Recall (5 min):** The two questions above. If the exit tickets show a different common gap, replace question 1 with it.
 - **Explain (20 min):** Baseline methods: sample 20–50 recent cases; time them; count errors and rework.
 - **Exercise (40 min):** Learners draft the brief (T10).
 - **Hand-off drill (20 min):** A learner who did not see the workflow reads the brief and lists the system's steps and the decisions people keep. The author compares the list with their intent. Discuss the gaps.
@@ -164,6 +203,14 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 ---
 
 ## Session 1.5 – Rollout and change management (Week 14, optional)
+
+**Primary source:** Kruhse-Lehtonen and Hofmann, ["The Agent-Centric Enterprise"](https://hdsr.mitpress.mit.edu/pub/0mrfxamu/release/3), Section 6 (the human side) and Section 8 (the phased sprint).
+
+### Recall warm-up (5 min, no notes)
+1. What is a baseline? Why must you measure it before you build? *(Week 2, Session 1.4)*
+   - The measured value of an outcome before the system exists. Every claimed gain is compared with it. After launch, the old process is gone.
+2. What does "evaluation before optimization" mean? *(Week 11, Module 4)*
+   - No efficiency change without a quality baseline. A cheaper system that is wrong is not cheaper.
 
 ### Objectives
 - Learners plan a phased rollout with rollback criteria.
@@ -178,9 +225,11 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 5. **Close the loop.** The KPI review feeds the next Audit. Choose the next workflow from the canvas.
 
 ### How to teach it
+- **Recall (5 min):** The two questions above. They reach back to Weeks 2 and 11 on purpose.
+- **Warm-up (5 min):** The warm-up on the slide.
 - **Explain (20 min):** The five points.
 - **Exercise (45 min):** Learners write the rollout plan (T11) and one role guide.
-- **Close (25 min):** Group discussion: "What will make people trust or distrust this system in the first month?"
+- **Close (15 min):** Group discussion: "What will make people trust or distrust this system in the first month?"
 
 ---
 

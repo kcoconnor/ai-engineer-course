@@ -54,11 +54,32 @@ By the end of this session, you can:
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Warm-up | Pairs |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up | Pairs |
 | 10–30 | Phases, training, signals, the loop | Explain + check |
 | 30–75 | Rollout plan and role guide | Individual + pairs |
 | 75–85 | Trust discussion | Group |
 | 85–90 | Exit ticket | Individual |
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. What is a baseline? Why must you measure it before you build?
+2. What does "evaluation before optimization" mean?
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 2, Session 1.4. Q2 is from Week 11, Module 4.
+Answer to 1: The measured value of an outcome before the system exists. Every claimed gain is compared with it. After launch, the old process is gone.
+Answer to 2: No efficiency change without a quality baseline. A cheaper system that is wrong is not cheaper.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Do not skip this slide when time is short. Cut the warm-up instead.
+-->
 
 ---
 
@@ -232,3 +253,4 @@ Connect to Navigate: explainer views, override and escalation paths.
 
 - Kruhse-Lehtonen, Hofmann et al., "The Agent-Centric Enterprise," *Harvard Data Science Review* 8.1, Winter 2026.
 - Course files: `01b-teaching-notes-module-1-strategy.md`, `05-templates.md` (T11).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-1.md`.
