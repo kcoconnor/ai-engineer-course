@@ -60,7 +60,7 @@ Security and efficiency have the same shape. Each rests on a few principles that
 | "Only users can attack us." | Anyone who can write content that your system reads can attack it. |
 | "It is internal, so it is safe." | Internal documents, tickets, and emails contain external content. |
 | "A Guardian agent protects us." | A Guardian reads the same content as the agents it watches. The same injection can affect it. Use it for quality and policy monitoring, not as a security boundary. |
-| "Straight-through flow is the goal everywhere." | On a path with all three trifecta legs, autonomy creates exfiltration risk. Keep an approval step or remove a leg. |
+| "Straight-through flow is the goal everywhere." | On a path with all three trifecta legs, autonomy creates exfiltration risk (the risk of private data leaving the system to an attacker). Keep an approval step or remove a leg. |
 
 ### Expert depth
 - Map threats to concepts. The `Approving` concept from Module 2 is a security control. Its precondition (approver ≠ requester) is a refusal. Security that is in the design is easier to verify than security added afterwards.
