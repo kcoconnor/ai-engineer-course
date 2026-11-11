@@ -149,7 +149,7 @@ Answers (reveal only after pairs compare):
 ---
 <!-- _class: activity -->
 
-## Quiz: compare and score <span class="timer">10 min</span>
+## Quiz: compare and score <span class="timer">10 min (of 25)</span>
 
 1. Answer alone first: 15 minutes for all 16 questions.
 2. Compare with a partner for 10 minutes.

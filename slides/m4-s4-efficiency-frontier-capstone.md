@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'AI Engineering · Module 4 – Engineering'
-footer: 'Session 4.4 · Efficiency frontier and capstone [FRONTIER — dated October 2026]'
+footer: 'Session 4.4 · Efficiency frontier and capstone [FRONTIER — dated November 2026]'
 style: |
   section { font-size: 28px; padding: 60px 70px; }
   h1 { color: #1f3a5f; font-size: 44px; }
@@ -28,7 +28,7 @@ style: |
 
 ## Session 4.4 · Module 4 – Engineering
 
-**[FRONTIER — dated October 2026]**
+**[FRONTIER — dated November 2026]**
 
 90 minutes · Week 13
 

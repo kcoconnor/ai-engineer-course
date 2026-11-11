@@ -153,7 +153,7 @@ Model calls per user action. Context per call. Which calls deterministic code co
 
 ---
 
-## Week 12 – Security frontier [FRONTIER — dated October 2026]
+## Week 12 – Security frontier [FRONTIER — dated November 2026]
 
 **1.** A third-party MCP server returns a tool description with hidden instructions. What is this attack called?
 
@@ -216,7 +216,7 @@ Injected content can make the summary misleading. The approver then approves tex
 
 ---
 
-## Week 13 – Efficiency frontier and capstone [FRONTIER — dated October 2026]
+## Week 13 – Efficiency frontier and capstone [FRONTIER — dated November 2026]
 
 **1.** For prompt caching to work, where does stable content go?
 

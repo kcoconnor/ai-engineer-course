@@ -31,14 +31,14 @@ Security and efficiency have the same shape: a few principles that hold for year
 ## Procedure: judge a new optimization
 1. Which measured driver? 2. Expected saving on your traces? 3. Does quality hold on the eval suite? 4. Does it change the security posture (for example, a cache shared across users)? 5. Keep only if 1–4 pass.
 
-## Frontier specifics [FRONTIER — dated October 2026, verify each quarter]
+## Frontier specifics [FRONTIER — dated November 2026, verify each quarter]
 **Attack routes:** injection through tool results, retrieved documents, and memory; tool poisoning from third-party MCP servers; exfiltration through rendered links and images; confused-deputy attacks across agents.
 
 **Patterns** (Beurer-Kellner et al., 2025): action-selector, plan-then-execute, LLM map-reduce, dual LLM, code-then-execute, context minimization. **CaMeL** separates control flow from data flow.
 
-**Optimizations:** prompt caching (stable content first; measure cache hit rate), batch APIs for non-interactive work, model tiers, reasoning budgets, structured output and length limits, small and open-weight models for narrow tasks, decision models for scoring and routing.
+**Optimizations:** prompt caching (stable content first; measure cache hit rate), batch APIs for non-interactive work, model tiers, reasoning budgets, structured output and length limits, small and open-weight models for narrow tasks.
 
-**Warnings (Thoughtworks Radar Vol 35, Nov 2026):** naive context compression (can break caching), agent skill cognitive surrender (unreviewed third-party skills), multi-turn attacks that need stateful guardrails.
+**Warnings (Thoughtworks Radar Vol 35, Nov 2026):** naive context compression (can break caching), agent skill cognitive surrender (unreviewed third-party skills), multi-turn attacks (mitigate with stateful guardrails, which check the whole conversation).
 
 ## Capstone
 Report the outcome as measured against the Module 1 baseline, with sample size and method. No extrapolated multiples.

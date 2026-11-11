@@ -4,7 +4,7 @@ A self-paced curriculum for experienced engineers who will mentor and teach othe
 
 This curriculum follows the structure of the MIT CSAIL *AI Engineer Intensive* (Design → Systems → Engineering). It adds a strategy module (Module 1) based on the [A.G.E.N.T. playbook](GLOSSARY.md) (Audit, Gauge, Engineer, Navigate, Track) used in the Harvard Data Science Review *Agentic AI 2.5-Week Intensive*.
 
-It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, HDSR, DAIN Studios, or NGL, and it does not reproduce their course materials. It uses public sources, mainly Daniel Jackson's published work on concept design and the HDSR article "The Agent-Centric Enterprise" (2026).
+It is an independent study plan. It is not affiliated with MIT, CSAIL, Harvard, HDSR (*Harvard Data Science Review*), DAIN Studios, or NGL, and it does not reproduce their course materials. It uses public sources, mainly Daniel Jackson's published work on concept design and the HDSR article "The Agent-Centric Enterprise" (2026).
 
 ## Files
 
@@ -71,4 +71,4 @@ The course has four layers. Each layer changes at a different speed.
 | Architecture patterns | 3 – Systems | Every 1–2 years | Review every 6–12 months |
 | Techniques and tools | 4 – Engineering, frontier weeks | Every few months | Rebuild every quarter |
 
-Sections that are time-sensitive have the label **[FRONTIER — dated October 2026]**. Do a check of these sections before you teach them.
+Sections that are time-sensitive have the label **[FRONTIER — dated November 2026]**. Do a check of these sections before you teach them.

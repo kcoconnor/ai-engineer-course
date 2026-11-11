@@ -138,7 +138,7 @@ Answers (reveal only after pairs compare):
 ---
 <!-- _class: activity -->
 
-## Quiz: compare and score <span class="timer">8 min</span>
+## Quiz: compare and score <span class="timer">8 min (of 20)</span>
 
 1. Answer alone first: 12 minutes for all 12 questions.
 2. Compare with a partner. Agree or disagree on each answer.

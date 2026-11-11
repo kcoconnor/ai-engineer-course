@@ -119,7 +119,7 @@ Security and efficiency have the same shape. Each rests on a few principles that
 
 ---
 
-## Session 4.3 – Security frontier **[FRONTIER — dated October 2026]**
+## Session 4.3 – Security frontier **[FRONTIER — dated November 2026]**
 
 Rebuild this session every quarter. Keep the structure. Replace the specifics.
 
@@ -175,7 +175,7 @@ Rebuild this session every quarter. Keep the structure. Replace the specifics.
 
 ---
 
-## Session 4.4 – Efficiency frontier and capstone **[FRONTIER — dated October 2026]**
+## Session 4.4 – Efficiency frontier and capstone **[FRONTIER — dated November 2026]**
 
 Rebuild the first half of this session every quarter.
 
@@ -199,7 +199,6 @@ Rebuild the first half of this session every quarter.
 - **Output control.** Structured outputs and length limits reduce output tokens and parsing failures.
 - **Inference options.** Faster inference modes and regional options change latency and price. Check current provider documentation.
 - **Smaller and open-weight models.** Small language models and open-weight models now pass evals for narrow tasks such as classification, extraction, and routing (Thoughtworks Radar Vol 35, Trial). Route to them only after they pass your eval.
-- **Decision models.** A new class of model returns a calibrated score or choice instead of free text. Candidates for evaluator checks, routing, and policy gates ([Radar, Assess](https://www.thoughtworks.com/radar/platforms/decision-models)).
 - **Context compression: a warning.** Tools that shrink the prompt can break prompt caching, so real cost rises while token counts fall, and they can drop information the model needed. The Radar puts [naive context compression](https://www.thoughtworks.com/radar/techniques/naive-context-compression) on Caution. Apply the procedure below before you adopt one.
 
 ### How to teach it

@@ -147,7 +147,7 @@ Walk around. Do not help. If a learner stops after 3 minutes, ask: "What did you
 
 {quiz_slides(qs, ans, 6, "20 min")}<!-- _class: activity -->
 
-## Quiz: compare and score <span class="timer">8 min</span>
+## Quiz: compare and score <span class="timer">8 min (of 20)</span>
 
 1. Answer alone first: 12 minutes for all 12 questions.
 2. Compare with a partner. Agree or disagree on each answer.
@@ -284,7 +284,7 @@ Write everything you remember: terms, rules, templates, procedures, and one exam
 
 {quiz_slides(qs, ans, 6, "25 min")}<!-- _class: activity -->
 
-## Quiz: compare and score <span class="timer">10 min</span>
+## Quiz: compare and score <span class="timer">10 min (of 25)</span>
 
 1. Answer alone first: 15 minutes for all 16 questions.
 2. Compare with a partner for 10 minutes.
