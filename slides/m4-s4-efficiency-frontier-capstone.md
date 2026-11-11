@@ -136,7 +136,7 @@ After:
          ← stable prefix, cached →                          ← variable →
 ```
 
-Measure: **cache hit rate**, cost per task, quality.
+Measure: **cache hit rate** (share of requests that reuse the cached prefix), cost per task, quality.
 
 <!--
 Point out the security question from the procedure: is the cache shared across users or tenants? Check your provider's isolation guarantees.
