@@ -277,6 +277,13 @@ As measured against the Module 1 baseline, with the sample size and method. Do n
 
 **7. (your system)** Apply the optimization procedure to two current optimizations for your system. Keep only the ones that pass all four checks.
 
+**8.** A context compression tool cuts your prompt tokens by 40%. Your cost per task goes up. Give the likely reason, and the procedure step that would have caught it.
+
+<details><summary>Answer</summary>
+
+The compressed prompt changes on every call, so the prompt cache no longer matches and every call pays the full price. Compression can also drop information the model needs. Step 2 (expected saving on your traces) and step 3 (does quality hold on the eval suite) catch it. The Thoughtworks Radar puts naive context compression on Caution. **[FRONTIER]**
+</details>
+
 ---
 
 ## Mixed review (do this before the capstone, and again 3 months later)

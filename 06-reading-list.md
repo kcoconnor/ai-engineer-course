@@ -72,6 +72,7 @@ Start with the first row of each module's table. That row is the core, required 
 | Simon Willison, [review of the design patterns paper](https://simonwillison.net/2025/Jun/13/prompt-injection-design-patterns/), 2025 | A readable summary of the paper above. |
 | Debenedetti et al., ["Defeating Prompt Injections by Design"](https://arxiv.org/abs/2503.18813) (CaMeL), 2025 | Capability-based defense. Separates control flow from data flow. |
 | Vendor security advisories and model system cards | Current attacks and mitigations. Check each quarter. |
+| Thoughtworks, [Technology Radar](https://www.thoughtworks.com/radar), Vol 35, November 2026 | A twice-yearly review of techniques and tools, rated Adopt, Trial, Assess, or Caution. Read the AI security items ([toxic flow analysis](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai), [stateful guardrails](https://www.thoughtworks.com/radar/techniques/stateful-guardrails), [agent skill cognitive surrender](https://www.thoughtworks.com/radar/techniques/agent-skill-cognitive-surrender)) as input to the attack procedure, not as a verdict. |
 
 ### Efficiency core
 
@@ -85,6 +86,7 @@ Start with the first row of each module's table. That row is the core, required 
 | Source | Use it for |
 |---|---|
 | Your providers' documentation on prompt caching, batch processing, reasoning budgets, and pricing | Current features and prices. These change several times per year. |
+| Thoughtworks Technology Radar, Vol 35: [context profiling](https://www.thoughtworks.com/radar/techniques/context-profiling), [blanket frontier model usage](https://www.thoughtworks.com/radar/techniques/blanket-frontier-model-usage), [naive context compression](https://www.thoughtworks.com/radar/techniques/naive-context-compression) | Named practices and anti-patterns for cost. Run each through the optimization procedure. |
 
 ---
 
@@ -92,6 +94,6 @@ Start with the first row of each module's table. That row is the core, required 
 
 1. Check each **[FRONTIER]** item for a newer version.
 2. Search for new OWASP GenAI publications.
-3. Read your providers' release notes for the quarter.
+3. Read your providers' release notes for the quarter. In April and November, read the new Thoughtworks Technology Radar and pick its new AI items.
 4. Add one new attack case and one new optimization to the Module 4 teaching notes.
 5. Update the date on each **[FRONTIER]** section.

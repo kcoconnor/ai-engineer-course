@@ -59,7 +59,7 @@ AI added to a workflow that was designed for people gives small gains. Large gai
 
 ### Key points
 1. **Bolt-on vs. redesign.** If an agent does one step faster, but the step waits in a human queue, the workflow does not get faster. The constraint is the workflow, not the step.
-2. **Outcome vs. output.** An output is what a step produces (a report, a draft). An outcome is what the business needs (a decision made faster, a risk found earlier, more customers served).
+2. **Outcome vs. output.** An output is what a step produces (a report, a draft). An outcome is what the business needs (a decision made faster, a risk found earlier, more customers served). A current example of the mistake: counting the share of AI-written code or the tokens used as "productivity". The Thoughtworks Technology Radar (Vol 35, November 2026) puts this on Caution as [coding throughput as a measure of productivity](https://www.thoughtworks.com/radar/techniques/coding-throughput-as-a-measure-of-productivity). Those numbers measure activity, not outcome.
 3. **Interview the people who do the work.** Documents describe the official process. People describe the real one: workarounds, waits, rework, and tacit decisions.
 4. **Find the tacit decisions.** These are the judgments that people make without a written rule. They are where agents most often fail, and where the design (Module 2) must be precise.
 

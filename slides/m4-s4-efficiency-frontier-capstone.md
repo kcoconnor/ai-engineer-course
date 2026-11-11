@@ -135,11 +135,14 @@ Collect 2–3 answers aloud. Look for "quality held" with evidence. If a learner
 | **Reasoning budgets** (cap on how much internal reasoning a model does before answering) | Set the budget per action from evals. |
 | **Output control** | Structured outputs and length limits. |
 | **Inference options** | Faster modes and regional options change latency and price. |
+| **Small and open-weight models** | Route narrow tasks to them only after they pass your eval. |
+| **Context compression** (Caution) | Can break caching: fewer tokens, higher cost. Profile first. |
 
 <!--
 Verify each row this quarter.
 Caching example: a 6,000-token stable prefix reused across requests. Put the user's question at the end, not the start.
 Ask: "Which of these addresses one of your top 3 drivers?"
+The last two rows come from the Thoughtworks Technology Radar Vol 35 (Nov 2026): small language models and open-weight models (Trial), naive context compression (Caution). Context compression makes a good second choice in the activity: most learners find it fails step 2 or step 3 of the procedure.
 -->
 
 ---

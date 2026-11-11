@@ -219,6 +219,13 @@ The real action, not only a model summary. The approver sees, decides, overrides
 
 **8. (your system)** Stop your system in the middle of a multi-step task. Record the result: resumed, failed safely, or partial effects. If partial effects, write which state needs a durable home.
 
+**8.** An approver gets 200 approval requests a day and clicks "approve" on almost all of them in seconds. What is wrong, and what do you change?
+
+<details><summary>Answer</summary>
+
+This is human-in-the-loop theater: the approver cannot really judge the actions, so the step gives false confidence. Use risk tiers. Low-risk, reversible actions run without approval. Medium-risk actions get a real review with the raw action shown. A human performs high-risk or irreversible actions. The Module 2 refusals tell you which tier each action is in. (Thoughtworks Radar Vol 35, November 2026.)
+</details>
+
 ---
 
 ## Week 9 – Deploy with observability, evals, and KPIs

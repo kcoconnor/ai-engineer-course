@@ -139,11 +139,14 @@ Write them on the board. Use them in the red-team lab.
 | **Tool poisoning** (third-party MCP servers) | A tool description contains instructions |
 | **Exfiltration through rendering** | An image URL or link carries data out |
 | **Confused deputy** across agents | One agent asks a more privileged agent to act |
+| **Multi-turn attacks** (need stateful guardrails) | Each message looks safe; the conversation is not |
+| **Unreviewed third-party skills** | A downloaded skill file contains instructions |
 
 <!--
 Verify this list each quarter.
 Each row maps to the stable principle: any text in the context can act as an instruction.
 Ask: "Which route is new, and which is the same principle with a new input?" Usually all are the same principle.
+The last two rows come from the Thoughtworks Technology Radar Vol 35 (Nov 2026): stateful guardrails (Trial) and agent skill cognitive surrender (Caution). Each April and November, take one or two new Radar security items as input to the procedure.
 -->
 
 ---
