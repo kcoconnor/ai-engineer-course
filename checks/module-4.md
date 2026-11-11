@@ -176,7 +176,7 @@ A. Tool poisoning: malicious tool descriptions or results from third-party MCP s
 
 <details><summary>Answer</summary>
 
-D. In the Dual LLM pattern, a quarantined model processes untrusted text and returns references. The privileged model never sees the text itself (Beurer-Kellner et al., 2025).
+D. In the Dual LLM pattern, a quarantined model processes untrusted text and returns references. The privileged model never sees the text itself (Beurer-Kellner et al., 2025). **[FRONTIER]**
 </details>
 
 **3.** In plan-then-execute, what can untrusted data still change?
@@ -188,7 +188,7 @@ D. In the Dual LLM pattern, a quarantined model processes untrusted text and ret
 
 <details><summary>Answer</summary>
 
-B. The plan is fixed before the model sees untrusted data, so the data cannot change which actions run. It can still change their parameters.
+B. The plan is fixed before the model sees untrusted data, so the data cannot change which actions run. It can still change their parameters. **[FRONTIER]**
 </details>
 
 **4.** Write the six steps of the procedure to judge a new attack. This procedure is stable.
