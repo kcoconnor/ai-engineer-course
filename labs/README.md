@@ -9,6 +9,10 @@ the wider anchor-project work and readings use the remaining weekly time.
 Deliverables below are named by template code (T1, T8, ADR-001, and so on).
 All template codes are defined in [05-templates.md](../05-templates.md).
 
+The reference tool also has ticket IDs T1, T2, T3 (synthetic support
+tickets). A ticket ID is not a template code; `support_lab inspect T1` shows
+ticket T1's draft, not your T1 concept spec.
+
 ## Setup and learning loop
 
 Python 3.11+ is required. No dependencies or API keys are needed.
