@@ -19,10 +19,10 @@ Many engineers can build an AI demo. Fewer can engineer an AI system that is cor
 
 Learn the layers in the order that makes them last:
 
-1. **Purpose first.** Choose the workflow and the outcome. Redesign the work so agents do it and people supervise it. Measure the baseline.
-2. **Principles second.** Design principles do not expire. Learn to specify what a system must do.
-3. **Architecture third.** Architecture patterns change every year or two. Learn to choose them from the properties of the design.
-4. **Techniques last.** Tools and techniques change every few months. Learn to judge each new one against principles you already hold.
+1. **Purpose first (Module 1 – Strategy).** Choose the workflow and the outcome. Redesign the work so agents do it and people supervise it. Measure the baseline.
+2. **Principles second (Module 2 – Design).** Design principles do not expire. Learn to specify what a system must do.
+3. **Architecture third (Module 3 – Systems).** Architecture patterns change every year or two. Learn to choose them from the properties of the design.
+4. **Techniques last (Module 4 – Engineering).** Tools and techniques change every few months. Learn to judge each new one against principles you already hold.
 
 When the principles are yours, a new framework is a change of syntax, not a restart.
 
