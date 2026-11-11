@@ -68,7 +68,7 @@ Tell learners that the exit ticket checks objectives 1 and 3.
 | 85–90 | Exit ticket | Individual |
 
 <!--
-Explanation is 20 minutes. Practice is 60 minutes.
+Explanation is 20 minutes. Practice is 55 minutes.
 -->
 
 ---
