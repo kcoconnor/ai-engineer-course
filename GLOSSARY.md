@@ -76,7 +76,7 @@ The **Module** column shows where the course introduces the term.
 | Workflow | A system whose steps you can list in advance. | 3 |
 | Agent (architecture) | A system in which the model chooses the steps as it goes. | 3 |
 | Walking skeleton | A minimal end-to-end path through the whole system, built before adding retrieval or other features. It proves the pieces connect before the system gets complex. | 3 |
-| ADR | Architecture decision record (T3). One decision, its context, the options, and the reason, traced to a design property. | 3 |
+| ADR | Architecture decision record (T3). Fields: design property, context, decision, alternatives considered, consequences, change trigger. | 3 |
 | Lexical search | Search for exact terms, names, and codes (for example, BM25). | 3 |
 | Dense search | Search by meaning, with embeddings. | 3 |
 | Hybrid search | Lexical and dense search combined. | 3 |
