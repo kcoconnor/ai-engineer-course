@@ -59,7 +59,8 @@ Read the objectives aloud. The exit ticket checks objectives 2 and 3.
 
 | Time | Block | Mode |
 |---|---|---|
-| 0–10 | Warm-up: "Why was it an agent?" | Discussion |
+| 0–5 | Recall: no notes | Individual |
+| 5–10 | Warm-up: "Why was it an agent?" | Discussion |
 | 10–30 | Augmented LLM; the continuum; the rule | Explain + check |
 | 30–65 | Place your actions on the continuum | Pairs |
 | 65–80 | Tool design clinic | Pairs |
@@ -68,6 +69,26 @@ Read the objectives aloud. The exit ticket checks objectives 2 and 3.
 
 <!--
 Explanation: 20 minutes. Practice: 50 minutes. Keep to the times.
+-->
+
+---
+
+<!-- _class: check -->
+
+## Recall: no notes <span class="timer">5 min</span>
+
+Write your answers alone. Do not look at your notes.
+
+1. Name the three things that specify an LLM-backed action.
+2. Name the five agent types. Say what each one does.
+
+Then compare with a partner. Correct each other.
+
+<!--
+Q1 is from Week 5, Module 2. Q2 is from Week 2, Module 1.
+Answer to 1: Contract (inputs, output type, what is fixed), quality criterion (what good enough means, as a check), failure behavior (what happens when the check fails).
+Answer to 2: Assistant drafts, summarizes, retrieves. Analyst analyzes and recommends. Tasker does one bounded action through tools. Orchestrator plans and runs multi-step work. Guardian monitors other agents.
+Why this slide: recall from memory builds long-term retention. Re-reading does not. Do not skip this slide when time is short.
 -->
 
 ---
@@ -119,7 +140,7 @@ single call → prompt chain → routing → parallelization
 Each step to the right adds **flexibility**.
 Each step to the right also adds **cost, latency, and risk**.
 
-<p class="small">Source: Anthropic, "Building effective agents"</p>
+<p class="small">Pattern order: Anthropic, "Building effective AI agents". The "continuum" framing and the single-call step are this course's.</p>
 
 <!--
 Give one example at each step, from one domain (e.g. support tickets):
@@ -216,7 +237,7 @@ A good tool has:
 More tools make selection harder and increase the attack surface.
 
 <!--
-Mention MCP briefly: a protocol standardizes how tools and data connect. It changes integration cost, not the design reasoning.
+Mention MCP briefly: a protocol standardizes how tools and data connect. It changes integration cost, not the design reasoning. [dated November 2026]
 -->
 
 ---
@@ -339,8 +360,9 @@ Read all tickets before Session 3.2.
 
 ## Sources
 
-- Anthropic, "Building effective agents," 2024.
+- Anthropic, "Building effective AI agents," 2024. **[dated November 2026]** The page says its tooling details changed after December 2024; the patterns still hold.
 - Anthropic, "Writing effective tools for agents," 2025.
 - Model Context Protocol specification: overview.
 - Kruhse-Lehtonen, Hofmann et al., "The Agent-Centric Enterprise," *HDSR* 8.1, 2026 (agent types).
 - Course files: `03-teaching-notes-module-3-systems.md`, `05-templates.md` (T3).
+- Course glossary: `GLOSSARY.md`. Weekly self-check: `checks/module-3.md`.

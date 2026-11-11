@@ -2,6 +2,8 @@
 
 Use these notes after you complete Module 3 yourself. Each session is approximately 90 minutes.
 
+Use the terms in [GLOSSARY.md](GLOSSARY.md). Learners check their own recall each week with [checks/module-3.md](checks/module-3.md). The one-page summary for review is [cards/module-3.md](cards/module-3.md).
+
 **Stability:** The reasoning is stable. The named technologies change. Review every 6–12 months.
 
 ---
@@ -59,6 +61,14 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ## Session 3.1 – Building blocks and the workflow–agent continuum
 
+**Primary source:** Anthropic, ["Building effective AI agents"](https://www.anthropic.com/research/building-effective-agents) (2024). **[dated November 2026]** The page says its tooling details changed after December 2024. Read it for the patterns, which still hold. Then ["Writing effective tools for agents"](https://www.anthropic.com/engineering/writing-tools-for-agents) (2025) for the tool clinic.
+
+### Recall warm-up (5 min, no notes)
+1. Name the three things that specify an LLM-backed action. *(Week 5, Module 2)*
+   - Contract (inputs, output type, what is fixed), quality criterion (what good enough means, as a check), failure behavior (what happens when the check fails).
+2. Name the five agent types. Say what each one does. *(Week 2, Module 1)*
+   - Assistant drafts, summarizes, retrieves. Analyst analyzes and recommends. Tasker does one bounded action through tools. Orchestrator plans and runs multi-step work. Guardian monitors other agents.
+
 ### Objectives
 - Learners describe the augmented LLM: model, context, tools, memory.
 - Learners place each LLM-backed action on the continuum and defend the choice.
@@ -69,10 +79,11 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 2. **The rule.** Start at the left. Move right only when the design requires it.
 3. **Context engineering.** The model sees only its context. Decide what goes in, in what order, and what stays out. This is a design decision, not a prompt trick.
 4. **Tools are interfaces for a model.** Write clear names, few parameters, specific descriptions, and error messages that tell the model what to do next. Return only what the model needs.
-5. **Protocols.** The Model Context Protocol (MCP) standardizes how tools and data connect to models. It changes the integration cost, not the design reasoning.
+5. **Protocols.** The Model Context Protocol (MCP) standardizes how tools and data connect to models. It changes the integration cost, not the design reasoning. **[dated November 2026]**
 
 ### How to teach it
-- **Warm-up (10 min):** "Why was it an agent?"
+- **Recall (5 min):** The two questions above. Question 2 sets up today's mapping from agent type to continuum.
+- **Warm-up (5 min):** "Why was it an agent?"
 - **Explain (20 min):** The continuum, with one example at each step.
 - **Exercise (35 min):** Learners place each LLM-backed action from their Module 2 spec on the continuum. Partners challenge each placement that is right of "prompt chain".
 - **Tool design clinic (15 min):** Learners write one tool description. A partner gives it to a model with no other context and asks the model to use it. Learners observe the errors.
@@ -83,6 +94,7 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 |---|---|
 | "Agents are the modern way. Workflows are old." | Workflows are cheaper, faster, and easier to test. Use an agent only where the steps are not known in advance. |
 | "More tools make the agent more capable." | More tools make selection harder and increase the attack surface. |
+| "A bigger model will pick the right tool." | A bigger model does not fix a bad tool interface. Fix the names, the descriptions, and the number of tools first. |
 | "The framework handles context." | The framework assembles context. You still decide what belongs in it. |
 
 ### Expert depth
@@ -92,6 +104,14 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 ---
 
 ## Session 3.2 – Knowledge: retrieval, long context, structure, graphs
+
+**Primary source:** Anthropic, ["Introducing Contextual Retrieval"](https://www.anthropic.com/news/contextual-retrieval) (2024). It compares lexical, dense, and hybrid search with reranking, with measurements.
+
+### Recall warm-up (5 min, no notes)
+1. State the rule that decides between a workflow and an agent. *(Week 6, Session 3.1)*
+   - If you can list the steps in advance, use a workflow. If the system must choose the steps as it goes, use an agent. Start at the left of the continuum.
+2. Name the three legs of the lethal trifecta. Which leg can a retrieval system add? *(Week 1, Module 1)*
+   - Private data, untrusted content, external communication. Retrieval can add untrusted content: a retrieved document can carry hidden instructions.
 
 ### Objectives
 - Learners choose a knowledge strategy from design properties.
@@ -108,7 +128,8 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 7. **Access control.** Filter at retrieval time. Never rely on the model to hide documents that the user must not see.
 
 ### How to teach it
-- **Warm-up (10 min):** "Why a vector database?"
+- **Recall (5 min):** The two questions above. Question 2 sets up today's point that retrieved documents are untrusted input.
+- **Warm-up (5 min):** "Why a vector database?"
 - **Explain (20 min):** Requirements first, then the options.
 - **Exercise (40 min):** Learners write their knowledge requirements and choose a strategy. Groups review each choice against the central table.
 - **Demo (10 min):** Show one query where lexical search wins and one where dense search wins. Use your organization's data if possible.
@@ -129,6 +150,14 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 
 ## Session 3.3 – Orchestration, state, memory, and humans in the loop
 
+**Primary source:** Read both sides of the multi-agent debate: Anthropic, ["How we built our multi-agent research system"](https://www.anthropic.com/engineering/multi-agent-research-system) (2025), and Cognition, ["Don't Build Multi-Agents"](https://cognition.ai/blog/dont-build-multi-agents) (2025).
+
+### Recall warm-up (5 min, no notes)
+1. What does recall@k measure? Why do you measure retrieval separately from generation? *(Week 7, Session 3.2)*
+   - The share of test questions where the correct source is in the top k results. If retrieval fails, generation cannot recover, so you test retrieval alone.
+2. Write the sync that sends a draft after someone approves it. *(Week 4, Module 2)*
+   - sync SendOnApproval / when Approving.approve (q, a) / where d = item(q) / then Sending.send (d)
+
 ### Objectives
 - Learners implement syncs as orchestration code.
 - Learners decide where each piece of state lives.
@@ -143,8 +172,9 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 5. **Multiple agents.** Use them when the task divides into parts with separate context and separate tools. They multiply cost and make failures harder to trace. Compare with one agent on real tasks before you commit.
 
 ### How to teach it
+- **Recall (5 min):** The two questions above. Question 2 is the sync that today becomes orchestration code.
 - **Warm-up (5 min):** A task in your system stops mid-way. Predict what happens.
-- **Explain (20 min):** The five points.
+- **Explain (15 min):** The five points. Keep it short; the failure drill teaches state.
 - **Failure drill (30 min):** Each learner stops their system during a multi-step task. Does it resume, fail safely, or leave partial effects? Discuss results.
 - **Approval review (20 min):** Pairs review each other's approval flow. Questions: "Can the model skip it? Does the approver see the real action?"
 - **Close (15 min):** Multi-agent debate. One side argues for, one side against, for a real case.
@@ -156,6 +186,14 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 ---
 
 ## Session 3.4 – Deploy with observability, evals, and KPIs
+
+**Primary source:** Hamel Husain, ["Your AI Product Needs Evals"](https://hamel.dev/blog/posts/evals/). It covers error analysis and building evals from real traces.
+
+### Recall warm-up (5 min, no notes)
+1. Why must the approval check be in code, not in the prompt? *(Week 8, Session 3.3)*
+   - A prompt is not enforcement. The model can skip or be talked out of an instruction. Code runs the check every time.
+2. What is an acceptance scenario? Where does it come from? *(Week 5, Module 2)*
+   - A testable scenario derived from an operational principle, including the paths that must be refused. It comes from the Module 2 spec, and today it becomes an automated eval.
 
 ### Objectives
 - Learners trace every model call and tool call.
@@ -171,9 +209,10 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 6. **Outcome KPIs.** Put the Module 1 outcome measures on the same dashboard as quality, cost, and latency. Add approval rate and override rate. A system can pass every eval and still not move the outcome.
 
 ### How to teach it
+- **Recall (5 min):** The two questions above. Question 2 sets up today's point: acceptance scenarios become evals.
 - **Warm-up (5 min):** Guess your system's most common failure.
 - **Explain (15 min):** Tracing and eval types.
-- **Error analysis workshop (50 min):** Each learner brings 30 traces. They categorize failures in silence for 20 minutes, then share categories. Most learners find a category they did not expect.
+- **Error analysis workshop (45 min):** Each learner brings 30 traces. They categorize failures in silence for 20 minutes, then share categories. Most learners find a category they did not expect.
 - **ADR review (15 min):** Pairs swap one ADR. The reviewer asks: "What design property would change this decision?"
 - **Close (5 min):** Each learner names their top failure category.
 
