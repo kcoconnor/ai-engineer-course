@@ -62,7 +62,7 @@ By the end of this session, you can:
 | 85–90 | Takeaways and exit ticket | Individual |
 
 <!--
-Explanation: 15 minutes. Practice: 65 minutes.
+Explanation: 15 minutes. Practice: 60 minutes.
 -->
 
 ---
