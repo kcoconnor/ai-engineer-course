@@ -72,9 +72,10 @@ Module 1 classified each step by agent type (from the HDSR article). Map each ty
 5. **Protocols.** The Model Context Protocol (MCP) standardizes how tools and data connect to models. It changes the integration cost, not the design reasoning.
 
 ### How to teach it
+- **Warm-up (10 min):** "Why was it an agent?"
 - **Explain (20 min):** The continuum, with one example at each step.
 - **Exercise (35 min):** Learners place each LLM-backed action from their Module 2 spec on the continuum. Partners challenge each placement that is right of "prompt chain".
-- **Tool design clinic (25 min):** Learners write one tool description. A partner gives it to a model with no other context and asks the model to use it. Learners observe the errors.
+- **Tool design clinic (15 min):** Learners write one tool description. A partner gives it to a model with no other context and asks the model to use it. Learners observe the errors.
 - **Close (10 min):** "Which of your actions moved left after the challenge?"
 
 ### Common misconceptions
