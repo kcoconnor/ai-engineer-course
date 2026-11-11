@@ -207,8 +207,8 @@ From *The Essence of Software*. Jackson names two peer defects, overloading and 
 - **Recall (5 min):** The two questions above.
 - **Explain (20 min):** Syncs and the worked example.
 - **Exercise (40 min):** Each learner writes the syncs for their own anchor system. Partners read only the syncs and describe the system's behavior. The author checks the description.
-- **Defect hunt (20 min):** Each learner finds one defect from the table in a real system at your organization.
-- **Close (5 min):** Share defects. Do not name teams. Focus on the pattern.
+- **Defect hunt (15 min):** Each learner finds one defect from the table in a real system at your organization.
+- **Close (10 min):** Share defects. Do not name teams. Focus on the pattern.
 
 ### Expert depth
 - The LLM inside an action is the main source of non-determinism. The syncs are deterministic. This separation is the reason concept design works for AI systems: you can test syncs exactly and evaluate actions statistically.
