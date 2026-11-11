@@ -82,7 +82,7 @@ Agents now write code faster than people can review it. The leverage moves to th
 
 ### Objectives
 - Learners can write a complete concept specification.
-- Learners can tell a concept from a class, a module, a screen, or a data entity.
+- Learners can tell a concept from a feature, a class, or a data entity.
 
 ### Key points
 A concept has six parts:
