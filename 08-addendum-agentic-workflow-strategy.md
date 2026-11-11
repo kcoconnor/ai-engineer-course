@@ -10,7 +10,7 @@ How the Harvard Data Science Review *Agentic AI 2.5-Week Intensive* adds to this
 
 | Item | Detail |
 |---|---|
-| Program | Agentic AI 2.5-Week Intensive, Harvard Data Science Review / Next Gen Learning |
+| Program | Agentic AI 2.5-Week Intensive, Harvard Data Science Review / Next Gen Learning (NGL) |
 | Audience | Professionals and leaders. No technical background required. |
 | Output | A workflow design, not a working agent. |
 | Deliverables | Use case canvas, one redesigned agentic workflow, implementation brief |
